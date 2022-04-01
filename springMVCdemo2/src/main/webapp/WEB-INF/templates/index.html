@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a th:href="@{/target}">访问目标页面target.html</a>
+
+<table border="1" style="text-align:center;width:600px;margin:0 auto;">
+    <tr>
+        <caption style="font-size:36px">Student CURD</caption>
+    </tr>
+    <tr>
+        <td>
+            <a href="/jsp/add.jsp">
+                <button type="button">ADD</button>
+            </a>
+        </td>
+        <td>
+            <a href="/jsp/delete.jsp">
+                <button type="button">DELETE</button>
+            </a>
+        </td>
+        <td>
+            <a href="/springMVCdemo2/update">
+                <button type="button">UPDATE</button>
+            </a>
+        </td>
+        <td>
+            <a th:href="@{/show}">
+                <button type="button">SHOW</button>
+            </a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
