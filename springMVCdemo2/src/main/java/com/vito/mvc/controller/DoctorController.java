@@ -39,14 +39,14 @@ public class DoctorController {
      */
     @RequestMapping(value="/login", produces = "application/json; charset=utf-8")
     public @ResponseBody
-    ResponseData login(HttpServletRequest request, @RequestParam("appid") String appid,
-                       @RequestParam("secret") String secret,@RequestParam("js_code") String js_code) {
+    ResponseData login(HttpServletRequest request,@RequestParam("js_code") String js_code) {
         //获取session_key,openid
         String wechatApiInfo;
-        wechatApiInfo = hc.doGet("https://api.weixin.qq.com/sns/jscode2session?appid="+appid+"&secret="+secret+"&js_code="+js_code+"&grant_type=authorization_code");
+        wechatApiInfo = hc.doGet("https://api.weixin.qq.com/sns/jscode2session?appid=wxeae4d653ad57dcc5&secret=d531d7a5592343794f8f897ba929e9be&js_code="+js_code+"&grant_type=authorization_code");
 
         String session_key = getSession_key(wechatApiInfo);
         String openid = getOpen_id(wechatApiInfo);
+
         Login login = new Login();
         login.setSession_key(session_key);
         login.setOpenid(openid);
