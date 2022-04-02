@@ -57,4 +57,10 @@
             </bean>
         </mvc:message-converters>
     </mvc:annotation-driven>
+
+
+
+  <!--  <mvc:cors>
+        <mvc:mapping path="/**" allowed-origins="*" allowed-methods="*" allowed-headers="*" allow-credentials="true" max-age="3600"/>
+    </mvc:cors>-->
 </beans>

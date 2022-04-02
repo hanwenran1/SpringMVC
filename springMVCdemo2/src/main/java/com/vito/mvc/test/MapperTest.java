@@ -55,28 +55,30 @@ public class MapperTest {
 //        System.out.println("DoctorPassword:"+doc.getPassword());
 //        System.out.println("wechatApiInfo:"+wechatApiInfo);
 
-        Login login = new Login();
-        login.setTel("123456");
-        login.setPassword("123456");
-        Integer loginId = userService.checkLogin(login.getTel()).getId();
-        ResponseData responseData = ResponseData.ok();
-        System.out.println("loginId："+loginId);
-        if(null != loginId) {
-            User user = userService.getUserByLoginId(loginId);
-            login.setId(loginId);
-            //给用户jwt加密生成token
-            String token = JWT.sign(login, 60L* 1000L* 30L);
-            //封装成对象返回给客户端
-            responseData.putDataValue("loginId", login.getId());
-            responseData.putDataValue("token", token);
-            responseData.putDataValue("user", user);
-            login = JWT.unsign(token, Login.class);
-        }
-        System.out.println("ResponseData:"+responseData);
-        System.out.println("ResponseData:"+responseData.getMessage());
-        System.out.println("ResponseData:"+responseData.getCode());
-        System.out.println("ResponseData:"+responseData.getData());
-        System.out.println("JWT.unsign:"+login);
+//        Login login = new Login();
+//        login.setTel("123456");
+//        login.setPassword("123456");
+////        Integer loginId = userService.checkLogin(login.getTel()).getId();
+//        ResponseData responseData = ResponseData.ok();
+//        System.out.println("loginId："+loginId);
+//        if(null != loginId) {
+//            User user = userService.getUserByLoginId(loginId);
+//            login.setId(loginId);
+//            //给用户jwt加密生成token
+//            String token = JWT.sign(login, 60L* 1000L* 30L);
+//            //封装成对象返回给客户端
+//            responseData.putDataValue("loginId", login.getId());
+//            responseData.putDataValue("token", token);
+//            responseData.putDataValue("user", user);
+//            login = JWT.unsign(token, Login.class);
+//        }
+//        System.out.println("ResponseData:"+responseData);
+//        System.out.println("ResponseData-message:"+responseData.getMessage());
+//        System.out.println("ResponseData-code:"+responseData.getCode());
+//        System.out.println("ResponseData-loginId:"+responseData.getData().get("loginId"));
+//        System.out.println("ResponseData-user:"+responseData.getData().get("user"));
+//        System.out.println("ResponseData-token:"+responseData.getData().get("token"));
+//        System.out.println("JWT.unsign:"+login);
 
 
         //1.插入几个部门

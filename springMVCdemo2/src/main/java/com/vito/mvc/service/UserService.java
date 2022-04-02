@@ -23,10 +23,10 @@ public class UserService {
         return userMapper.selectByExample(null);
     }
 
-    public User checkLogin(String tel){
-        return userMapper.selectBySingleExample(tel);
+    public User checkLogin(String openid){
+        return userMapper.selectBySingleExample(openid);
     }
-    public User getUserByLoginId(int loginId){
+    public User getUserByLoginId(String loginId){
         return userMapper.selectByLoginId(loginId);
     }
 }

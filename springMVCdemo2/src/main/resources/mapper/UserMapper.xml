@@ -74,13 +74,13 @@
     select
     <include refid="Base_Column_List" />
     from tbl_user
-    where tel = #{tel,jdbcType=VARCHAR}
+    where openid = #{openid,jdbcType=VARCHAR}
   </select>
-  <select id="selectByLoginId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+  <select id="selectByLoginId" parameterType="java.lang.String" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />
     from tbl_user
-    where id = #{id,jdbcType=INTEGER}
+    where openid = #{openid,jdbcType=VARCHAR}
   </select>
   <select id="selectByExample" parameterType="com.vito.mvc.bean.UserExample" resultMap="BaseResultMap">
     select

@@ -17,13 +17,13 @@ public interface UserMapper {
 
     int insertSelective(User record);
 
-    User selectBySingleExample(String tel);
+    User selectBySingleExample(String openid);
 
     User selectByPrimaryKey(Integer id);
 
     List<User> selectByExample(UserExample example);
 
-    User selectByLoginId(Integer id);
+    User selectByLoginId(String id);
 
     int updateByExampleSelective(@Param("record") User record, @Param("example") UserExample example);
 
