@@ -19,6 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 //@CrossOrigin
 @Controller
@@ -69,6 +70,82 @@ public class DoctorController {
             System.out.println("code错误");
         }
         return responseData;
+    }
+
+    /**
+     * 获取问题数据
+     */
+    @PostMapping(value="/question", produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public Map question_random(){
+        Random random = new Random();
+        Map<String, Object> map=new HashMap<String, Object>();
+
+        String[] questionList = {"P_Sex","P_Age","P_Constellation","P_Blood_Type","P_Occupation_Risk","P_Education","P_Marriage_Status","P_Surgery_History","P_Comparison","P_Others’_Satisfaction","P_Change_Life","P_Change_Destiny","P_Kinsfolk_Attitude","P_Unhappiness_Family","P_Mental_Disorder","P_Selfie","P_Appearance_Attention","D_Charm","D_Subjective","D_Modesty","D_Attention","D_Expression","D_Extreme_Emotion","D_Expectation","D_Detail","D_Comprehension","D_Internet_Research","D_Suspicious","D_Repair","D_Impulsion","D_Price","D_Slander","D_Forwardness","D_Praise","D_Quarrel","D_ Art_Detail","D_Scar","D_Fail","D_Nurse","D_Perfect","D_Paranoid"};
+        Integer[] questionAnswer = new Integer[questionList.length];
+
+        //字典
+        String[] whether = {"是","否"};
+        String[] sex = {"男","女"};
+        String[] constellation = {"白羊座","金牛座","双子座","巨蟹座","狮子座","处女座","天秤座","天蝎座","射手座","摩羯座","水瓶座","双鱼座"};
+        String[] blood_type = {"A","B","AB","O"};
+        String[] education = {"高中及以下","大专","本科","硕士及以上"};
+        String[] marriage = {"单身","离异","拥有恋人或已婚"};
+        String[] modesty = {"善于倾听","傲慢","一般"};
+        String[] expression = {"有口才","表述含糊不清","一般"};
+
+        //问题字段与对应答案（数字格式）存入数组
+        for(int i=0;i<questionList.length;i++){
+            if(i==1||i==2||i==3||i==5||i==6||i==19||i==21){
+                if(i==1)
+                    questionAnswer[1]=random.nextInt(80);   //年龄
+                if(i==2)
+                    questionAnswer[2]=random.nextInt(12);   //星座：0-白羊座；1-金牛座；2-双子座；3-巨蟹座；4-狮子座；5-处女座；6-天秤座；7-天蝎座；8-射手座；9-摩羯座；10-水瓶座；11-双鱼座
+                if(i==3)
+                    questionAnswer[3]=random.nextInt(4);    //血型：0-A；1-B；2-AB；3-O
+                if(i==5)
+                    questionAnswer[5]=random.nextInt(4);    //学历：0-高中及以下；1-大专；2-本科；3-硕士及以上
+                if(i==6)
+                    questionAnswer[6]=random.nextInt(3);    //婚恋：0-单身；1-离异；2-拥有恋人或已婚
+                if(i==19)
+                    questionAnswer[19]=random.nextInt(3);   //是否善于倾听：0-善于倾听；1-傲慢；2-一般
+                if(i==21)
+                    questionAnswer[21]=random.nextInt(3);   //表述能力：0-有口才；1-表述含糊不清；2-一般
+            }
+            else {
+                questionAnswer[i]=random.nextInt(2);
+            }
+        }
+
+        //存入数据库
+
+        //返回前端
+        for(int i=0;i<questionList.length;i++){
+            if(i==0||i==1||i==2||i==3||i==5||i==6||i==19||i==21){
+                if(i==0)
+                    map.put(questionList[0], sex[questionAnswer[0]]);
+                if(i==1)
+                    map.put(questionList[1], questionAnswer[1]);   //年龄
+                if(i==2)
+                    map.put(questionList[2], constellation[questionAnswer[2]]);   //星座：0-白羊座；1-金牛座；2-双子座；3-巨蟹座；4-狮子座；5-处女座；6-天秤座；7-天蝎座；8-射手座；9-摩羯座；10-水瓶座；11-双鱼座
+                if(i==3)
+                    map.put(questionList[3], blood_type[questionAnswer[3]]);    //血型：0-A；1-B；2-AB；3-O
+                if(i==5)
+                    map.put(questionList[5], education[questionAnswer[5]]);    //学历：0-高中及以下；1-大专；2-本科；3-硕士及以上
+                if(i==6)
+                    map.put(questionList[6], marriage[questionAnswer[6]]);    //婚恋：0-单身；1-离异；2-拥有恋人或已婚
+                if(i==19)
+                    map.put(questionList[19], modesty[questionAnswer[19]]);   //是否善于倾听：0-善于倾听；1-傲慢；2-一般
+                if(i==21)
+                    map.put(questionList[21], expression[questionAnswer[21]]);   //表述能力：0-有口才；1-表述含糊不清；2-一般
+            }
+            else {
+                map.put(questionList[i], whether[questionAnswer[i]]);
+            }
+        }
+
+
+        return map;
     }
 
     /**

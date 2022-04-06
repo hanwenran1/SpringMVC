@@ -44,7 +44,8 @@
         <!--<table tableName="tbl_dept" domainObjectName="Department"></table>-->
         <!--<table tableName="tbl_doc" domainObjectName="Doctor"></table>-->
         <!--<table tableName="tbl_cus" domainObjectName="Customer"></table>-->
-        <table tableName="tbl_user" domainObjectName="User"></table>
+        <!--<table tableName="tbl_user" domainObjectName="User"></table>-->
+        <table tableName="tbl_question" domainObjectName="Question"></table>
 
     </context>
 </generatorConfiguration>
