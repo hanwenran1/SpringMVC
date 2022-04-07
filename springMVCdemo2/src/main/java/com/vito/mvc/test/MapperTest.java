@@ -1,9 +1,7 @@
 package com.vito.mvc.test;
 
-import com.vito.mvc.bean.Doctor;
-import com.vito.mvc.bean.Login;
-import com.vito.mvc.bean.ResponseData;
-import com.vito.mvc.bean.User;
+import com.vito.mvc.bean.*;
+import com.vito.mvc.dao.QuestionMapper;
 import com.vito.mvc.service.HttpClient;
 import com.vito.mvc.dao.DoctorMapper;
 import com.vito.mvc.service.DoctorService;
@@ -41,6 +39,9 @@ public class MapperTest {
 
     @Autowired
     UserService userService;
+
+    @Autowired
+    QuestionMapper questionMapper;
     /**
      * 测试DoctorMapper
      */
@@ -180,5 +181,12 @@ public class MapperTest {
             System.out.println(questionAnswer_String[i]);
         }
 
+    }
+
+    @Test
+    public void testCount(){
+        long i = questionMapper.countByExample(null);
+        int id = (int)i;
+        System.out.println("countByExample::"+id);
     }
 }

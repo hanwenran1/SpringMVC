@@ -128,7 +128,7 @@ public class DoctorController {
         List<Question> qus = questionService.getAll();
         Integer id;
         id=qus.size()+1;
-        Question question = new Question(id,questionAnswer_String[0],questionAnswer_String[1],questionAnswer_String[2],questionAnswer_String[3],questionAnswer_String[4],questionAnswer_String[5],questionAnswer_String[6],questionAnswer_String[7],questionAnswer_String[8],questionAnswer_String[9],questionAnswer_String[10],questionAnswer_String[11],questionAnswer_String[12],questionAnswer_String[13],questionAnswer_String[14],questionAnswer_String[15],questionAnswer_String[16],questionAnswer_String[17],questionAnswer_String[18],questionAnswer_String[19],questionAnswer_String[20],questionAnswer_String[21],questionAnswer_String[22],questionAnswer_String[23],questionAnswer_String[24],questionAnswer_String[25],questionAnswer_String[26],questionAnswer_String[27],questionAnswer_String[28],questionAnswer_String[29],questionAnswer_String[30],questionAnswer_String[31],questionAnswer_String[32],questionAnswer_String[33],questionAnswer_String[34],questionAnswer_String[35],questionAnswer_String[36],questionAnswer_String[37],questionAnswer_String[38],questionAnswer_String[39],questionAnswer_String[40],questionAnswer_String[41]);
+        Question question = new Question(id,questionAnswer_String[0],questionAnswer_String[1],questionAnswer_String[2],questionAnswer_String[3],questionAnswer_String[4],questionAnswer_String[5],questionAnswer_String[6],questionAnswer_String[7],questionAnswer_String[8],questionAnswer_String[9],questionAnswer_String[10],questionAnswer_String[11],questionAnswer_String[12],questionAnswer_String[13],questionAnswer_String[14],questionAnswer_String[15],questionAnswer_String[16],questionAnswer_String[17],questionAnswer_String[18],questionAnswer_String[19],questionAnswer_String[20],questionAnswer_String[21],questionAnswer_String[22],questionAnswer_String[23],questionAnswer_String[24],questionAnswer_String[25],questionAnswer_String[26],questionAnswer_String[27],questionAnswer_String[28],questionAnswer_String[29],questionAnswer_String[30],questionAnswer_String[31],questionAnswer_String[32],questionAnswer_String[33],questionAnswer_String[34],questionAnswer_String[35],questionAnswer_String[36],questionAnswer_String[37],questionAnswer_String[38],questionAnswer_String[39],questionAnswer_String[40],null);
         questionMapper.insert(question);
 
         //返回前端
@@ -157,6 +157,22 @@ public class DoctorController {
         }
 
         return map;
+    }
+
+    /**
+     * 接收前端判断结果
+     */
+    @PostMapping(value="/answer", produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public Question answer_judgement(@RequestParam("Judgement") String Judgement){
+        //获取当前问题id
+        long i = questionMapper.countByExample(null);
+        int id = (int)i;
+        //得到该问题信息
+        Question question = questionMapper.selectByPrimaryKey(id);
+        question.setJudgement(Judgement);
+        questionMapper.updateByPrimaryKeySelective(question);
+        return question;
     }
 
     /**
