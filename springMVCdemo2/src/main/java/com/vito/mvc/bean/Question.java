@@ -21,7 +21,7 @@ public class Question {
 
     private String pComparison;
 
-    private String pOthers’Satisfaction;
+    private String pOthersSatisfaction;
 
     private String pChangeLife;
 
@@ -84,6 +84,60 @@ public class Question {
     private String dPerfect;
 
     private String dParanoid;
+
+    private String judgement;
+
+    public Question(){
+        super();
+        //TODO Auto-generated constructor stub
+    }
+
+    public Question(Integer id, String pSex, String pAge, String pConstellation, String pBloodType, String pOccupationRisk, String pEducation, String pMarriageStatus, String pSurgeryHistory, String pComparison, String pOthersSatisfaction, String pChangeLife, String pChangeDestiny, String pKinsfolkAttitude, String pUnhappinessFamily, String pMentalDisorder, String pSelfie, String pAppearanceAttention, String dCharm, String dSubjective, String dModesty, String dAttention, String dExpression, String dExtremeEmotion, String dExpectation, String dDetail, String dComprehension, String dInternetResearch, String dSuspicious, String dRepair, String dImpulsion, String dPrice, String dSlander, String dForwardness, String dPraise, String dQuarrel, String dArtDetail, String dScar, String dFail, String dNurse, String dPerfect, String dParanoid, String judgement) {
+        super();
+        this.id = id;
+        this.pSex = pSex;
+        this.pAge = pAge;
+        this.pConstellation = pConstellation;
+        this.pBloodType = pBloodType;
+        this.pOccupationRisk = pOccupationRisk;
+        this.pEducation = pEducation;
+        this.pMarriageStatus = pMarriageStatus;
+        this.pSurgeryHistory = pSurgeryHistory;
+        this.pComparison = pComparison;
+        this.pOthersSatisfaction = pOthersSatisfaction;
+        this.pChangeLife = pChangeLife;
+        this.pChangeDestiny = pChangeDestiny;
+        this.pKinsfolkAttitude = pKinsfolkAttitude;
+        this.pUnhappinessFamily = pUnhappinessFamily;
+        this.pMentalDisorder = pMentalDisorder;
+        this.pSelfie = pSelfie;
+        this.pAppearanceAttention = pAppearanceAttention;
+        this.dCharm = dCharm;
+        this.dSubjective = dSubjective;
+        this.dModesty = dModesty;
+        this.dAttention = dAttention;
+        this.dExpression = dExpression;
+        this.dExtremeEmotion = dExtremeEmotion;
+        this.dExpectation = dExpectation;
+        this.dDetail = dDetail;
+        this.dComprehension = dComprehension;
+        this.dInternetResearch = dInternetResearch;
+        this.dSuspicious = dSuspicious;
+        this.dRepair = dRepair;
+        this.dImpulsion = dImpulsion;
+        this.dPrice = dPrice;
+        this.dSlander = dSlander;
+        this.dForwardness = dForwardness;
+        this.dPraise = dPraise;
+        this.dQuarrel = dQuarrel;
+        this.dArtDetail = dArtDetail;
+        this.dScar = dScar;
+        this.dFail = dFail;
+        this.dNurse = dNurse;
+        this.dPerfect = dPerfect;
+        this.dParanoid = dParanoid;
+        this.judgement = judgement;
+    }
 
     public Integer getId() {
         return id;
@@ -165,12 +219,12 @@ public class Question {
         this.pComparison = pComparison == null ? null : pComparison.trim();
     }
 
-    public String getpOthers’Satisfaction() {
-        return pOthers’Satisfaction;
+    public String getpOthersSatisfaction() {
+        return pOthersSatisfaction;
     }
 
-    public void setpOthers’Satisfaction(String pOthers’Satisfaction) {
-        this.pOthers’Satisfaction = pOthers’Satisfaction == null ? null : pOthers’Satisfaction.trim();
+    public void setpOthersSatisfaction(String pOthersSatisfaction) {
+        this.pOthersSatisfaction = pOthersSatisfaction == null ? null : pOthersSatisfaction.trim();
     }
 
     public String getpChangeLife() {
@@ -419,5 +473,13 @@ public class Question {
 
     public void setdParanoid(String dParanoid) {
         this.dParanoid = dParanoid == null ? null : dParanoid.trim();
+    }
+
+    public String getJudgement() {
+        return judgement;
+    }
+
+    public void setJudgement(String judgement) {
+        this.judgement = judgement == null ? null : judgement.trim();
     }
 }

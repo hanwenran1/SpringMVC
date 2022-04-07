@@ -794,73 +794,73 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andPOthers’SatisfactionIsNull() {
-            addCriterion("P_Others’_Satisfaction is null");
+        public Criteria andPOthersSatisfactionIsNull() {
+            addCriterion("P_Others_Satisfaction is null");
             return (Criteria) this;
         }
 
-        public Criteria andPOthers’SatisfactionIsNotNull() {
-            addCriterion("P_Others’_Satisfaction is not null");
+        public Criteria andPOthersSatisfactionIsNotNull() {
+            addCriterion("P_Others_Satisfaction is not null");
             return (Criteria) this;
         }
 
-        public Criteria andPOthers’SatisfactionEqualTo(String value) {
-            addCriterion("P_Others’_Satisfaction =", value, "pOthers’Satisfaction");
+        public Criteria andPOthersSatisfactionEqualTo(String value) {
+            addCriterion("P_Others_Satisfaction =", value, "pOthersSatisfaction");
             return (Criteria) this;
         }
 
-        public Criteria andPOthers’SatisfactionNotEqualTo(String value) {
-            addCriterion("P_Others’_Satisfaction <>", value, "pOthers’Satisfaction");
+        public Criteria andPOthersSatisfactionNotEqualTo(String value) {
+            addCriterion("P_Others_Satisfaction <>", value, "pOthersSatisfaction");
             return (Criteria) this;
         }
 
-        public Criteria andPOthers’SatisfactionGreaterThan(String value) {
-            addCriterion("P_Others’_Satisfaction >", value, "pOthers’Satisfaction");
+        public Criteria andPOthersSatisfactionGreaterThan(String value) {
+            addCriterion("P_Others_Satisfaction >", value, "pOthersSatisfaction");
             return (Criteria) this;
         }
 
-        public Criteria andPOthers’SatisfactionGreaterThanOrEqualTo(String value) {
-            addCriterion("P_Others’_Satisfaction >=", value, "pOthers’Satisfaction");
+        public Criteria andPOthersSatisfactionGreaterThanOrEqualTo(String value) {
+            addCriterion("P_Others_Satisfaction >=", value, "pOthersSatisfaction");
             return (Criteria) this;
         }
 
-        public Criteria andPOthers’SatisfactionLessThan(String value) {
-            addCriterion("P_Others’_Satisfaction <", value, "pOthers’Satisfaction");
+        public Criteria andPOthersSatisfactionLessThan(String value) {
+            addCriterion("P_Others_Satisfaction <", value, "pOthersSatisfaction");
             return (Criteria) this;
         }
 
-        public Criteria andPOthers’SatisfactionLessThanOrEqualTo(String value) {
-            addCriterion("P_Others’_Satisfaction <=", value, "pOthers’Satisfaction");
+        public Criteria andPOthersSatisfactionLessThanOrEqualTo(String value) {
+            addCriterion("P_Others_Satisfaction <=", value, "pOthersSatisfaction");
             return (Criteria) this;
         }
 
-        public Criteria andPOthers’SatisfactionLike(String value) {
-            addCriterion("P_Others’_Satisfaction like", value, "pOthers’Satisfaction");
+        public Criteria andPOthersSatisfactionLike(String value) {
+            addCriterion("P_Others_Satisfaction like", value, "pOthersSatisfaction");
             return (Criteria) this;
         }
 
-        public Criteria andPOthers’SatisfactionNotLike(String value) {
-            addCriterion("P_Others’_Satisfaction not like", value, "pOthers’Satisfaction");
+        public Criteria andPOthersSatisfactionNotLike(String value) {
+            addCriterion("P_Others_Satisfaction not like", value, "pOthersSatisfaction");
             return (Criteria) this;
         }
 
-        public Criteria andPOthers’SatisfactionIn(List<String> values) {
-            addCriterion("P_Others’_Satisfaction in", values, "pOthers’Satisfaction");
+        public Criteria andPOthersSatisfactionIn(List<String> values) {
+            addCriterion("P_Others_Satisfaction in", values, "pOthersSatisfaction");
             return (Criteria) this;
         }
 
-        public Criteria andPOthers’SatisfactionNotIn(List<String> values) {
-            addCriterion("P_Others’_Satisfaction not in", values, "pOthers’Satisfaction");
+        public Criteria andPOthersSatisfactionNotIn(List<String> values) {
+            addCriterion("P_Others_Satisfaction not in", values, "pOthersSatisfaction");
             return (Criteria) this;
         }
 
-        public Criteria andPOthers’SatisfactionBetween(String value1, String value2) {
-            addCriterion("P_Others’_Satisfaction between", value1, value2, "pOthers’Satisfaction");
+        public Criteria andPOthersSatisfactionBetween(String value1, String value2) {
+            addCriterion("P_Others_Satisfaction between", value1, value2, "pOthersSatisfaction");
             return (Criteria) this;
         }
 
-        public Criteria andPOthers’SatisfactionNotBetween(String value1, String value2) {
-            addCriterion("P_Others’_Satisfaction not between", value1, value2, "pOthers’Satisfaction");
+        public Criteria andPOthersSatisfactionNotBetween(String value1, String value2) {
+            addCriterion("P_Others_Satisfaction not between", value1, value2, "pOthersSatisfaction");
             return (Criteria) this;
         }
 
@@ -3031,6 +3031,76 @@ public class QuestionExample {
 
         public Criteria andDParanoidNotBetween(String value1, String value2) {
             addCriterion("D_Paranoid not between", value1, value2, "dParanoid");
+            return (Criteria) this;
+        }
+
+        public Criteria andJudgementIsNull() {
+            addCriterion("Judgement is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andJudgementIsNotNull() {
+            addCriterion("Judgement is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andJudgementEqualTo(String value) {
+            addCriterion("Judgement =", value, "judgement");
+            return (Criteria) this;
+        }
+
+        public Criteria andJudgementNotEqualTo(String value) {
+            addCriterion("Judgement <>", value, "judgement");
+            return (Criteria) this;
+        }
+
+        public Criteria andJudgementGreaterThan(String value) {
+            addCriterion("Judgement >", value, "judgement");
+            return (Criteria) this;
+        }
+
+        public Criteria andJudgementGreaterThanOrEqualTo(String value) {
+            addCriterion("Judgement >=", value, "judgement");
+            return (Criteria) this;
+        }
+
+        public Criteria andJudgementLessThan(String value) {
+            addCriterion("Judgement <", value, "judgement");
+            return (Criteria) this;
+        }
+
+        public Criteria andJudgementLessThanOrEqualTo(String value) {
+            addCriterion("Judgement <=", value, "judgement");
+            return (Criteria) this;
+        }
+
+        public Criteria andJudgementLike(String value) {
+            addCriterion("Judgement like", value, "judgement");
+            return (Criteria) this;
+        }
+
+        public Criteria andJudgementNotLike(String value) {
+            addCriterion("Judgement not like", value, "judgement");
+            return (Criteria) this;
+        }
+
+        public Criteria andJudgementIn(List<String> values) {
+            addCriterion("Judgement in", values, "judgement");
+            return (Criteria) this;
+        }
+
+        public Criteria andJudgementNotIn(List<String> values) {
+            addCriterion("Judgement not in", values, "judgement");
+            return (Criteria) this;
+        }
+
+        public Criteria andJudgementBetween(String value1, String value2) {
+            addCriterion("Judgement between", value1, value2, "judgement");
+            return (Criteria) this;
+        }
+
+        public Criteria andJudgementNotBetween(String value1, String value2) {
+            addCriterion("Judgement not between", value1, value2, "judgement");
             return (Criteria) this;
         }
     }

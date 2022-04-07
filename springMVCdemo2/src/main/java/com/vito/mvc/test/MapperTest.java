@@ -114,6 +114,7 @@ public class MapperTest {
         Map<String, Object> map=new HashMap<String, Object>();
         String[] questionList = {"P_Sex","P_Age","P_Constellation","P_Blood_Type","P_Occupation_Risk","P_Education","P_Marriage_Status","P_Surgery_History","P_Comparison","P_Others’_Satisfaction","P_Change_Life","P_Change_Destiny","P_Kinsfolk_Attitude","P_Unhappiness_Family","P_Mental_Disorder","P_Selfie","P_Appearance_Attention","D_Charm","D_Subjective","D_Modesty","D_Attention","D_Expression","D_Extreme_Emotion","D_Expectation","D_Detail","D_Comprehension","D_Internet_Research","D_Suspicious","D_Repair","D_Impulsion","D_Price","D_Slander","D_Forwardness","D_Praise","D_Quarrel","D_ Art_Detail","D_Scar","D_Fail","D_Nurse","D_Perfect","D_Paranoid"};
         Integer[] questionAnswer = new Integer[questionList.length];
+        String[] questionAnswer_String = new String[questionList.length];
 
         //字典
         String[] whether = {"是","否"};
@@ -172,7 +173,12 @@ public class MapperTest {
 //            }
 //        }
 
-        System.out.println(map);
+        for(int i=0;i<questionAnswer.length;i++){
+            questionAnswer_String[i]=String.valueOf(questionAnswer[i]);
+        }
+        for(int i=0;i<questionAnswer.length;i++){
+            System.out.println(questionAnswer_String[i]);
+        }
 
     }
 }

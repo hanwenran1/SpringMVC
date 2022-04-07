@@ -1,14 +1,13 @@
 package com.vito.mvc.controller;
 
 
-import com.vito.mvc.bean.ResponseData;
-import com.vito.mvc.bean.Doctor;
-import com.vito.mvc.bean.Login;
-import com.vito.mvc.bean.User;
+import com.vito.mvc.bean.*;
 import com.vito.mvc.dao.DoctorMapper;
+import com.vito.mvc.dao.QuestionMapper;
 import com.vito.mvc.service.DoctorService;
 
 import com.vito.mvc.service.HttpClient;
+import com.vito.mvc.service.QuestionService;
 import com.vito.mvc.service.UserService;
 import com.vito.mvc.utils.JWT;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +30,10 @@ public class DoctorController {
     DoctorMapper doctorMapper;
     @Autowired
     UserService userService;
+    @Autowired
+    QuestionMapper questionMapper;
+    @Autowired
+    QuestionService questionService;
     @Autowired
     HttpClient hc;
 
@@ -81,8 +84,9 @@ public class DoctorController {
         Random random = new Random();
         Map<String, Object> map=new HashMap<String, Object>();
 
-        String[] questionList = {"P_Sex","P_Age","P_Constellation","P_Blood_Type","P_Occupation_Risk","P_Education","P_Marriage_Status","P_Surgery_History","P_Comparison","P_Others’_Satisfaction","P_Change_Life","P_Change_Destiny","P_Kinsfolk_Attitude","P_Unhappiness_Family","P_Mental_Disorder","P_Selfie","P_Appearance_Attention","D_Charm","D_Subjective","D_Modesty","D_Attention","D_Expression","D_Extreme_Emotion","D_Expectation","D_Detail","D_Comprehension","D_Internet_Research","D_Suspicious","D_Repair","D_Impulsion","D_Price","D_Slander","D_Forwardness","D_Praise","D_Quarrel","D_ Art_Detail","D_Scar","D_Fail","D_Nurse","D_Perfect","D_Paranoid"};
+        String[] questionList = {"P_Sex","P_Age","P_Constellation","P_Blood_Type","P_Occupation_Risk","P_Education","P_Marriage_Status","P_Surgery_History","P_Comparison","P_Others’_Satisfaction","P_Change_Life","P_Change_Destiny","P_Kinsfolk_Attitude","P_Unhappiness_Family","P_Mental_Disorder","P_Selfie","P_Appearance_Attention","D_Charm","D_Subjective","D_Modesty","D_Attention","D_Expression","D_Extreme_Emotion","D_Expectation","D_Detail","D_Comprehension","D_Internet_Research","D_Suspicious","D_Repair","D_Impulsion","D_Price","D_Slander","D_Forwardness","D_Praise","D_Quarrel","D_ Art_Detail","D_Scar","D_Fail","D_Nurse","D_Perfect","D_Paranoid","Judgement"};
         Integer[] questionAnswer = new Integer[questionList.length];
+        String[] questionAnswer_String = new String[questionList.length];
 
         //字典
         String[] whether = {"是","否"};
@@ -118,6 +122,14 @@ public class DoctorController {
         }
 
         //存入数据库
+        for(int i=0;i<questionAnswer.length;i++){
+            questionAnswer_String[i]=String.valueOf(questionAnswer[i]);
+        }
+        List<Question> qus = questionService.getAll();
+        Integer id;
+        id=qus.size()+1;
+        Question question = new Question(id,questionAnswer_String[0],questionAnswer_String[1],questionAnswer_String[2],questionAnswer_String[3],questionAnswer_String[4],questionAnswer_String[5],questionAnswer_String[6],questionAnswer_String[7],questionAnswer_String[8],questionAnswer_String[9],questionAnswer_String[10],questionAnswer_String[11],questionAnswer_String[12],questionAnswer_String[13],questionAnswer_String[14],questionAnswer_String[15],questionAnswer_String[16],questionAnswer_String[17],questionAnswer_String[18],questionAnswer_String[19],questionAnswer_String[20],questionAnswer_String[21],questionAnswer_String[22],questionAnswer_String[23],questionAnswer_String[24],questionAnswer_String[25],questionAnswer_String[26],questionAnswer_String[27],questionAnswer_String[28],questionAnswer_String[29],questionAnswer_String[30],questionAnswer_String[31],questionAnswer_String[32],questionAnswer_String[33],questionAnswer_String[34],questionAnswer_String[35],questionAnswer_String[36],questionAnswer_String[37],questionAnswer_String[38],questionAnswer_String[39],questionAnswer_String[40],questionAnswer_String[41]);
+        questionMapper.insert(question);
 
         //返回前端
         for(int i=0;i<questionList.length;i++){
@@ -143,7 +155,6 @@ public class DoctorController {
                 map.put(questionList[i], whether[questionAnswer[i]]);
             }
         }
-
 
         return map;
     }

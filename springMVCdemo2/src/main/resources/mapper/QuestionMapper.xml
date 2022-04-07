@@ -12,7 +12,7 @@
     <result column="P_Marriage_Status" jdbcType="VARCHAR" property="pMarriageStatus" />
     <result column="P_Surgery_History" jdbcType="VARCHAR" property="pSurgeryHistory" />
     <result column="P_Comparison" jdbcType="VARCHAR" property="pComparison" />
-    <result column="P_Others’_Satisfaction" jdbcType="VARCHAR" property="pOthers’Satisfaction" />
+    <result column="P_Others_Satisfaction" jdbcType="VARCHAR" property="pOthersSatisfaction" />
     <result column="P_Change_Life" jdbcType="VARCHAR" property="pChangeLife" />
     <result column="P_Change_Destiny" jdbcType="VARCHAR" property="pChangeDestiny" />
     <result column="P_Kinsfolk_Attitude" jdbcType="VARCHAR" property="pKinsfolkAttitude" />
@@ -44,6 +44,7 @@
     <result column="D_Nurse" jdbcType="VARCHAR" property="dNurse" />
     <result column="D_Perfect" jdbcType="VARCHAR" property="dPerfect" />
     <result column="D_Paranoid" jdbcType="VARCHAR" property="dParanoid" />
+    <result column="Judgement" jdbcType="VARCHAR" property="judgement" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -105,12 +106,12 @@
   </sql>
   <sql id="Base_Column_List">
     id, P_Sex, P_Age, P_Constellation, P_Blood_Type, P_Occupation_Risk, P_Education, 
-    P_Marriage_Status, P_Surgery_History, P_Comparison, P_Others’_Satisfaction, P_Change_Life, 
+    P_Marriage_Status, P_Surgery_History, P_Comparison, P_Others_Satisfaction, P_Change_Life, 
     P_Change_Destiny, P_Kinsfolk_Attitude, P_Unhappiness_Family, P_Mental_Disorder, P_Selfie, 
     P_Appearance_Attention, D_Charm, D_Subjective, D_Modesty, D_Attention, D_Expression, 
     D_Extreme_Emotion, D_Expectation, D_Detail, D_Comprehension, D_Internet_Research, 
     D_Suspicious, D_Repair, D_Impulsion, D_Price, D_Slander, D_Forwardness, D_Praise, 
-    D_Quarrel, D_Art_Detail, D_Scar, D_Fail, D_Nurse, D_Perfect, D_Paranoid
+    D_Quarrel, D_Art_Detail, D_Scar, D_Fail, D_Nurse, D_Perfect, D_Paranoid, Judgement
   </sql>
   <select id="selectByExample" parameterType="com.vito.mvc.bean.QuestionExample" resultMap="BaseResultMap">
     select
@@ -146,7 +147,7 @@
     insert into tbl_question (id, P_Sex, P_Age, 
       P_Constellation, P_Blood_Type, P_Occupation_Risk, 
       P_Education, P_Marriage_Status, P_Surgery_History, 
-      P_Comparison, P_Others’_Satisfaction, P_Change_Life, 
+      P_Comparison, P_Others_Satisfaction, P_Change_Life, 
       P_Change_Destiny, P_Kinsfolk_Attitude, P_Unhappiness_Family, 
       P_Mental_Disorder, P_Selfie, P_Appearance_Attention, 
       D_Charm, D_Subjective, D_Modesty, 
@@ -156,12 +157,12 @@
       D_Impulsion, D_Price, D_Slander, 
       D_Forwardness, D_Praise, D_Quarrel, 
       D_Art_Detail, D_Scar, D_Fail, 
-      D_Nurse, D_Perfect, D_Paranoid
-      )
+      D_Nurse, D_Perfect, D_Paranoid, 
+      Judgement)
     values (#{id,jdbcType=INTEGER}, #{pSex,jdbcType=VARCHAR}, #{pAge,jdbcType=VARCHAR}, 
       #{pConstellation,jdbcType=VARCHAR}, #{pBloodType,jdbcType=VARCHAR}, #{pOccupationRisk,jdbcType=VARCHAR}, 
       #{pEducation,jdbcType=VARCHAR}, #{pMarriageStatus,jdbcType=VARCHAR}, #{pSurgeryHistory,jdbcType=VARCHAR}, 
-      #{pComparison,jdbcType=VARCHAR}, #{pOthers’Satisfaction,jdbcType=VARCHAR}, #{pChangeLife,jdbcType=VARCHAR}, 
+      #{pComparison,jdbcType=VARCHAR}, #{pOthersSatisfaction,jdbcType=VARCHAR}, #{pChangeLife,jdbcType=VARCHAR}, 
       #{pChangeDestiny,jdbcType=VARCHAR}, #{pKinsfolkAttitude,jdbcType=VARCHAR}, #{pUnhappinessFamily,jdbcType=VARCHAR}, 
       #{pMentalDisorder,jdbcType=VARCHAR}, #{pSelfie,jdbcType=VARCHAR}, #{pAppearanceAttention,jdbcType=VARCHAR}, 
       #{dCharm,jdbcType=VARCHAR}, #{dSubjective,jdbcType=VARCHAR}, #{dModesty,jdbcType=VARCHAR}, 
@@ -171,8 +172,8 @@
       #{dImpulsion,jdbcType=VARCHAR}, #{dPrice,jdbcType=VARCHAR}, #{dSlander,jdbcType=VARCHAR}, 
       #{dForwardness,jdbcType=VARCHAR}, #{dPraise,jdbcType=VARCHAR}, #{dQuarrel,jdbcType=VARCHAR}, 
       #{dArtDetail,jdbcType=VARCHAR}, #{dScar,jdbcType=VARCHAR}, #{dFail,jdbcType=VARCHAR}, 
-      #{dNurse,jdbcType=VARCHAR}, #{dPerfect,jdbcType=VARCHAR}, #{dParanoid,jdbcType=VARCHAR}
-      )
+      #{dNurse,jdbcType=VARCHAR}, #{dPerfect,jdbcType=VARCHAR}, #{dParanoid,jdbcType=VARCHAR}, 
+      #{judgement,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.vito.mvc.bean.Question">
     insert into tbl_question
@@ -207,8 +208,8 @@
       <if test="pComparison != null">
         P_Comparison,
       </if>
-      <if test="pOthers’Satisfaction != null">
-        P_Others’_Satisfaction,
+      <if test="pOthersSatisfaction != null">
+        P_Others_Satisfaction,
       </if>
       <if test="pChangeLife != null">
         P_Change_Life,
@@ -303,6 +304,9 @@
       <if test="dParanoid != null">
         D_Paranoid,
       </if>
+      <if test="judgement != null">
+        Judgement,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -335,8 +339,8 @@
       <if test="pComparison != null">
         #{pComparison,jdbcType=VARCHAR},
       </if>
-      <if test="pOthers’Satisfaction != null">
-        #{pOthers’Satisfaction,jdbcType=VARCHAR},
+      <if test="pOthersSatisfaction != null">
+        #{pOthersSatisfaction,jdbcType=VARCHAR},
       </if>
       <if test="pChangeLife != null">
         #{pChangeLife,jdbcType=VARCHAR},
@@ -431,6 +435,9 @@
       <if test="dParanoid != null">
         #{dParanoid,jdbcType=VARCHAR},
       </if>
+      <if test="judgement != null">
+        #{judgement,jdbcType=VARCHAR},
+      </if>
     </trim>
   </insert>
   <select id="countByExample" parameterType="com.vito.mvc.bean.QuestionExample" resultType="java.lang.Long">
@@ -472,8 +479,8 @@
       <if test="record.pComparison != null">
         P_Comparison = #{record.pComparison,jdbcType=VARCHAR},
       </if>
-      <if test="record.pOthers’Satisfaction != null">
-        P_Others’_Satisfaction = #{record.pOthers’Satisfaction,jdbcType=VARCHAR},
+      <if test="record.pOthersSatisfaction != null">
+        P_Others_Satisfaction = #{record.pOthersSatisfaction,jdbcType=VARCHAR},
       </if>
       <if test="record.pChangeLife != null">
         P_Change_Life = #{record.pChangeLife,jdbcType=VARCHAR},
@@ -568,6 +575,9 @@
       <if test="record.dParanoid != null">
         D_Paranoid = #{record.dParanoid,jdbcType=VARCHAR},
       </if>
+      <if test="record.judgement != null">
+        Judgement = #{record.judgement,jdbcType=VARCHAR},
+      </if>
     </set>
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
@@ -585,7 +595,7 @@
       P_Marriage_Status = #{record.pMarriageStatus,jdbcType=VARCHAR},
       P_Surgery_History = #{record.pSurgeryHistory,jdbcType=VARCHAR},
       P_Comparison = #{record.pComparison,jdbcType=VARCHAR},
-      P_Others’_Satisfaction = #{record.pOthers’Satisfaction,jdbcType=VARCHAR},
+      P_Others_Satisfaction = #{record.pOthersSatisfaction,jdbcType=VARCHAR},
       P_Change_Life = #{record.pChangeLife,jdbcType=VARCHAR},
       P_Change_Destiny = #{record.pChangeDestiny,jdbcType=VARCHAR},
       P_Kinsfolk_Attitude = #{record.pKinsfolkAttitude,jdbcType=VARCHAR},
@@ -616,7 +626,8 @@
       D_Fail = #{record.dFail,jdbcType=VARCHAR},
       D_Nurse = #{record.dNurse,jdbcType=VARCHAR},
       D_Perfect = #{record.dPerfect,jdbcType=VARCHAR},
-      D_Paranoid = #{record.dParanoid,jdbcType=VARCHAR}
+      D_Paranoid = #{record.dParanoid,jdbcType=VARCHAR},
+      Judgement = #{record.judgement,jdbcType=VARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -651,8 +662,8 @@
       <if test="pComparison != null">
         P_Comparison = #{pComparison,jdbcType=VARCHAR},
       </if>
-      <if test="pOthers’Satisfaction != null">
-        P_Others’_Satisfaction = #{pOthers’Satisfaction,jdbcType=VARCHAR},
+      <if test="pOthersSatisfaction != null">
+        P_Others_Satisfaction = #{pOthersSatisfaction,jdbcType=VARCHAR},
       </if>
       <if test="pChangeLife != null">
         P_Change_Life = #{pChangeLife,jdbcType=VARCHAR},
@@ -747,6 +758,9 @@
       <if test="dParanoid != null">
         D_Paranoid = #{dParanoid,jdbcType=VARCHAR},
       </if>
+      <if test="judgement != null">
+        Judgement = #{judgement,jdbcType=VARCHAR},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
@@ -761,7 +775,7 @@
       P_Marriage_Status = #{pMarriageStatus,jdbcType=VARCHAR},
       P_Surgery_History = #{pSurgeryHistory,jdbcType=VARCHAR},
       P_Comparison = #{pComparison,jdbcType=VARCHAR},
-      P_Others’_Satisfaction = #{pOthers’Satisfaction,jdbcType=VARCHAR},
+      P_Others_Satisfaction = #{pOthersSatisfaction,jdbcType=VARCHAR},
       P_Change_Life = #{pChangeLife,jdbcType=VARCHAR},
       P_Change_Destiny = #{pChangeDestiny,jdbcType=VARCHAR},
       P_Kinsfolk_Attitude = #{pKinsfolkAttitude,jdbcType=VARCHAR},
@@ -792,7 +806,8 @@
       D_Fail = #{dFail,jdbcType=VARCHAR},
       D_Nurse = #{dNurse,jdbcType=VARCHAR},
       D_Perfect = #{dPerfect,jdbcType=VARCHAR},
-      D_Paranoid = #{dParanoid,jdbcType=VARCHAR}
+      D_Paranoid = #{dParanoid,jdbcType=VARCHAR},
+      Judgement = #{judgement,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>
