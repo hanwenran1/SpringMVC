@@ -40,7 +40,7 @@ public class DoctorController {
     /**
      *用户
      */
-    @RequestMapping(value="/login", produces = "application/json; charset=utf-8")
+    @PostMapping(value="/login", produces = "application/json; charset=utf-8")
     public @ResponseBody
     ResponseData login(HttpServletRequest request,@RequestParam("js_code") String js_code) {
         //获取session_key,openid
@@ -78,7 +78,7 @@ public class DoctorController {
     /**
      * 获取问题数据
      */
-    @RequestMapping(value="/question", produces = "application/json; charset=utf-8")
+    @PostMapping(value="/question", produces = "application/json; charset=utf-8")
     @ResponseBody
     public Map question_random(){
         Random random = new Random();
@@ -97,16 +97,19 @@ public class DoctorController {
         String[] marriage = {"单身","离异","拥有恋人或已婚"};
         String[] modesty = {"善于倾听","傲慢","一般"};
         String[] expression = {"有口才","表述含糊不清","一般"};
+        String[] occupation = {"法律","自媒体","演员","公务员","自由职业"};
 
         //问题字段与对应答案（数字格式）存入数组
         for(int i=0;i<questionList.length;i++){
-            if(i==1||i==2||i==3||i==5||i==6||i==19||i==21){
+            if(i==1||i==2||i==3||i==4||i==5||i==6||i==19||i==21){
                 if(i==1)
                     questionAnswer[1]=random.nextInt(80);   //年龄
                 if(i==2)
                     questionAnswer[2]=random.nextInt(12);   //星座：0-白羊座；1-金牛座；2-双子座；3-巨蟹座；4-狮子座；5-处女座；6-天秤座；7-天蝎座；8-射手座；9-摩羯座；10-水瓶座；11-双鱼座
                 if(i==3)
                     questionAnswer[3]=random.nextInt(4);    //血型：0-A；1-B；2-AB；3-O
+                if(i==4)
+                    questionAnswer[4]=random.nextInt(5);    //职业：0-law；1-self_media；2-actor；3-civil_servant；4-free
                 if(i==5)
                     questionAnswer[5]=random.nextInt(4);    //学历：0-高中及以下；1-大专；2-本科；3-硕士及以上
                 if(i==6)
@@ -125,15 +128,14 @@ public class DoctorController {
         for(int i=0;i<questionAnswer.length;i++){
             questionAnswer_String[i]=String.valueOf(questionAnswer[i]);
         }
-        List<Question> qus = questionService.getAll();
         Integer id;
-        id=qus.size()+1;
-        Question question = new Question(id,questionAnswer_String[0],questionAnswer_String[1],questionAnswer_String[2],questionAnswer_String[3],questionAnswer_String[4],questionAnswer_String[5],questionAnswer_String[6],questionAnswer_String[7],questionAnswer_String[8],questionAnswer_String[9],questionAnswer_String[10],questionAnswer_String[11],questionAnswer_String[12],questionAnswer_String[13],questionAnswer_String[14],questionAnswer_String[15],questionAnswer_String[16],questionAnswer_String[17],questionAnswer_String[18],questionAnswer_String[19],questionAnswer_String[20],questionAnswer_String[21],questionAnswer_String[22],questionAnswer_String[23],questionAnswer_String[24],questionAnswer_String[25],questionAnswer_String[26],questionAnswer_String[27],questionAnswer_String[28],questionAnswer_String[29],questionAnswer_String[30],questionAnswer_String[31],questionAnswer_String[32],questionAnswer_String[33],questionAnswer_String[34],questionAnswer_String[35],questionAnswer_String[36],questionAnswer_String[37],questionAnswer_String[38],questionAnswer_String[39],questionAnswer_String[40],null);
+        Question question = new Question(Byte.valueOf(questionAnswer_String[0]),Byte.valueOf(questionAnswer_String[1]),Byte.valueOf(questionAnswer_String[2]),Byte.valueOf(questionAnswer_String[3]),Byte.valueOf(questionAnswer_String[4]),Byte.valueOf(questionAnswer_String[5]),Byte.valueOf(questionAnswer_String[6]),Byte.valueOf(questionAnswer_String[7]),Byte.valueOf(questionAnswer_String[8]),Byte.valueOf(questionAnswer_String[9]),Byte.valueOf(questionAnswer_String[10]),Byte.valueOf(questionAnswer_String[11]),Byte.valueOf(questionAnswer_String[12]),Byte.valueOf(questionAnswer_String[13]),Byte.valueOf(questionAnswer_String[14]),Byte.valueOf(questionAnswer_String[15]),Byte.valueOf(questionAnswer_String[16]),Byte.valueOf(questionAnswer_String[17]),Byte.valueOf(questionAnswer_String[18]),Byte.valueOf(questionAnswer_String[19]),Byte.valueOf(questionAnswer_String[20]),Byte.valueOf(questionAnswer_String[21]),Byte.valueOf(questionAnswer_String[22]),Byte.valueOf(questionAnswer_String[23]),Byte.valueOf(questionAnswer_String[24]),Byte.valueOf(questionAnswer_String[25]),Byte.valueOf(questionAnswer_String[26]),Byte.valueOf(questionAnswer_String[27]),Byte.valueOf(questionAnswer_String[28]),Byte.valueOf(questionAnswer_String[29]),Byte.valueOf(questionAnswer_String[30]),Byte.valueOf(questionAnswer_String[31]),Byte.valueOf(questionAnswer_String[32]),Byte.valueOf(questionAnswer_String[33]),Byte.valueOf(questionAnswer_String[34]),Byte.valueOf(questionAnswer_String[35]),Byte.valueOf(questionAnswer_String[36]),Byte.valueOf(questionAnswer_String[37]),Byte.valueOf(questionAnswer_String[38]),Byte.valueOf(questionAnswer_String[39]),Byte.valueOf(questionAnswer_String[40]),null);
         questionMapper.insert(question);
+        id = question.getId();
 
         //返回前端
         for(int i=0;i<questionList.length;i++){
-            if(i==0||i==1||i==2||i==3||i==5||i==6||i==19||i==21){
+            if(i==0||i==1||i==2||i==3||i==4||i==5||i==6||i==19||i==21){
                 if(i==0)
                     map.put(questionList[0], sex[questionAnswer[0]]);
                 if(i==1)
@@ -142,6 +144,8 @@ public class DoctorController {
                     map.put(questionList[2], constellation[questionAnswer[2]]);   //星座：0-白羊座；1-金牛座；2-双子座；3-巨蟹座；4-狮子座；5-处女座；6-天秤座；7-天蝎座；8-射手座；9-摩羯座；10-水瓶座；11-双鱼座
                 if(i==3)
                     map.put(questionList[3], blood_type[questionAnswer[3]]);    //血型：0-A；1-B；2-AB；3-O
+                if(i==4)
+                    map.put(questionList[4], occupation[questionAnswer[4]]);    //职业：0-law；1-self_media；2-actor；3-civil_servant；4-free
                 if(i==5)
                     map.put(questionList[5], education[questionAnswer[5]]);    //学历：0-高中及以下；1-大专；2-本科；3-硕士及以上
                 if(i==6)
@@ -155,19 +159,16 @@ public class DoctorController {
                 map.put(questionList[i], whether[questionAnswer[i]]);
             }
         }
-
+        map.put("id",id);
         return map;
     }
 
     /**
      * 接收前端判断结果
      */
-    @RequestMapping(value="/answer", produces = "application/json; charset=utf-8")
+    @PostMapping(value="/answer", produces = "application/json; charset=utf-8")
     @ResponseBody
-    public Question answer_judgement(@RequestParam("Judgement") String Judgement){
-        //获取当前问题id
-        long i = questionMapper.countByExample(null);
-        int id = (int)i;
+    public Question answer_judgement(@RequestParam("Id") Integer id,@RequestParam("Judgement") Byte Judgement){
         //得到该问题信息
         Question question = questionMapper.selectByPrimaryKey(id);
         question.setJudgement(Judgement);

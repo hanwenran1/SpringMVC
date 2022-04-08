@@ -174,62 +174,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andPSexEqualTo(String value) {
+        public Criteria andPSexEqualTo(Byte value) {
             addCriterion("P_Sex =", value, "pSex");
             return (Criteria) this;
         }
 
-        public Criteria andPSexNotEqualTo(String value) {
+        public Criteria andPSexNotEqualTo(Byte value) {
             addCriterion("P_Sex <>", value, "pSex");
             return (Criteria) this;
         }
 
-        public Criteria andPSexGreaterThan(String value) {
+        public Criteria andPSexGreaterThan(Byte value) {
             addCriterion("P_Sex >", value, "pSex");
             return (Criteria) this;
         }
 
-        public Criteria andPSexGreaterThanOrEqualTo(String value) {
+        public Criteria andPSexGreaterThanOrEqualTo(Byte value) {
             addCriterion("P_Sex >=", value, "pSex");
             return (Criteria) this;
         }
 
-        public Criteria andPSexLessThan(String value) {
+        public Criteria andPSexLessThan(Byte value) {
             addCriterion("P_Sex <", value, "pSex");
             return (Criteria) this;
         }
 
-        public Criteria andPSexLessThanOrEqualTo(String value) {
+        public Criteria andPSexLessThanOrEqualTo(Byte value) {
             addCriterion("P_Sex <=", value, "pSex");
             return (Criteria) this;
         }
 
-        public Criteria andPSexLike(String value) {
-            addCriterion("P_Sex like", value, "pSex");
-            return (Criteria) this;
-        }
-
-        public Criteria andPSexNotLike(String value) {
-            addCriterion("P_Sex not like", value, "pSex");
-            return (Criteria) this;
-        }
-
-        public Criteria andPSexIn(List<String> values) {
+        public Criteria andPSexIn(List<Byte> values) {
             addCriterion("P_Sex in", values, "pSex");
             return (Criteria) this;
         }
 
-        public Criteria andPSexNotIn(List<String> values) {
+        public Criteria andPSexNotIn(List<Byte> values) {
             addCriterion("P_Sex not in", values, "pSex");
             return (Criteria) this;
         }
 
-        public Criteria andPSexBetween(String value1, String value2) {
+        public Criteria andPSexBetween(Byte value1, Byte value2) {
             addCriterion("P_Sex between", value1, value2, "pSex");
             return (Criteria) this;
         }
 
-        public Criteria andPSexNotBetween(String value1, String value2) {
+        public Criteria andPSexNotBetween(Byte value1, Byte value2) {
             addCriterion("P_Sex not between", value1, value2, "pSex");
             return (Criteria) this;
         }
@@ -244,62 +234,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andPAgeEqualTo(String value) {
+        public Criteria andPAgeEqualTo(Byte value) {
             addCriterion("P_Age =", value, "pAge");
             return (Criteria) this;
         }
 
-        public Criteria andPAgeNotEqualTo(String value) {
+        public Criteria andPAgeNotEqualTo(Byte value) {
             addCriterion("P_Age <>", value, "pAge");
             return (Criteria) this;
         }
 
-        public Criteria andPAgeGreaterThan(String value) {
+        public Criteria andPAgeGreaterThan(Byte value) {
             addCriterion("P_Age >", value, "pAge");
             return (Criteria) this;
         }
 
-        public Criteria andPAgeGreaterThanOrEqualTo(String value) {
+        public Criteria andPAgeGreaterThanOrEqualTo(Byte value) {
             addCriterion("P_Age >=", value, "pAge");
             return (Criteria) this;
         }
 
-        public Criteria andPAgeLessThan(String value) {
+        public Criteria andPAgeLessThan(Byte value) {
             addCriterion("P_Age <", value, "pAge");
             return (Criteria) this;
         }
 
-        public Criteria andPAgeLessThanOrEqualTo(String value) {
+        public Criteria andPAgeLessThanOrEqualTo(Byte value) {
             addCriterion("P_Age <=", value, "pAge");
             return (Criteria) this;
         }
 
-        public Criteria andPAgeLike(String value) {
-            addCriterion("P_Age like", value, "pAge");
-            return (Criteria) this;
-        }
-
-        public Criteria andPAgeNotLike(String value) {
-            addCriterion("P_Age not like", value, "pAge");
-            return (Criteria) this;
-        }
-
-        public Criteria andPAgeIn(List<String> values) {
+        public Criteria andPAgeIn(List<Byte> values) {
             addCriterion("P_Age in", values, "pAge");
             return (Criteria) this;
         }
 
-        public Criteria andPAgeNotIn(List<String> values) {
+        public Criteria andPAgeNotIn(List<Byte> values) {
             addCriterion("P_Age not in", values, "pAge");
             return (Criteria) this;
         }
 
-        public Criteria andPAgeBetween(String value1, String value2) {
+        public Criteria andPAgeBetween(Byte value1, Byte value2) {
             addCriterion("P_Age between", value1, value2, "pAge");
             return (Criteria) this;
         }
 
-        public Criteria andPAgeNotBetween(String value1, String value2) {
+        public Criteria andPAgeNotBetween(Byte value1, Byte value2) {
             addCriterion("P_Age not between", value1, value2, "pAge");
             return (Criteria) this;
         }
@@ -314,62 +294,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andPConstellationEqualTo(String value) {
+        public Criteria andPConstellationEqualTo(Byte value) {
             addCriterion("P_Constellation =", value, "pConstellation");
             return (Criteria) this;
         }
 
-        public Criteria andPConstellationNotEqualTo(String value) {
+        public Criteria andPConstellationNotEqualTo(Byte value) {
             addCriterion("P_Constellation <>", value, "pConstellation");
             return (Criteria) this;
         }
 
-        public Criteria andPConstellationGreaterThan(String value) {
+        public Criteria andPConstellationGreaterThan(Byte value) {
             addCriterion("P_Constellation >", value, "pConstellation");
             return (Criteria) this;
         }
 
-        public Criteria andPConstellationGreaterThanOrEqualTo(String value) {
+        public Criteria andPConstellationGreaterThanOrEqualTo(Byte value) {
             addCriterion("P_Constellation >=", value, "pConstellation");
             return (Criteria) this;
         }
 
-        public Criteria andPConstellationLessThan(String value) {
+        public Criteria andPConstellationLessThan(Byte value) {
             addCriterion("P_Constellation <", value, "pConstellation");
             return (Criteria) this;
         }
 
-        public Criteria andPConstellationLessThanOrEqualTo(String value) {
+        public Criteria andPConstellationLessThanOrEqualTo(Byte value) {
             addCriterion("P_Constellation <=", value, "pConstellation");
             return (Criteria) this;
         }
 
-        public Criteria andPConstellationLike(String value) {
-            addCriterion("P_Constellation like", value, "pConstellation");
-            return (Criteria) this;
-        }
-
-        public Criteria andPConstellationNotLike(String value) {
-            addCriterion("P_Constellation not like", value, "pConstellation");
-            return (Criteria) this;
-        }
-
-        public Criteria andPConstellationIn(List<String> values) {
+        public Criteria andPConstellationIn(List<Byte> values) {
             addCriterion("P_Constellation in", values, "pConstellation");
             return (Criteria) this;
         }
 
-        public Criteria andPConstellationNotIn(List<String> values) {
+        public Criteria andPConstellationNotIn(List<Byte> values) {
             addCriterion("P_Constellation not in", values, "pConstellation");
             return (Criteria) this;
         }
 
-        public Criteria andPConstellationBetween(String value1, String value2) {
+        public Criteria andPConstellationBetween(Byte value1, Byte value2) {
             addCriterion("P_Constellation between", value1, value2, "pConstellation");
             return (Criteria) this;
         }
 
-        public Criteria andPConstellationNotBetween(String value1, String value2) {
+        public Criteria andPConstellationNotBetween(Byte value1, Byte value2) {
             addCriterion("P_Constellation not between", value1, value2, "pConstellation");
             return (Criteria) this;
         }
@@ -384,62 +354,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andPBloodTypeEqualTo(String value) {
+        public Criteria andPBloodTypeEqualTo(Byte value) {
             addCriterion("P_Blood_Type =", value, "pBloodType");
             return (Criteria) this;
         }
 
-        public Criteria andPBloodTypeNotEqualTo(String value) {
+        public Criteria andPBloodTypeNotEqualTo(Byte value) {
             addCriterion("P_Blood_Type <>", value, "pBloodType");
             return (Criteria) this;
         }
 
-        public Criteria andPBloodTypeGreaterThan(String value) {
+        public Criteria andPBloodTypeGreaterThan(Byte value) {
             addCriterion("P_Blood_Type >", value, "pBloodType");
             return (Criteria) this;
         }
 
-        public Criteria andPBloodTypeGreaterThanOrEqualTo(String value) {
+        public Criteria andPBloodTypeGreaterThanOrEqualTo(Byte value) {
             addCriterion("P_Blood_Type >=", value, "pBloodType");
             return (Criteria) this;
         }
 
-        public Criteria andPBloodTypeLessThan(String value) {
+        public Criteria andPBloodTypeLessThan(Byte value) {
             addCriterion("P_Blood_Type <", value, "pBloodType");
             return (Criteria) this;
         }
 
-        public Criteria andPBloodTypeLessThanOrEqualTo(String value) {
+        public Criteria andPBloodTypeLessThanOrEqualTo(Byte value) {
             addCriterion("P_Blood_Type <=", value, "pBloodType");
             return (Criteria) this;
         }
 
-        public Criteria andPBloodTypeLike(String value) {
-            addCriterion("P_Blood_Type like", value, "pBloodType");
-            return (Criteria) this;
-        }
-
-        public Criteria andPBloodTypeNotLike(String value) {
-            addCriterion("P_Blood_Type not like", value, "pBloodType");
-            return (Criteria) this;
-        }
-
-        public Criteria andPBloodTypeIn(List<String> values) {
+        public Criteria andPBloodTypeIn(List<Byte> values) {
             addCriterion("P_Blood_Type in", values, "pBloodType");
             return (Criteria) this;
         }
 
-        public Criteria andPBloodTypeNotIn(List<String> values) {
+        public Criteria andPBloodTypeNotIn(List<Byte> values) {
             addCriterion("P_Blood_Type not in", values, "pBloodType");
             return (Criteria) this;
         }
 
-        public Criteria andPBloodTypeBetween(String value1, String value2) {
+        public Criteria andPBloodTypeBetween(Byte value1, Byte value2) {
             addCriterion("P_Blood_Type between", value1, value2, "pBloodType");
             return (Criteria) this;
         }
 
-        public Criteria andPBloodTypeNotBetween(String value1, String value2) {
+        public Criteria andPBloodTypeNotBetween(Byte value1, Byte value2) {
             addCriterion("P_Blood_Type not between", value1, value2, "pBloodType");
             return (Criteria) this;
         }
@@ -454,62 +414,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andPOccupationRiskEqualTo(String value) {
+        public Criteria andPOccupationRiskEqualTo(Byte value) {
             addCriterion("P_Occupation_Risk =", value, "pOccupationRisk");
             return (Criteria) this;
         }
 
-        public Criteria andPOccupationRiskNotEqualTo(String value) {
+        public Criteria andPOccupationRiskNotEqualTo(Byte value) {
             addCriterion("P_Occupation_Risk <>", value, "pOccupationRisk");
             return (Criteria) this;
         }
 
-        public Criteria andPOccupationRiskGreaterThan(String value) {
+        public Criteria andPOccupationRiskGreaterThan(Byte value) {
             addCriterion("P_Occupation_Risk >", value, "pOccupationRisk");
             return (Criteria) this;
         }
 
-        public Criteria andPOccupationRiskGreaterThanOrEqualTo(String value) {
+        public Criteria andPOccupationRiskGreaterThanOrEqualTo(Byte value) {
             addCriterion("P_Occupation_Risk >=", value, "pOccupationRisk");
             return (Criteria) this;
         }
 
-        public Criteria andPOccupationRiskLessThan(String value) {
+        public Criteria andPOccupationRiskLessThan(Byte value) {
             addCriterion("P_Occupation_Risk <", value, "pOccupationRisk");
             return (Criteria) this;
         }
 
-        public Criteria andPOccupationRiskLessThanOrEqualTo(String value) {
+        public Criteria andPOccupationRiskLessThanOrEqualTo(Byte value) {
             addCriterion("P_Occupation_Risk <=", value, "pOccupationRisk");
             return (Criteria) this;
         }
 
-        public Criteria andPOccupationRiskLike(String value) {
-            addCriterion("P_Occupation_Risk like", value, "pOccupationRisk");
-            return (Criteria) this;
-        }
-
-        public Criteria andPOccupationRiskNotLike(String value) {
-            addCriterion("P_Occupation_Risk not like", value, "pOccupationRisk");
-            return (Criteria) this;
-        }
-
-        public Criteria andPOccupationRiskIn(List<String> values) {
+        public Criteria andPOccupationRiskIn(List<Byte> values) {
             addCriterion("P_Occupation_Risk in", values, "pOccupationRisk");
             return (Criteria) this;
         }
 
-        public Criteria andPOccupationRiskNotIn(List<String> values) {
+        public Criteria andPOccupationRiskNotIn(List<Byte> values) {
             addCriterion("P_Occupation_Risk not in", values, "pOccupationRisk");
             return (Criteria) this;
         }
 
-        public Criteria andPOccupationRiskBetween(String value1, String value2) {
+        public Criteria andPOccupationRiskBetween(Byte value1, Byte value2) {
             addCriterion("P_Occupation_Risk between", value1, value2, "pOccupationRisk");
             return (Criteria) this;
         }
 
-        public Criteria andPOccupationRiskNotBetween(String value1, String value2) {
+        public Criteria andPOccupationRiskNotBetween(Byte value1, Byte value2) {
             addCriterion("P_Occupation_Risk not between", value1, value2, "pOccupationRisk");
             return (Criteria) this;
         }
@@ -524,62 +474,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andPEducationEqualTo(String value) {
+        public Criteria andPEducationEqualTo(Byte value) {
             addCriterion("P_Education =", value, "pEducation");
             return (Criteria) this;
         }
 
-        public Criteria andPEducationNotEqualTo(String value) {
+        public Criteria andPEducationNotEqualTo(Byte value) {
             addCriterion("P_Education <>", value, "pEducation");
             return (Criteria) this;
         }
 
-        public Criteria andPEducationGreaterThan(String value) {
+        public Criteria andPEducationGreaterThan(Byte value) {
             addCriterion("P_Education >", value, "pEducation");
             return (Criteria) this;
         }
 
-        public Criteria andPEducationGreaterThanOrEqualTo(String value) {
+        public Criteria andPEducationGreaterThanOrEqualTo(Byte value) {
             addCriterion("P_Education >=", value, "pEducation");
             return (Criteria) this;
         }
 
-        public Criteria andPEducationLessThan(String value) {
+        public Criteria andPEducationLessThan(Byte value) {
             addCriterion("P_Education <", value, "pEducation");
             return (Criteria) this;
         }
 
-        public Criteria andPEducationLessThanOrEqualTo(String value) {
+        public Criteria andPEducationLessThanOrEqualTo(Byte value) {
             addCriterion("P_Education <=", value, "pEducation");
             return (Criteria) this;
         }
 
-        public Criteria andPEducationLike(String value) {
-            addCriterion("P_Education like", value, "pEducation");
-            return (Criteria) this;
-        }
-
-        public Criteria andPEducationNotLike(String value) {
-            addCriterion("P_Education not like", value, "pEducation");
-            return (Criteria) this;
-        }
-
-        public Criteria andPEducationIn(List<String> values) {
+        public Criteria andPEducationIn(List<Byte> values) {
             addCriterion("P_Education in", values, "pEducation");
             return (Criteria) this;
         }
 
-        public Criteria andPEducationNotIn(List<String> values) {
+        public Criteria andPEducationNotIn(List<Byte> values) {
             addCriterion("P_Education not in", values, "pEducation");
             return (Criteria) this;
         }
 
-        public Criteria andPEducationBetween(String value1, String value2) {
+        public Criteria andPEducationBetween(Byte value1, Byte value2) {
             addCriterion("P_Education between", value1, value2, "pEducation");
             return (Criteria) this;
         }
 
-        public Criteria andPEducationNotBetween(String value1, String value2) {
+        public Criteria andPEducationNotBetween(Byte value1, Byte value2) {
             addCriterion("P_Education not between", value1, value2, "pEducation");
             return (Criteria) this;
         }
@@ -594,62 +534,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andPMarriageStatusEqualTo(String value) {
+        public Criteria andPMarriageStatusEqualTo(Byte value) {
             addCriterion("P_Marriage_Status =", value, "pMarriageStatus");
             return (Criteria) this;
         }
 
-        public Criteria andPMarriageStatusNotEqualTo(String value) {
+        public Criteria andPMarriageStatusNotEqualTo(Byte value) {
             addCriterion("P_Marriage_Status <>", value, "pMarriageStatus");
             return (Criteria) this;
         }
 
-        public Criteria andPMarriageStatusGreaterThan(String value) {
+        public Criteria andPMarriageStatusGreaterThan(Byte value) {
             addCriterion("P_Marriage_Status >", value, "pMarriageStatus");
             return (Criteria) this;
         }
 
-        public Criteria andPMarriageStatusGreaterThanOrEqualTo(String value) {
+        public Criteria andPMarriageStatusGreaterThanOrEqualTo(Byte value) {
             addCriterion("P_Marriage_Status >=", value, "pMarriageStatus");
             return (Criteria) this;
         }
 
-        public Criteria andPMarriageStatusLessThan(String value) {
+        public Criteria andPMarriageStatusLessThan(Byte value) {
             addCriterion("P_Marriage_Status <", value, "pMarriageStatus");
             return (Criteria) this;
         }
 
-        public Criteria andPMarriageStatusLessThanOrEqualTo(String value) {
+        public Criteria andPMarriageStatusLessThanOrEqualTo(Byte value) {
             addCriterion("P_Marriage_Status <=", value, "pMarriageStatus");
             return (Criteria) this;
         }
 
-        public Criteria andPMarriageStatusLike(String value) {
-            addCriterion("P_Marriage_Status like", value, "pMarriageStatus");
-            return (Criteria) this;
-        }
-
-        public Criteria andPMarriageStatusNotLike(String value) {
-            addCriterion("P_Marriage_Status not like", value, "pMarriageStatus");
-            return (Criteria) this;
-        }
-
-        public Criteria andPMarriageStatusIn(List<String> values) {
+        public Criteria andPMarriageStatusIn(List<Byte> values) {
             addCriterion("P_Marriage_Status in", values, "pMarriageStatus");
             return (Criteria) this;
         }
 
-        public Criteria andPMarriageStatusNotIn(List<String> values) {
+        public Criteria andPMarriageStatusNotIn(List<Byte> values) {
             addCriterion("P_Marriage_Status not in", values, "pMarriageStatus");
             return (Criteria) this;
         }
 
-        public Criteria andPMarriageStatusBetween(String value1, String value2) {
+        public Criteria andPMarriageStatusBetween(Byte value1, Byte value2) {
             addCriterion("P_Marriage_Status between", value1, value2, "pMarriageStatus");
             return (Criteria) this;
         }
 
-        public Criteria andPMarriageStatusNotBetween(String value1, String value2) {
+        public Criteria andPMarriageStatusNotBetween(Byte value1, Byte value2) {
             addCriterion("P_Marriage_Status not between", value1, value2, "pMarriageStatus");
             return (Criteria) this;
         }
@@ -664,62 +594,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andPSurgeryHistoryEqualTo(String value) {
+        public Criteria andPSurgeryHistoryEqualTo(Byte value) {
             addCriterion("P_Surgery_History =", value, "pSurgeryHistory");
             return (Criteria) this;
         }
 
-        public Criteria andPSurgeryHistoryNotEqualTo(String value) {
+        public Criteria andPSurgeryHistoryNotEqualTo(Byte value) {
             addCriterion("P_Surgery_History <>", value, "pSurgeryHistory");
             return (Criteria) this;
         }
 
-        public Criteria andPSurgeryHistoryGreaterThan(String value) {
+        public Criteria andPSurgeryHistoryGreaterThan(Byte value) {
             addCriterion("P_Surgery_History >", value, "pSurgeryHistory");
             return (Criteria) this;
         }
 
-        public Criteria andPSurgeryHistoryGreaterThanOrEqualTo(String value) {
+        public Criteria andPSurgeryHistoryGreaterThanOrEqualTo(Byte value) {
             addCriterion("P_Surgery_History >=", value, "pSurgeryHistory");
             return (Criteria) this;
         }
 
-        public Criteria andPSurgeryHistoryLessThan(String value) {
+        public Criteria andPSurgeryHistoryLessThan(Byte value) {
             addCriterion("P_Surgery_History <", value, "pSurgeryHistory");
             return (Criteria) this;
         }
 
-        public Criteria andPSurgeryHistoryLessThanOrEqualTo(String value) {
+        public Criteria andPSurgeryHistoryLessThanOrEqualTo(Byte value) {
             addCriterion("P_Surgery_History <=", value, "pSurgeryHistory");
             return (Criteria) this;
         }
 
-        public Criteria andPSurgeryHistoryLike(String value) {
-            addCriterion("P_Surgery_History like", value, "pSurgeryHistory");
-            return (Criteria) this;
-        }
-
-        public Criteria andPSurgeryHistoryNotLike(String value) {
-            addCriterion("P_Surgery_History not like", value, "pSurgeryHistory");
-            return (Criteria) this;
-        }
-
-        public Criteria andPSurgeryHistoryIn(List<String> values) {
+        public Criteria andPSurgeryHistoryIn(List<Byte> values) {
             addCriterion("P_Surgery_History in", values, "pSurgeryHistory");
             return (Criteria) this;
         }
 
-        public Criteria andPSurgeryHistoryNotIn(List<String> values) {
+        public Criteria andPSurgeryHistoryNotIn(List<Byte> values) {
             addCriterion("P_Surgery_History not in", values, "pSurgeryHistory");
             return (Criteria) this;
         }
 
-        public Criteria andPSurgeryHistoryBetween(String value1, String value2) {
+        public Criteria andPSurgeryHistoryBetween(Byte value1, Byte value2) {
             addCriterion("P_Surgery_History between", value1, value2, "pSurgeryHistory");
             return (Criteria) this;
         }
 
-        public Criteria andPSurgeryHistoryNotBetween(String value1, String value2) {
+        public Criteria andPSurgeryHistoryNotBetween(Byte value1, Byte value2) {
             addCriterion("P_Surgery_History not between", value1, value2, "pSurgeryHistory");
             return (Criteria) this;
         }
@@ -734,62 +654,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andPComparisonEqualTo(String value) {
+        public Criteria andPComparisonEqualTo(Byte value) {
             addCriterion("P_Comparison =", value, "pComparison");
             return (Criteria) this;
         }
 
-        public Criteria andPComparisonNotEqualTo(String value) {
+        public Criteria andPComparisonNotEqualTo(Byte value) {
             addCriterion("P_Comparison <>", value, "pComparison");
             return (Criteria) this;
         }
 
-        public Criteria andPComparisonGreaterThan(String value) {
+        public Criteria andPComparisonGreaterThan(Byte value) {
             addCriterion("P_Comparison >", value, "pComparison");
             return (Criteria) this;
         }
 
-        public Criteria andPComparisonGreaterThanOrEqualTo(String value) {
+        public Criteria andPComparisonGreaterThanOrEqualTo(Byte value) {
             addCriterion("P_Comparison >=", value, "pComparison");
             return (Criteria) this;
         }
 
-        public Criteria andPComparisonLessThan(String value) {
+        public Criteria andPComparisonLessThan(Byte value) {
             addCriterion("P_Comparison <", value, "pComparison");
             return (Criteria) this;
         }
 
-        public Criteria andPComparisonLessThanOrEqualTo(String value) {
+        public Criteria andPComparisonLessThanOrEqualTo(Byte value) {
             addCriterion("P_Comparison <=", value, "pComparison");
             return (Criteria) this;
         }
 
-        public Criteria andPComparisonLike(String value) {
-            addCriterion("P_Comparison like", value, "pComparison");
-            return (Criteria) this;
-        }
-
-        public Criteria andPComparisonNotLike(String value) {
-            addCriterion("P_Comparison not like", value, "pComparison");
-            return (Criteria) this;
-        }
-
-        public Criteria andPComparisonIn(List<String> values) {
+        public Criteria andPComparisonIn(List<Byte> values) {
             addCriterion("P_Comparison in", values, "pComparison");
             return (Criteria) this;
         }
 
-        public Criteria andPComparisonNotIn(List<String> values) {
+        public Criteria andPComparisonNotIn(List<Byte> values) {
             addCriterion("P_Comparison not in", values, "pComparison");
             return (Criteria) this;
         }
 
-        public Criteria andPComparisonBetween(String value1, String value2) {
+        public Criteria andPComparisonBetween(Byte value1, Byte value2) {
             addCriterion("P_Comparison between", value1, value2, "pComparison");
             return (Criteria) this;
         }
 
-        public Criteria andPComparisonNotBetween(String value1, String value2) {
+        public Criteria andPComparisonNotBetween(Byte value1, Byte value2) {
             addCriterion("P_Comparison not between", value1, value2, "pComparison");
             return (Criteria) this;
         }
@@ -804,62 +714,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andPOthersSatisfactionEqualTo(String value) {
+        public Criteria andPOthersSatisfactionEqualTo(Byte value) {
             addCriterion("P_Others_Satisfaction =", value, "pOthersSatisfaction");
             return (Criteria) this;
         }
 
-        public Criteria andPOthersSatisfactionNotEqualTo(String value) {
+        public Criteria andPOthersSatisfactionNotEqualTo(Byte value) {
             addCriterion("P_Others_Satisfaction <>", value, "pOthersSatisfaction");
             return (Criteria) this;
         }
 
-        public Criteria andPOthersSatisfactionGreaterThan(String value) {
+        public Criteria andPOthersSatisfactionGreaterThan(Byte value) {
             addCriterion("P_Others_Satisfaction >", value, "pOthersSatisfaction");
             return (Criteria) this;
         }
 
-        public Criteria andPOthersSatisfactionGreaterThanOrEqualTo(String value) {
+        public Criteria andPOthersSatisfactionGreaterThanOrEqualTo(Byte value) {
             addCriterion("P_Others_Satisfaction >=", value, "pOthersSatisfaction");
             return (Criteria) this;
         }
 
-        public Criteria andPOthersSatisfactionLessThan(String value) {
+        public Criteria andPOthersSatisfactionLessThan(Byte value) {
             addCriterion("P_Others_Satisfaction <", value, "pOthersSatisfaction");
             return (Criteria) this;
         }
 
-        public Criteria andPOthersSatisfactionLessThanOrEqualTo(String value) {
+        public Criteria andPOthersSatisfactionLessThanOrEqualTo(Byte value) {
             addCriterion("P_Others_Satisfaction <=", value, "pOthersSatisfaction");
             return (Criteria) this;
         }
 
-        public Criteria andPOthersSatisfactionLike(String value) {
-            addCriterion("P_Others_Satisfaction like", value, "pOthersSatisfaction");
-            return (Criteria) this;
-        }
-
-        public Criteria andPOthersSatisfactionNotLike(String value) {
-            addCriterion("P_Others_Satisfaction not like", value, "pOthersSatisfaction");
-            return (Criteria) this;
-        }
-
-        public Criteria andPOthersSatisfactionIn(List<String> values) {
+        public Criteria andPOthersSatisfactionIn(List<Byte> values) {
             addCriterion("P_Others_Satisfaction in", values, "pOthersSatisfaction");
             return (Criteria) this;
         }
 
-        public Criteria andPOthersSatisfactionNotIn(List<String> values) {
+        public Criteria andPOthersSatisfactionNotIn(List<Byte> values) {
             addCriterion("P_Others_Satisfaction not in", values, "pOthersSatisfaction");
             return (Criteria) this;
         }
 
-        public Criteria andPOthersSatisfactionBetween(String value1, String value2) {
+        public Criteria andPOthersSatisfactionBetween(Byte value1, Byte value2) {
             addCriterion("P_Others_Satisfaction between", value1, value2, "pOthersSatisfaction");
             return (Criteria) this;
         }
 
-        public Criteria andPOthersSatisfactionNotBetween(String value1, String value2) {
+        public Criteria andPOthersSatisfactionNotBetween(Byte value1, Byte value2) {
             addCriterion("P_Others_Satisfaction not between", value1, value2, "pOthersSatisfaction");
             return (Criteria) this;
         }
@@ -874,62 +774,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andPChangeLifeEqualTo(String value) {
+        public Criteria andPChangeLifeEqualTo(Byte value) {
             addCriterion("P_Change_Life =", value, "pChangeLife");
             return (Criteria) this;
         }
 
-        public Criteria andPChangeLifeNotEqualTo(String value) {
+        public Criteria andPChangeLifeNotEqualTo(Byte value) {
             addCriterion("P_Change_Life <>", value, "pChangeLife");
             return (Criteria) this;
         }
 
-        public Criteria andPChangeLifeGreaterThan(String value) {
+        public Criteria andPChangeLifeGreaterThan(Byte value) {
             addCriterion("P_Change_Life >", value, "pChangeLife");
             return (Criteria) this;
         }
 
-        public Criteria andPChangeLifeGreaterThanOrEqualTo(String value) {
+        public Criteria andPChangeLifeGreaterThanOrEqualTo(Byte value) {
             addCriterion("P_Change_Life >=", value, "pChangeLife");
             return (Criteria) this;
         }
 
-        public Criteria andPChangeLifeLessThan(String value) {
+        public Criteria andPChangeLifeLessThan(Byte value) {
             addCriterion("P_Change_Life <", value, "pChangeLife");
             return (Criteria) this;
         }
 
-        public Criteria andPChangeLifeLessThanOrEqualTo(String value) {
+        public Criteria andPChangeLifeLessThanOrEqualTo(Byte value) {
             addCriterion("P_Change_Life <=", value, "pChangeLife");
             return (Criteria) this;
         }
 
-        public Criteria andPChangeLifeLike(String value) {
-            addCriterion("P_Change_Life like", value, "pChangeLife");
-            return (Criteria) this;
-        }
-
-        public Criteria andPChangeLifeNotLike(String value) {
-            addCriterion("P_Change_Life not like", value, "pChangeLife");
-            return (Criteria) this;
-        }
-
-        public Criteria andPChangeLifeIn(List<String> values) {
+        public Criteria andPChangeLifeIn(List<Byte> values) {
             addCriterion("P_Change_Life in", values, "pChangeLife");
             return (Criteria) this;
         }
 
-        public Criteria andPChangeLifeNotIn(List<String> values) {
+        public Criteria andPChangeLifeNotIn(List<Byte> values) {
             addCriterion("P_Change_Life not in", values, "pChangeLife");
             return (Criteria) this;
         }
 
-        public Criteria andPChangeLifeBetween(String value1, String value2) {
+        public Criteria andPChangeLifeBetween(Byte value1, Byte value2) {
             addCriterion("P_Change_Life between", value1, value2, "pChangeLife");
             return (Criteria) this;
         }
 
-        public Criteria andPChangeLifeNotBetween(String value1, String value2) {
+        public Criteria andPChangeLifeNotBetween(Byte value1, Byte value2) {
             addCriterion("P_Change_Life not between", value1, value2, "pChangeLife");
             return (Criteria) this;
         }
@@ -944,62 +834,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andPChangeDestinyEqualTo(String value) {
+        public Criteria andPChangeDestinyEqualTo(Byte value) {
             addCriterion("P_Change_Destiny =", value, "pChangeDestiny");
             return (Criteria) this;
         }
 
-        public Criteria andPChangeDestinyNotEqualTo(String value) {
+        public Criteria andPChangeDestinyNotEqualTo(Byte value) {
             addCriterion("P_Change_Destiny <>", value, "pChangeDestiny");
             return (Criteria) this;
         }
 
-        public Criteria andPChangeDestinyGreaterThan(String value) {
+        public Criteria andPChangeDestinyGreaterThan(Byte value) {
             addCriterion("P_Change_Destiny >", value, "pChangeDestiny");
             return (Criteria) this;
         }
 
-        public Criteria andPChangeDestinyGreaterThanOrEqualTo(String value) {
+        public Criteria andPChangeDestinyGreaterThanOrEqualTo(Byte value) {
             addCriterion("P_Change_Destiny >=", value, "pChangeDestiny");
             return (Criteria) this;
         }
 
-        public Criteria andPChangeDestinyLessThan(String value) {
+        public Criteria andPChangeDestinyLessThan(Byte value) {
             addCriterion("P_Change_Destiny <", value, "pChangeDestiny");
             return (Criteria) this;
         }
 
-        public Criteria andPChangeDestinyLessThanOrEqualTo(String value) {
+        public Criteria andPChangeDestinyLessThanOrEqualTo(Byte value) {
             addCriterion("P_Change_Destiny <=", value, "pChangeDestiny");
             return (Criteria) this;
         }
 
-        public Criteria andPChangeDestinyLike(String value) {
-            addCriterion("P_Change_Destiny like", value, "pChangeDestiny");
-            return (Criteria) this;
-        }
-
-        public Criteria andPChangeDestinyNotLike(String value) {
-            addCriterion("P_Change_Destiny not like", value, "pChangeDestiny");
-            return (Criteria) this;
-        }
-
-        public Criteria andPChangeDestinyIn(List<String> values) {
+        public Criteria andPChangeDestinyIn(List<Byte> values) {
             addCriterion("P_Change_Destiny in", values, "pChangeDestiny");
             return (Criteria) this;
         }
 
-        public Criteria andPChangeDestinyNotIn(List<String> values) {
+        public Criteria andPChangeDestinyNotIn(List<Byte> values) {
             addCriterion("P_Change_Destiny not in", values, "pChangeDestiny");
             return (Criteria) this;
         }
 
-        public Criteria andPChangeDestinyBetween(String value1, String value2) {
+        public Criteria andPChangeDestinyBetween(Byte value1, Byte value2) {
             addCriterion("P_Change_Destiny between", value1, value2, "pChangeDestiny");
             return (Criteria) this;
         }
 
-        public Criteria andPChangeDestinyNotBetween(String value1, String value2) {
+        public Criteria andPChangeDestinyNotBetween(Byte value1, Byte value2) {
             addCriterion("P_Change_Destiny not between", value1, value2, "pChangeDestiny");
             return (Criteria) this;
         }
@@ -1014,62 +894,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andPKinsfolkAttitudeEqualTo(String value) {
+        public Criteria andPKinsfolkAttitudeEqualTo(Byte value) {
             addCriterion("P_Kinsfolk_Attitude =", value, "pKinsfolkAttitude");
             return (Criteria) this;
         }
 
-        public Criteria andPKinsfolkAttitudeNotEqualTo(String value) {
+        public Criteria andPKinsfolkAttitudeNotEqualTo(Byte value) {
             addCriterion("P_Kinsfolk_Attitude <>", value, "pKinsfolkAttitude");
             return (Criteria) this;
         }
 
-        public Criteria andPKinsfolkAttitudeGreaterThan(String value) {
+        public Criteria andPKinsfolkAttitudeGreaterThan(Byte value) {
             addCriterion("P_Kinsfolk_Attitude >", value, "pKinsfolkAttitude");
             return (Criteria) this;
         }
 
-        public Criteria andPKinsfolkAttitudeGreaterThanOrEqualTo(String value) {
+        public Criteria andPKinsfolkAttitudeGreaterThanOrEqualTo(Byte value) {
             addCriterion("P_Kinsfolk_Attitude >=", value, "pKinsfolkAttitude");
             return (Criteria) this;
         }
 
-        public Criteria andPKinsfolkAttitudeLessThan(String value) {
+        public Criteria andPKinsfolkAttitudeLessThan(Byte value) {
             addCriterion("P_Kinsfolk_Attitude <", value, "pKinsfolkAttitude");
             return (Criteria) this;
         }
 
-        public Criteria andPKinsfolkAttitudeLessThanOrEqualTo(String value) {
+        public Criteria andPKinsfolkAttitudeLessThanOrEqualTo(Byte value) {
             addCriterion("P_Kinsfolk_Attitude <=", value, "pKinsfolkAttitude");
             return (Criteria) this;
         }
 
-        public Criteria andPKinsfolkAttitudeLike(String value) {
-            addCriterion("P_Kinsfolk_Attitude like", value, "pKinsfolkAttitude");
-            return (Criteria) this;
-        }
-
-        public Criteria andPKinsfolkAttitudeNotLike(String value) {
-            addCriterion("P_Kinsfolk_Attitude not like", value, "pKinsfolkAttitude");
-            return (Criteria) this;
-        }
-
-        public Criteria andPKinsfolkAttitudeIn(List<String> values) {
+        public Criteria andPKinsfolkAttitudeIn(List<Byte> values) {
             addCriterion("P_Kinsfolk_Attitude in", values, "pKinsfolkAttitude");
             return (Criteria) this;
         }
 
-        public Criteria andPKinsfolkAttitudeNotIn(List<String> values) {
+        public Criteria andPKinsfolkAttitudeNotIn(List<Byte> values) {
             addCriterion("P_Kinsfolk_Attitude not in", values, "pKinsfolkAttitude");
             return (Criteria) this;
         }
 
-        public Criteria andPKinsfolkAttitudeBetween(String value1, String value2) {
+        public Criteria andPKinsfolkAttitudeBetween(Byte value1, Byte value2) {
             addCriterion("P_Kinsfolk_Attitude between", value1, value2, "pKinsfolkAttitude");
             return (Criteria) this;
         }
 
-        public Criteria andPKinsfolkAttitudeNotBetween(String value1, String value2) {
+        public Criteria andPKinsfolkAttitudeNotBetween(Byte value1, Byte value2) {
             addCriterion("P_Kinsfolk_Attitude not between", value1, value2, "pKinsfolkAttitude");
             return (Criteria) this;
         }
@@ -1084,62 +954,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andPUnhappinessFamilyEqualTo(String value) {
+        public Criteria andPUnhappinessFamilyEqualTo(Byte value) {
             addCriterion("P_Unhappiness_Family =", value, "pUnhappinessFamily");
             return (Criteria) this;
         }
 
-        public Criteria andPUnhappinessFamilyNotEqualTo(String value) {
+        public Criteria andPUnhappinessFamilyNotEqualTo(Byte value) {
             addCriterion("P_Unhappiness_Family <>", value, "pUnhappinessFamily");
             return (Criteria) this;
         }
 
-        public Criteria andPUnhappinessFamilyGreaterThan(String value) {
+        public Criteria andPUnhappinessFamilyGreaterThan(Byte value) {
             addCriterion("P_Unhappiness_Family >", value, "pUnhappinessFamily");
             return (Criteria) this;
         }
 
-        public Criteria andPUnhappinessFamilyGreaterThanOrEqualTo(String value) {
+        public Criteria andPUnhappinessFamilyGreaterThanOrEqualTo(Byte value) {
             addCriterion("P_Unhappiness_Family >=", value, "pUnhappinessFamily");
             return (Criteria) this;
         }
 
-        public Criteria andPUnhappinessFamilyLessThan(String value) {
+        public Criteria andPUnhappinessFamilyLessThan(Byte value) {
             addCriterion("P_Unhappiness_Family <", value, "pUnhappinessFamily");
             return (Criteria) this;
         }
 
-        public Criteria andPUnhappinessFamilyLessThanOrEqualTo(String value) {
+        public Criteria andPUnhappinessFamilyLessThanOrEqualTo(Byte value) {
             addCriterion("P_Unhappiness_Family <=", value, "pUnhappinessFamily");
             return (Criteria) this;
         }
 
-        public Criteria andPUnhappinessFamilyLike(String value) {
-            addCriterion("P_Unhappiness_Family like", value, "pUnhappinessFamily");
-            return (Criteria) this;
-        }
-
-        public Criteria andPUnhappinessFamilyNotLike(String value) {
-            addCriterion("P_Unhappiness_Family not like", value, "pUnhappinessFamily");
-            return (Criteria) this;
-        }
-
-        public Criteria andPUnhappinessFamilyIn(List<String> values) {
+        public Criteria andPUnhappinessFamilyIn(List<Byte> values) {
             addCriterion("P_Unhappiness_Family in", values, "pUnhappinessFamily");
             return (Criteria) this;
         }
 
-        public Criteria andPUnhappinessFamilyNotIn(List<String> values) {
+        public Criteria andPUnhappinessFamilyNotIn(List<Byte> values) {
             addCriterion("P_Unhappiness_Family not in", values, "pUnhappinessFamily");
             return (Criteria) this;
         }
 
-        public Criteria andPUnhappinessFamilyBetween(String value1, String value2) {
+        public Criteria andPUnhappinessFamilyBetween(Byte value1, Byte value2) {
             addCriterion("P_Unhappiness_Family between", value1, value2, "pUnhappinessFamily");
             return (Criteria) this;
         }
 
-        public Criteria andPUnhappinessFamilyNotBetween(String value1, String value2) {
+        public Criteria andPUnhappinessFamilyNotBetween(Byte value1, Byte value2) {
             addCriterion("P_Unhappiness_Family not between", value1, value2, "pUnhappinessFamily");
             return (Criteria) this;
         }
@@ -1154,62 +1014,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andPMentalDisorderEqualTo(String value) {
+        public Criteria andPMentalDisorderEqualTo(Byte value) {
             addCriterion("P_Mental_Disorder =", value, "pMentalDisorder");
             return (Criteria) this;
         }
 
-        public Criteria andPMentalDisorderNotEqualTo(String value) {
+        public Criteria andPMentalDisorderNotEqualTo(Byte value) {
             addCriterion("P_Mental_Disorder <>", value, "pMentalDisorder");
             return (Criteria) this;
         }
 
-        public Criteria andPMentalDisorderGreaterThan(String value) {
+        public Criteria andPMentalDisorderGreaterThan(Byte value) {
             addCriterion("P_Mental_Disorder >", value, "pMentalDisorder");
             return (Criteria) this;
         }
 
-        public Criteria andPMentalDisorderGreaterThanOrEqualTo(String value) {
+        public Criteria andPMentalDisorderGreaterThanOrEqualTo(Byte value) {
             addCriterion("P_Mental_Disorder >=", value, "pMentalDisorder");
             return (Criteria) this;
         }
 
-        public Criteria andPMentalDisorderLessThan(String value) {
+        public Criteria andPMentalDisorderLessThan(Byte value) {
             addCriterion("P_Mental_Disorder <", value, "pMentalDisorder");
             return (Criteria) this;
         }
 
-        public Criteria andPMentalDisorderLessThanOrEqualTo(String value) {
+        public Criteria andPMentalDisorderLessThanOrEqualTo(Byte value) {
             addCriterion("P_Mental_Disorder <=", value, "pMentalDisorder");
             return (Criteria) this;
         }
 
-        public Criteria andPMentalDisorderLike(String value) {
-            addCriterion("P_Mental_Disorder like", value, "pMentalDisorder");
-            return (Criteria) this;
-        }
-
-        public Criteria andPMentalDisorderNotLike(String value) {
-            addCriterion("P_Mental_Disorder not like", value, "pMentalDisorder");
-            return (Criteria) this;
-        }
-
-        public Criteria andPMentalDisorderIn(List<String> values) {
+        public Criteria andPMentalDisorderIn(List<Byte> values) {
             addCriterion("P_Mental_Disorder in", values, "pMentalDisorder");
             return (Criteria) this;
         }
 
-        public Criteria andPMentalDisorderNotIn(List<String> values) {
+        public Criteria andPMentalDisorderNotIn(List<Byte> values) {
             addCriterion("P_Mental_Disorder not in", values, "pMentalDisorder");
             return (Criteria) this;
         }
 
-        public Criteria andPMentalDisorderBetween(String value1, String value2) {
+        public Criteria andPMentalDisorderBetween(Byte value1, Byte value2) {
             addCriterion("P_Mental_Disorder between", value1, value2, "pMentalDisorder");
             return (Criteria) this;
         }
 
-        public Criteria andPMentalDisorderNotBetween(String value1, String value2) {
+        public Criteria andPMentalDisorderNotBetween(Byte value1, Byte value2) {
             addCriterion("P_Mental_Disorder not between", value1, value2, "pMentalDisorder");
             return (Criteria) this;
         }
@@ -1224,62 +1074,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andPSelfieEqualTo(String value) {
+        public Criteria andPSelfieEqualTo(Byte value) {
             addCriterion("P_Selfie =", value, "pSelfie");
             return (Criteria) this;
         }
 
-        public Criteria andPSelfieNotEqualTo(String value) {
+        public Criteria andPSelfieNotEqualTo(Byte value) {
             addCriterion("P_Selfie <>", value, "pSelfie");
             return (Criteria) this;
         }
 
-        public Criteria andPSelfieGreaterThan(String value) {
+        public Criteria andPSelfieGreaterThan(Byte value) {
             addCriterion("P_Selfie >", value, "pSelfie");
             return (Criteria) this;
         }
 
-        public Criteria andPSelfieGreaterThanOrEqualTo(String value) {
+        public Criteria andPSelfieGreaterThanOrEqualTo(Byte value) {
             addCriterion("P_Selfie >=", value, "pSelfie");
             return (Criteria) this;
         }
 
-        public Criteria andPSelfieLessThan(String value) {
+        public Criteria andPSelfieLessThan(Byte value) {
             addCriterion("P_Selfie <", value, "pSelfie");
             return (Criteria) this;
         }
 
-        public Criteria andPSelfieLessThanOrEqualTo(String value) {
+        public Criteria andPSelfieLessThanOrEqualTo(Byte value) {
             addCriterion("P_Selfie <=", value, "pSelfie");
             return (Criteria) this;
         }
 
-        public Criteria andPSelfieLike(String value) {
-            addCriterion("P_Selfie like", value, "pSelfie");
-            return (Criteria) this;
-        }
-
-        public Criteria andPSelfieNotLike(String value) {
-            addCriterion("P_Selfie not like", value, "pSelfie");
-            return (Criteria) this;
-        }
-
-        public Criteria andPSelfieIn(List<String> values) {
+        public Criteria andPSelfieIn(List<Byte> values) {
             addCriterion("P_Selfie in", values, "pSelfie");
             return (Criteria) this;
         }
 
-        public Criteria andPSelfieNotIn(List<String> values) {
+        public Criteria andPSelfieNotIn(List<Byte> values) {
             addCriterion("P_Selfie not in", values, "pSelfie");
             return (Criteria) this;
         }
 
-        public Criteria andPSelfieBetween(String value1, String value2) {
+        public Criteria andPSelfieBetween(Byte value1, Byte value2) {
             addCriterion("P_Selfie between", value1, value2, "pSelfie");
             return (Criteria) this;
         }
 
-        public Criteria andPSelfieNotBetween(String value1, String value2) {
+        public Criteria andPSelfieNotBetween(Byte value1, Byte value2) {
             addCriterion("P_Selfie not between", value1, value2, "pSelfie");
             return (Criteria) this;
         }
@@ -1294,62 +1134,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andPAppearanceAttentionEqualTo(String value) {
+        public Criteria andPAppearanceAttentionEqualTo(Byte value) {
             addCriterion("P_Appearance_Attention =", value, "pAppearanceAttention");
             return (Criteria) this;
         }
 
-        public Criteria andPAppearanceAttentionNotEqualTo(String value) {
+        public Criteria andPAppearanceAttentionNotEqualTo(Byte value) {
             addCriterion("P_Appearance_Attention <>", value, "pAppearanceAttention");
             return (Criteria) this;
         }
 
-        public Criteria andPAppearanceAttentionGreaterThan(String value) {
+        public Criteria andPAppearanceAttentionGreaterThan(Byte value) {
             addCriterion("P_Appearance_Attention >", value, "pAppearanceAttention");
             return (Criteria) this;
         }
 
-        public Criteria andPAppearanceAttentionGreaterThanOrEqualTo(String value) {
+        public Criteria andPAppearanceAttentionGreaterThanOrEqualTo(Byte value) {
             addCriterion("P_Appearance_Attention >=", value, "pAppearanceAttention");
             return (Criteria) this;
         }
 
-        public Criteria andPAppearanceAttentionLessThan(String value) {
+        public Criteria andPAppearanceAttentionLessThan(Byte value) {
             addCriterion("P_Appearance_Attention <", value, "pAppearanceAttention");
             return (Criteria) this;
         }
 
-        public Criteria andPAppearanceAttentionLessThanOrEqualTo(String value) {
+        public Criteria andPAppearanceAttentionLessThanOrEqualTo(Byte value) {
             addCriterion("P_Appearance_Attention <=", value, "pAppearanceAttention");
             return (Criteria) this;
         }
 
-        public Criteria andPAppearanceAttentionLike(String value) {
-            addCriterion("P_Appearance_Attention like", value, "pAppearanceAttention");
-            return (Criteria) this;
-        }
-
-        public Criteria andPAppearanceAttentionNotLike(String value) {
-            addCriterion("P_Appearance_Attention not like", value, "pAppearanceAttention");
-            return (Criteria) this;
-        }
-
-        public Criteria andPAppearanceAttentionIn(List<String> values) {
+        public Criteria andPAppearanceAttentionIn(List<Byte> values) {
             addCriterion("P_Appearance_Attention in", values, "pAppearanceAttention");
             return (Criteria) this;
         }
 
-        public Criteria andPAppearanceAttentionNotIn(List<String> values) {
+        public Criteria andPAppearanceAttentionNotIn(List<Byte> values) {
             addCriterion("P_Appearance_Attention not in", values, "pAppearanceAttention");
             return (Criteria) this;
         }
 
-        public Criteria andPAppearanceAttentionBetween(String value1, String value2) {
+        public Criteria andPAppearanceAttentionBetween(Byte value1, Byte value2) {
             addCriterion("P_Appearance_Attention between", value1, value2, "pAppearanceAttention");
             return (Criteria) this;
         }
 
-        public Criteria andPAppearanceAttentionNotBetween(String value1, String value2) {
+        public Criteria andPAppearanceAttentionNotBetween(Byte value1, Byte value2) {
             addCriterion("P_Appearance_Attention not between", value1, value2, "pAppearanceAttention");
             return (Criteria) this;
         }
@@ -1364,62 +1194,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDCharmEqualTo(String value) {
+        public Criteria andDCharmEqualTo(Byte value) {
             addCriterion("D_Charm =", value, "dCharm");
             return (Criteria) this;
         }
 
-        public Criteria andDCharmNotEqualTo(String value) {
+        public Criteria andDCharmNotEqualTo(Byte value) {
             addCriterion("D_Charm <>", value, "dCharm");
             return (Criteria) this;
         }
 
-        public Criteria andDCharmGreaterThan(String value) {
+        public Criteria andDCharmGreaterThan(Byte value) {
             addCriterion("D_Charm >", value, "dCharm");
             return (Criteria) this;
         }
 
-        public Criteria andDCharmGreaterThanOrEqualTo(String value) {
+        public Criteria andDCharmGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Charm >=", value, "dCharm");
             return (Criteria) this;
         }
 
-        public Criteria andDCharmLessThan(String value) {
+        public Criteria andDCharmLessThan(Byte value) {
             addCriterion("D_Charm <", value, "dCharm");
             return (Criteria) this;
         }
 
-        public Criteria andDCharmLessThanOrEqualTo(String value) {
+        public Criteria andDCharmLessThanOrEqualTo(Byte value) {
             addCriterion("D_Charm <=", value, "dCharm");
             return (Criteria) this;
         }
 
-        public Criteria andDCharmLike(String value) {
-            addCriterion("D_Charm like", value, "dCharm");
-            return (Criteria) this;
-        }
-
-        public Criteria andDCharmNotLike(String value) {
-            addCriterion("D_Charm not like", value, "dCharm");
-            return (Criteria) this;
-        }
-
-        public Criteria andDCharmIn(List<String> values) {
+        public Criteria andDCharmIn(List<Byte> values) {
             addCriterion("D_Charm in", values, "dCharm");
             return (Criteria) this;
         }
 
-        public Criteria andDCharmNotIn(List<String> values) {
+        public Criteria andDCharmNotIn(List<Byte> values) {
             addCriterion("D_Charm not in", values, "dCharm");
             return (Criteria) this;
         }
 
-        public Criteria andDCharmBetween(String value1, String value2) {
+        public Criteria andDCharmBetween(Byte value1, Byte value2) {
             addCriterion("D_Charm between", value1, value2, "dCharm");
             return (Criteria) this;
         }
 
-        public Criteria andDCharmNotBetween(String value1, String value2) {
+        public Criteria andDCharmNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Charm not between", value1, value2, "dCharm");
             return (Criteria) this;
         }
@@ -1434,62 +1254,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDSubjectiveEqualTo(String value) {
+        public Criteria andDSubjectiveEqualTo(Byte value) {
             addCriterion("D_Subjective =", value, "dSubjective");
             return (Criteria) this;
         }
 
-        public Criteria andDSubjectiveNotEqualTo(String value) {
+        public Criteria andDSubjectiveNotEqualTo(Byte value) {
             addCriterion("D_Subjective <>", value, "dSubjective");
             return (Criteria) this;
         }
 
-        public Criteria andDSubjectiveGreaterThan(String value) {
+        public Criteria andDSubjectiveGreaterThan(Byte value) {
             addCriterion("D_Subjective >", value, "dSubjective");
             return (Criteria) this;
         }
 
-        public Criteria andDSubjectiveGreaterThanOrEqualTo(String value) {
+        public Criteria andDSubjectiveGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Subjective >=", value, "dSubjective");
             return (Criteria) this;
         }
 
-        public Criteria andDSubjectiveLessThan(String value) {
+        public Criteria andDSubjectiveLessThan(Byte value) {
             addCriterion("D_Subjective <", value, "dSubjective");
             return (Criteria) this;
         }
 
-        public Criteria andDSubjectiveLessThanOrEqualTo(String value) {
+        public Criteria andDSubjectiveLessThanOrEqualTo(Byte value) {
             addCriterion("D_Subjective <=", value, "dSubjective");
             return (Criteria) this;
         }
 
-        public Criteria andDSubjectiveLike(String value) {
-            addCriterion("D_Subjective like", value, "dSubjective");
-            return (Criteria) this;
-        }
-
-        public Criteria andDSubjectiveNotLike(String value) {
-            addCriterion("D_Subjective not like", value, "dSubjective");
-            return (Criteria) this;
-        }
-
-        public Criteria andDSubjectiveIn(List<String> values) {
+        public Criteria andDSubjectiveIn(List<Byte> values) {
             addCriterion("D_Subjective in", values, "dSubjective");
             return (Criteria) this;
         }
 
-        public Criteria andDSubjectiveNotIn(List<String> values) {
+        public Criteria andDSubjectiveNotIn(List<Byte> values) {
             addCriterion("D_Subjective not in", values, "dSubjective");
             return (Criteria) this;
         }
 
-        public Criteria andDSubjectiveBetween(String value1, String value2) {
+        public Criteria andDSubjectiveBetween(Byte value1, Byte value2) {
             addCriterion("D_Subjective between", value1, value2, "dSubjective");
             return (Criteria) this;
         }
 
-        public Criteria andDSubjectiveNotBetween(String value1, String value2) {
+        public Criteria andDSubjectiveNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Subjective not between", value1, value2, "dSubjective");
             return (Criteria) this;
         }
@@ -1504,62 +1314,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDModestyEqualTo(String value) {
+        public Criteria andDModestyEqualTo(Byte value) {
             addCriterion("D_Modesty =", value, "dModesty");
             return (Criteria) this;
         }
 
-        public Criteria andDModestyNotEqualTo(String value) {
+        public Criteria andDModestyNotEqualTo(Byte value) {
             addCriterion("D_Modesty <>", value, "dModesty");
             return (Criteria) this;
         }
 
-        public Criteria andDModestyGreaterThan(String value) {
+        public Criteria andDModestyGreaterThan(Byte value) {
             addCriterion("D_Modesty >", value, "dModesty");
             return (Criteria) this;
         }
 
-        public Criteria andDModestyGreaterThanOrEqualTo(String value) {
+        public Criteria andDModestyGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Modesty >=", value, "dModesty");
             return (Criteria) this;
         }
 
-        public Criteria andDModestyLessThan(String value) {
+        public Criteria andDModestyLessThan(Byte value) {
             addCriterion("D_Modesty <", value, "dModesty");
             return (Criteria) this;
         }
 
-        public Criteria andDModestyLessThanOrEqualTo(String value) {
+        public Criteria andDModestyLessThanOrEqualTo(Byte value) {
             addCriterion("D_Modesty <=", value, "dModesty");
             return (Criteria) this;
         }
 
-        public Criteria andDModestyLike(String value) {
-            addCriterion("D_Modesty like", value, "dModesty");
-            return (Criteria) this;
-        }
-
-        public Criteria andDModestyNotLike(String value) {
-            addCriterion("D_Modesty not like", value, "dModesty");
-            return (Criteria) this;
-        }
-
-        public Criteria andDModestyIn(List<String> values) {
+        public Criteria andDModestyIn(List<Byte> values) {
             addCriterion("D_Modesty in", values, "dModesty");
             return (Criteria) this;
         }
 
-        public Criteria andDModestyNotIn(List<String> values) {
+        public Criteria andDModestyNotIn(List<Byte> values) {
             addCriterion("D_Modesty not in", values, "dModesty");
             return (Criteria) this;
         }
 
-        public Criteria andDModestyBetween(String value1, String value2) {
+        public Criteria andDModestyBetween(Byte value1, Byte value2) {
             addCriterion("D_Modesty between", value1, value2, "dModesty");
             return (Criteria) this;
         }
 
-        public Criteria andDModestyNotBetween(String value1, String value2) {
+        public Criteria andDModestyNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Modesty not between", value1, value2, "dModesty");
             return (Criteria) this;
         }
@@ -1574,62 +1374,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDAttentionEqualTo(String value) {
+        public Criteria andDAttentionEqualTo(Byte value) {
             addCriterion("D_Attention =", value, "dAttention");
             return (Criteria) this;
         }
 
-        public Criteria andDAttentionNotEqualTo(String value) {
+        public Criteria andDAttentionNotEqualTo(Byte value) {
             addCriterion("D_Attention <>", value, "dAttention");
             return (Criteria) this;
         }
 
-        public Criteria andDAttentionGreaterThan(String value) {
+        public Criteria andDAttentionGreaterThan(Byte value) {
             addCriterion("D_Attention >", value, "dAttention");
             return (Criteria) this;
         }
 
-        public Criteria andDAttentionGreaterThanOrEqualTo(String value) {
+        public Criteria andDAttentionGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Attention >=", value, "dAttention");
             return (Criteria) this;
         }
 
-        public Criteria andDAttentionLessThan(String value) {
+        public Criteria andDAttentionLessThan(Byte value) {
             addCriterion("D_Attention <", value, "dAttention");
             return (Criteria) this;
         }
 
-        public Criteria andDAttentionLessThanOrEqualTo(String value) {
+        public Criteria andDAttentionLessThanOrEqualTo(Byte value) {
             addCriterion("D_Attention <=", value, "dAttention");
             return (Criteria) this;
         }
 
-        public Criteria andDAttentionLike(String value) {
-            addCriterion("D_Attention like", value, "dAttention");
-            return (Criteria) this;
-        }
-
-        public Criteria andDAttentionNotLike(String value) {
-            addCriterion("D_Attention not like", value, "dAttention");
-            return (Criteria) this;
-        }
-
-        public Criteria andDAttentionIn(List<String> values) {
+        public Criteria andDAttentionIn(List<Byte> values) {
             addCriterion("D_Attention in", values, "dAttention");
             return (Criteria) this;
         }
 
-        public Criteria andDAttentionNotIn(List<String> values) {
+        public Criteria andDAttentionNotIn(List<Byte> values) {
             addCriterion("D_Attention not in", values, "dAttention");
             return (Criteria) this;
         }
 
-        public Criteria andDAttentionBetween(String value1, String value2) {
+        public Criteria andDAttentionBetween(Byte value1, Byte value2) {
             addCriterion("D_Attention between", value1, value2, "dAttention");
             return (Criteria) this;
         }
 
-        public Criteria andDAttentionNotBetween(String value1, String value2) {
+        public Criteria andDAttentionNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Attention not between", value1, value2, "dAttention");
             return (Criteria) this;
         }
@@ -1644,62 +1434,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDExpressionEqualTo(String value) {
+        public Criteria andDExpressionEqualTo(Byte value) {
             addCriterion("D_Expression =", value, "dExpression");
             return (Criteria) this;
         }
 
-        public Criteria andDExpressionNotEqualTo(String value) {
+        public Criteria andDExpressionNotEqualTo(Byte value) {
             addCriterion("D_Expression <>", value, "dExpression");
             return (Criteria) this;
         }
 
-        public Criteria andDExpressionGreaterThan(String value) {
+        public Criteria andDExpressionGreaterThan(Byte value) {
             addCriterion("D_Expression >", value, "dExpression");
             return (Criteria) this;
         }
 
-        public Criteria andDExpressionGreaterThanOrEqualTo(String value) {
+        public Criteria andDExpressionGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Expression >=", value, "dExpression");
             return (Criteria) this;
         }
 
-        public Criteria andDExpressionLessThan(String value) {
+        public Criteria andDExpressionLessThan(Byte value) {
             addCriterion("D_Expression <", value, "dExpression");
             return (Criteria) this;
         }
 
-        public Criteria andDExpressionLessThanOrEqualTo(String value) {
+        public Criteria andDExpressionLessThanOrEqualTo(Byte value) {
             addCriterion("D_Expression <=", value, "dExpression");
             return (Criteria) this;
         }
 
-        public Criteria andDExpressionLike(String value) {
-            addCriterion("D_Expression like", value, "dExpression");
-            return (Criteria) this;
-        }
-
-        public Criteria andDExpressionNotLike(String value) {
-            addCriterion("D_Expression not like", value, "dExpression");
-            return (Criteria) this;
-        }
-
-        public Criteria andDExpressionIn(List<String> values) {
+        public Criteria andDExpressionIn(List<Byte> values) {
             addCriterion("D_Expression in", values, "dExpression");
             return (Criteria) this;
         }
 
-        public Criteria andDExpressionNotIn(List<String> values) {
+        public Criteria andDExpressionNotIn(List<Byte> values) {
             addCriterion("D_Expression not in", values, "dExpression");
             return (Criteria) this;
         }
 
-        public Criteria andDExpressionBetween(String value1, String value2) {
+        public Criteria andDExpressionBetween(Byte value1, Byte value2) {
             addCriterion("D_Expression between", value1, value2, "dExpression");
             return (Criteria) this;
         }
 
-        public Criteria andDExpressionNotBetween(String value1, String value2) {
+        public Criteria andDExpressionNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Expression not between", value1, value2, "dExpression");
             return (Criteria) this;
         }
@@ -1714,62 +1494,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDExtremeEmotionEqualTo(String value) {
+        public Criteria andDExtremeEmotionEqualTo(Byte value) {
             addCriterion("D_Extreme_Emotion =", value, "dExtremeEmotion");
             return (Criteria) this;
         }
 
-        public Criteria andDExtremeEmotionNotEqualTo(String value) {
+        public Criteria andDExtremeEmotionNotEqualTo(Byte value) {
             addCriterion("D_Extreme_Emotion <>", value, "dExtremeEmotion");
             return (Criteria) this;
         }
 
-        public Criteria andDExtremeEmotionGreaterThan(String value) {
+        public Criteria andDExtremeEmotionGreaterThan(Byte value) {
             addCriterion("D_Extreme_Emotion >", value, "dExtremeEmotion");
             return (Criteria) this;
         }
 
-        public Criteria andDExtremeEmotionGreaterThanOrEqualTo(String value) {
+        public Criteria andDExtremeEmotionGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Extreme_Emotion >=", value, "dExtremeEmotion");
             return (Criteria) this;
         }
 
-        public Criteria andDExtremeEmotionLessThan(String value) {
+        public Criteria andDExtremeEmotionLessThan(Byte value) {
             addCriterion("D_Extreme_Emotion <", value, "dExtremeEmotion");
             return (Criteria) this;
         }
 
-        public Criteria andDExtremeEmotionLessThanOrEqualTo(String value) {
+        public Criteria andDExtremeEmotionLessThanOrEqualTo(Byte value) {
             addCriterion("D_Extreme_Emotion <=", value, "dExtremeEmotion");
             return (Criteria) this;
         }
 
-        public Criteria andDExtremeEmotionLike(String value) {
-            addCriterion("D_Extreme_Emotion like", value, "dExtremeEmotion");
-            return (Criteria) this;
-        }
-
-        public Criteria andDExtremeEmotionNotLike(String value) {
-            addCriterion("D_Extreme_Emotion not like", value, "dExtremeEmotion");
-            return (Criteria) this;
-        }
-
-        public Criteria andDExtremeEmotionIn(List<String> values) {
+        public Criteria andDExtremeEmotionIn(List<Byte> values) {
             addCriterion("D_Extreme_Emotion in", values, "dExtremeEmotion");
             return (Criteria) this;
         }
 
-        public Criteria andDExtremeEmotionNotIn(List<String> values) {
+        public Criteria andDExtremeEmotionNotIn(List<Byte> values) {
             addCriterion("D_Extreme_Emotion not in", values, "dExtremeEmotion");
             return (Criteria) this;
         }
 
-        public Criteria andDExtremeEmotionBetween(String value1, String value2) {
+        public Criteria andDExtremeEmotionBetween(Byte value1, Byte value2) {
             addCriterion("D_Extreme_Emotion between", value1, value2, "dExtremeEmotion");
             return (Criteria) this;
         }
 
-        public Criteria andDExtremeEmotionNotBetween(String value1, String value2) {
+        public Criteria andDExtremeEmotionNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Extreme_Emotion not between", value1, value2, "dExtremeEmotion");
             return (Criteria) this;
         }
@@ -1784,62 +1554,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDExpectationEqualTo(String value) {
+        public Criteria andDExpectationEqualTo(Byte value) {
             addCriterion("D_Expectation =", value, "dExpectation");
             return (Criteria) this;
         }
 
-        public Criteria andDExpectationNotEqualTo(String value) {
+        public Criteria andDExpectationNotEqualTo(Byte value) {
             addCriterion("D_Expectation <>", value, "dExpectation");
             return (Criteria) this;
         }
 
-        public Criteria andDExpectationGreaterThan(String value) {
+        public Criteria andDExpectationGreaterThan(Byte value) {
             addCriterion("D_Expectation >", value, "dExpectation");
             return (Criteria) this;
         }
 
-        public Criteria andDExpectationGreaterThanOrEqualTo(String value) {
+        public Criteria andDExpectationGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Expectation >=", value, "dExpectation");
             return (Criteria) this;
         }
 
-        public Criteria andDExpectationLessThan(String value) {
+        public Criteria andDExpectationLessThan(Byte value) {
             addCriterion("D_Expectation <", value, "dExpectation");
             return (Criteria) this;
         }
 
-        public Criteria andDExpectationLessThanOrEqualTo(String value) {
+        public Criteria andDExpectationLessThanOrEqualTo(Byte value) {
             addCriterion("D_Expectation <=", value, "dExpectation");
             return (Criteria) this;
         }
 
-        public Criteria andDExpectationLike(String value) {
-            addCriterion("D_Expectation like", value, "dExpectation");
-            return (Criteria) this;
-        }
-
-        public Criteria andDExpectationNotLike(String value) {
-            addCriterion("D_Expectation not like", value, "dExpectation");
-            return (Criteria) this;
-        }
-
-        public Criteria andDExpectationIn(List<String> values) {
+        public Criteria andDExpectationIn(List<Byte> values) {
             addCriterion("D_Expectation in", values, "dExpectation");
             return (Criteria) this;
         }
 
-        public Criteria andDExpectationNotIn(List<String> values) {
+        public Criteria andDExpectationNotIn(List<Byte> values) {
             addCriterion("D_Expectation not in", values, "dExpectation");
             return (Criteria) this;
         }
 
-        public Criteria andDExpectationBetween(String value1, String value2) {
+        public Criteria andDExpectationBetween(Byte value1, Byte value2) {
             addCriterion("D_Expectation between", value1, value2, "dExpectation");
             return (Criteria) this;
         }
 
-        public Criteria andDExpectationNotBetween(String value1, String value2) {
+        public Criteria andDExpectationNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Expectation not between", value1, value2, "dExpectation");
             return (Criteria) this;
         }
@@ -1854,62 +1614,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDDetailEqualTo(String value) {
+        public Criteria andDDetailEqualTo(Byte value) {
             addCriterion("D_Detail =", value, "dDetail");
             return (Criteria) this;
         }
 
-        public Criteria andDDetailNotEqualTo(String value) {
+        public Criteria andDDetailNotEqualTo(Byte value) {
             addCriterion("D_Detail <>", value, "dDetail");
             return (Criteria) this;
         }
 
-        public Criteria andDDetailGreaterThan(String value) {
+        public Criteria andDDetailGreaterThan(Byte value) {
             addCriterion("D_Detail >", value, "dDetail");
             return (Criteria) this;
         }
 
-        public Criteria andDDetailGreaterThanOrEqualTo(String value) {
+        public Criteria andDDetailGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Detail >=", value, "dDetail");
             return (Criteria) this;
         }
 
-        public Criteria andDDetailLessThan(String value) {
+        public Criteria andDDetailLessThan(Byte value) {
             addCriterion("D_Detail <", value, "dDetail");
             return (Criteria) this;
         }
 
-        public Criteria andDDetailLessThanOrEqualTo(String value) {
+        public Criteria andDDetailLessThanOrEqualTo(Byte value) {
             addCriterion("D_Detail <=", value, "dDetail");
             return (Criteria) this;
         }
 
-        public Criteria andDDetailLike(String value) {
-            addCriterion("D_Detail like", value, "dDetail");
-            return (Criteria) this;
-        }
-
-        public Criteria andDDetailNotLike(String value) {
-            addCriterion("D_Detail not like", value, "dDetail");
-            return (Criteria) this;
-        }
-
-        public Criteria andDDetailIn(List<String> values) {
+        public Criteria andDDetailIn(List<Byte> values) {
             addCriterion("D_Detail in", values, "dDetail");
             return (Criteria) this;
         }
 
-        public Criteria andDDetailNotIn(List<String> values) {
+        public Criteria andDDetailNotIn(List<Byte> values) {
             addCriterion("D_Detail not in", values, "dDetail");
             return (Criteria) this;
         }
 
-        public Criteria andDDetailBetween(String value1, String value2) {
+        public Criteria andDDetailBetween(Byte value1, Byte value2) {
             addCriterion("D_Detail between", value1, value2, "dDetail");
             return (Criteria) this;
         }
 
-        public Criteria andDDetailNotBetween(String value1, String value2) {
+        public Criteria andDDetailNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Detail not between", value1, value2, "dDetail");
             return (Criteria) this;
         }
@@ -1924,62 +1674,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDComprehensionEqualTo(String value) {
+        public Criteria andDComprehensionEqualTo(Byte value) {
             addCriterion("D_Comprehension =", value, "dComprehension");
             return (Criteria) this;
         }
 
-        public Criteria andDComprehensionNotEqualTo(String value) {
+        public Criteria andDComprehensionNotEqualTo(Byte value) {
             addCriterion("D_Comprehension <>", value, "dComprehension");
             return (Criteria) this;
         }
 
-        public Criteria andDComprehensionGreaterThan(String value) {
+        public Criteria andDComprehensionGreaterThan(Byte value) {
             addCriterion("D_Comprehension >", value, "dComprehension");
             return (Criteria) this;
         }
 
-        public Criteria andDComprehensionGreaterThanOrEqualTo(String value) {
+        public Criteria andDComprehensionGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Comprehension >=", value, "dComprehension");
             return (Criteria) this;
         }
 
-        public Criteria andDComprehensionLessThan(String value) {
+        public Criteria andDComprehensionLessThan(Byte value) {
             addCriterion("D_Comprehension <", value, "dComprehension");
             return (Criteria) this;
         }
 
-        public Criteria andDComprehensionLessThanOrEqualTo(String value) {
+        public Criteria andDComprehensionLessThanOrEqualTo(Byte value) {
             addCriterion("D_Comprehension <=", value, "dComprehension");
             return (Criteria) this;
         }
 
-        public Criteria andDComprehensionLike(String value) {
-            addCriterion("D_Comprehension like", value, "dComprehension");
-            return (Criteria) this;
-        }
-
-        public Criteria andDComprehensionNotLike(String value) {
-            addCriterion("D_Comprehension not like", value, "dComprehension");
-            return (Criteria) this;
-        }
-
-        public Criteria andDComprehensionIn(List<String> values) {
+        public Criteria andDComprehensionIn(List<Byte> values) {
             addCriterion("D_Comprehension in", values, "dComprehension");
             return (Criteria) this;
         }
 
-        public Criteria andDComprehensionNotIn(List<String> values) {
+        public Criteria andDComprehensionNotIn(List<Byte> values) {
             addCriterion("D_Comprehension not in", values, "dComprehension");
             return (Criteria) this;
         }
 
-        public Criteria andDComprehensionBetween(String value1, String value2) {
+        public Criteria andDComprehensionBetween(Byte value1, Byte value2) {
             addCriterion("D_Comprehension between", value1, value2, "dComprehension");
             return (Criteria) this;
         }
 
-        public Criteria andDComprehensionNotBetween(String value1, String value2) {
+        public Criteria andDComprehensionNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Comprehension not between", value1, value2, "dComprehension");
             return (Criteria) this;
         }
@@ -1994,62 +1734,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDInternetResearchEqualTo(String value) {
+        public Criteria andDInternetResearchEqualTo(Byte value) {
             addCriterion("D_Internet_Research =", value, "dInternetResearch");
             return (Criteria) this;
         }
 
-        public Criteria andDInternetResearchNotEqualTo(String value) {
+        public Criteria andDInternetResearchNotEqualTo(Byte value) {
             addCriterion("D_Internet_Research <>", value, "dInternetResearch");
             return (Criteria) this;
         }
 
-        public Criteria andDInternetResearchGreaterThan(String value) {
+        public Criteria andDInternetResearchGreaterThan(Byte value) {
             addCriterion("D_Internet_Research >", value, "dInternetResearch");
             return (Criteria) this;
         }
 
-        public Criteria andDInternetResearchGreaterThanOrEqualTo(String value) {
+        public Criteria andDInternetResearchGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Internet_Research >=", value, "dInternetResearch");
             return (Criteria) this;
         }
 
-        public Criteria andDInternetResearchLessThan(String value) {
+        public Criteria andDInternetResearchLessThan(Byte value) {
             addCriterion("D_Internet_Research <", value, "dInternetResearch");
             return (Criteria) this;
         }
 
-        public Criteria andDInternetResearchLessThanOrEqualTo(String value) {
+        public Criteria andDInternetResearchLessThanOrEqualTo(Byte value) {
             addCriterion("D_Internet_Research <=", value, "dInternetResearch");
             return (Criteria) this;
         }
 
-        public Criteria andDInternetResearchLike(String value) {
-            addCriterion("D_Internet_Research like", value, "dInternetResearch");
-            return (Criteria) this;
-        }
-
-        public Criteria andDInternetResearchNotLike(String value) {
-            addCriterion("D_Internet_Research not like", value, "dInternetResearch");
-            return (Criteria) this;
-        }
-
-        public Criteria andDInternetResearchIn(List<String> values) {
+        public Criteria andDInternetResearchIn(List<Byte> values) {
             addCriterion("D_Internet_Research in", values, "dInternetResearch");
             return (Criteria) this;
         }
 
-        public Criteria andDInternetResearchNotIn(List<String> values) {
+        public Criteria andDInternetResearchNotIn(List<Byte> values) {
             addCriterion("D_Internet_Research not in", values, "dInternetResearch");
             return (Criteria) this;
         }
 
-        public Criteria andDInternetResearchBetween(String value1, String value2) {
+        public Criteria andDInternetResearchBetween(Byte value1, Byte value2) {
             addCriterion("D_Internet_Research between", value1, value2, "dInternetResearch");
             return (Criteria) this;
         }
 
-        public Criteria andDInternetResearchNotBetween(String value1, String value2) {
+        public Criteria andDInternetResearchNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Internet_Research not between", value1, value2, "dInternetResearch");
             return (Criteria) this;
         }
@@ -2064,62 +1794,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDSuspiciousEqualTo(String value) {
+        public Criteria andDSuspiciousEqualTo(Byte value) {
             addCriterion("D_Suspicious =", value, "dSuspicious");
             return (Criteria) this;
         }
 
-        public Criteria andDSuspiciousNotEqualTo(String value) {
+        public Criteria andDSuspiciousNotEqualTo(Byte value) {
             addCriterion("D_Suspicious <>", value, "dSuspicious");
             return (Criteria) this;
         }
 
-        public Criteria andDSuspiciousGreaterThan(String value) {
+        public Criteria andDSuspiciousGreaterThan(Byte value) {
             addCriterion("D_Suspicious >", value, "dSuspicious");
             return (Criteria) this;
         }
 
-        public Criteria andDSuspiciousGreaterThanOrEqualTo(String value) {
+        public Criteria andDSuspiciousGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Suspicious >=", value, "dSuspicious");
             return (Criteria) this;
         }
 
-        public Criteria andDSuspiciousLessThan(String value) {
+        public Criteria andDSuspiciousLessThan(Byte value) {
             addCriterion("D_Suspicious <", value, "dSuspicious");
             return (Criteria) this;
         }
 
-        public Criteria andDSuspiciousLessThanOrEqualTo(String value) {
+        public Criteria andDSuspiciousLessThanOrEqualTo(Byte value) {
             addCriterion("D_Suspicious <=", value, "dSuspicious");
             return (Criteria) this;
         }
 
-        public Criteria andDSuspiciousLike(String value) {
-            addCriterion("D_Suspicious like", value, "dSuspicious");
-            return (Criteria) this;
-        }
-
-        public Criteria andDSuspiciousNotLike(String value) {
-            addCriterion("D_Suspicious not like", value, "dSuspicious");
-            return (Criteria) this;
-        }
-
-        public Criteria andDSuspiciousIn(List<String> values) {
+        public Criteria andDSuspiciousIn(List<Byte> values) {
             addCriterion("D_Suspicious in", values, "dSuspicious");
             return (Criteria) this;
         }
 
-        public Criteria andDSuspiciousNotIn(List<String> values) {
+        public Criteria andDSuspiciousNotIn(List<Byte> values) {
             addCriterion("D_Suspicious not in", values, "dSuspicious");
             return (Criteria) this;
         }
 
-        public Criteria andDSuspiciousBetween(String value1, String value2) {
+        public Criteria andDSuspiciousBetween(Byte value1, Byte value2) {
             addCriterion("D_Suspicious between", value1, value2, "dSuspicious");
             return (Criteria) this;
         }
 
-        public Criteria andDSuspiciousNotBetween(String value1, String value2) {
+        public Criteria andDSuspiciousNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Suspicious not between", value1, value2, "dSuspicious");
             return (Criteria) this;
         }
@@ -2134,62 +1854,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDRepairEqualTo(String value) {
+        public Criteria andDRepairEqualTo(Byte value) {
             addCriterion("D_Repair =", value, "dRepair");
             return (Criteria) this;
         }
 
-        public Criteria andDRepairNotEqualTo(String value) {
+        public Criteria andDRepairNotEqualTo(Byte value) {
             addCriterion("D_Repair <>", value, "dRepair");
             return (Criteria) this;
         }
 
-        public Criteria andDRepairGreaterThan(String value) {
+        public Criteria andDRepairGreaterThan(Byte value) {
             addCriterion("D_Repair >", value, "dRepair");
             return (Criteria) this;
         }
 
-        public Criteria andDRepairGreaterThanOrEqualTo(String value) {
+        public Criteria andDRepairGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Repair >=", value, "dRepair");
             return (Criteria) this;
         }
 
-        public Criteria andDRepairLessThan(String value) {
+        public Criteria andDRepairLessThan(Byte value) {
             addCriterion("D_Repair <", value, "dRepair");
             return (Criteria) this;
         }
 
-        public Criteria andDRepairLessThanOrEqualTo(String value) {
+        public Criteria andDRepairLessThanOrEqualTo(Byte value) {
             addCriterion("D_Repair <=", value, "dRepair");
             return (Criteria) this;
         }
 
-        public Criteria andDRepairLike(String value) {
-            addCriterion("D_Repair like", value, "dRepair");
-            return (Criteria) this;
-        }
-
-        public Criteria andDRepairNotLike(String value) {
-            addCriterion("D_Repair not like", value, "dRepair");
-            return (Criteria) this;
-        }
-
-        public Criteria andDRepairIn(List<String> values) {
+        public Criteria andDRepairIn(List<Byte> values) {
             addCriterion("D_Repair in", values, "dRepair");
             return (Criteria) this;
         }
 
-        public Criteria andDRepairNotIn(List<String> values) {
+        public Criteria andDRepairNotIn(List<Byte> values) {
             addCriterion("D_Repair not in", values, "dRepair");
             return (Criteria) this;
         }
 
-        public Criteria andDRepairBetween(String value1, String value2) {
+        public Criteria andDRepairBetween(Byte value1, Byte value2) {
             addCriterion("D_Repair between", value1, value2, "dRepair");
             return (Criteria) this;
         }
 
-        public Criteria andDRepairNotBetween(String value1, String value2) {
+        public Criteria andDRepairNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Repair not between", value1, value2, "dRepair");
             return (Criteria) this;
         }
@@ -2204,62 +1914,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDImpulsionEqualTo(String value) {
+        public Criteria andDImpulsionEqualTo(Byte value) {
             addCriterion("D_Impulsion =", value, "dImpulsion");
             return (Criteria) this;
         }
 
-        public Criteria andDImpulsionNotEqualTo(String value) {
+        public Criteria andDImpulsionNotEqualTo(Byte value) {
             addCriterion("D_Impulsion <>", value, "dImpulsion");
             return (Criteria) this;
         }
 
-        public Criteria andDImpulsionGreaterThan(String value) {
+        public Criteria andDImpulsionGreaterThan(Byte value) {
             addCriterion("D_Impulsion >", value, "dImpulsion");
             return (Criteria) this;
         }
 
-        public Criteria andDImpulsionGreaterThanOrEqualTo(String value) {
+        public Criteria andDImpulsionGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Impulsion >=", value, "dImpulsion");
             return (Criteria) this;
         }
 
-        public Criteria andDImpulsionLessThan(String value) {
+        public Criteria andDImpulsionLessThan(Byte value) {
             addCriterion("D_Impulsion <", value, "dImpulsion");
             return (Criteria) this;
         }
 
-        public Criteria andDImpulsionLessThanOrEqualTo(String value) {
+        public Criteria andDImpulsionLessThanOrEqualTo(Byte value) {
             addCriterion("D_Impulsion <=", value, "dImpulsion");
             return (Criteria) this;
         }
 
-        public Criteria andDImpulsionLike(String value) {
-            addCriterion("D_Impulsion like", value, "dImpulsion");
-            return (Criteria) this;
-        }
-
-        public Criteria andDImpulsionNotLike(String value) {
-            addCriterion("D_Impulsion not like", value, "dImpulsion");
-            return (Criteria) this;
-        }
-
-        public Criteria andDImpulsionIn(List<String> values) {
+        public Criteria andDImpulsionIn(List<Byte> values) {
             addCriterion("D_Impulsion in", values, "dImpulsion");
             return (Criteria) this;
         }
 
-        public Criteria andDImpulsionNotIn(List<String> values) {
+        public Criteria andDImpulsionNotIn(List<Byte> values) {
             addCriterion("D_Impulsion not in", values, "dImpulsion");
             return (Criteria) this;
         }
 
-        public Criteria andDImpulsionBetween(String value1, String value2) {
+        public Criteria andDImpulsionBetween(Byte value1, Byte value2) {
             addCriterion("D_Impulsion between", value1, value2, "dImpulsion");
             return (Criteria) this;
         }
 
-        public Criteria andDImpulsionNotBetween(String value1, String value2) {
+        public Criteria andDImpulsionNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Impulsion not between", value1, value2, "dImpulsion");
             return (Criteria) this;
         }
@@ -2274,62 +1974,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDPriceEqualTo(String value) {
+        public Criteria andDPriceEqualTo(Byte value) {
             addCriterion("D_Price =", value, "dPrice");
             return (Criteria) this;
         }
 
-        public Criteria andDPriceNotEqualTo(String value) {
+        public Criteria andDPriceNotEqualTo(Byte value) {
             addCriterion("D_Price <>", value, "dPrice");
             return (Criteria) this;
         }
 
-        public Criteria andDPriceGreaterThan(String value) {
+        public Criteria andDPriceGreaterThan(Byte value) {
             addCriterion("D_Price >", value, "dPrice");
             return (Criteria) this;
         }
 
-        public Criteria andDPriceGreaterThanOrEqualTo(String value) {
+        public Criteria andDPriceGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Price >=", value, "dPrice");
             return (Criteria) this;
         }
 
-        public Criteria andDPriceLessThan(String value) {
+        public Criteria andDPriceLessThan(Byte value) {
             addCriterion("D_Price <", value, "dPrice");
             return (Criteria) this;
         }
 
-        public Criteria andDPriceLessThanOrEqualTo(String value) {
+        public Criteria andDPriceLessThanOrEqualTo(Byte value) {
             addCriterion("D_Price <=", value, "dPrice");
             return (Criteria) this;
         }
 
-        public Criteria andDPriceLike(String value) {
-            addCriterion("D_Price like", value, "dPrice");
-            return (Criteria) this;
-        }
-
-        public Criteria andDPriceNotLike(String value) {
-            addCriterion("D_Price not like", value, "dPrice");
-            return (Criteria) this;
-        }
-
-        public Criteria andDPriceIn(List<String> values) {
+        public Criteria andDPriceIn(List<Byte> values) {
             addCriterion("D_Price in", values, "dPrice");
             return (Criteria) this;
         }
 
-        public Criteria andDPriceNotIn(List<String> values) {
+        public Criteria andDPriceNotIn(List<Byte> values) {
             addCriterion("D_Price not in", values, "dPrice");
             return (Criteria) this;
         }
 
-        public Criteria andDPriceBetween(String value1, String value2) {
+        public Criteria andDPriceBetween(Byte value1, Byte value2) {
             addCriterion("D_Price between", value1, value2, "dPrice");
             return (Criteria) this;
         }
 
-        public Criteria andDPriceNotBetween(String value1, String value2) {
+        public Criteria andDPriceNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Price not between", value1, value2, "dPrice");
             return (Criteria) this;
         }
@@ -2344,62 +2034,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDSlanderEqualTo(String value) {
+        public Criteria andDSlanderEqualTo(Byte value) {
             addCriterion("D_Slander =", value, "dSlander");
             return (Criteria) this;
         }
 
-        public Criteria andDSlanderNotEqualTo(String value) {
+        public Criteria andDSlanderNotEqualTo(Byte value) {
             addCriterion("D_Slander <>", value, "dSlander");
             return (Criteria) this;
         }
 
-        public Criteria andDSlanderGreaterThan(String value) {
+        public Criteria andDSlanderGreaterThan(Byte value) {
             addCriterion("D_Slander >", value, "dSlander");
             return (Criteria) this;
         }
 
-        public Criteria andDSlanderGreaterThanOrEqualTo(String value) {
+        public Criteria andDSlanderGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Slander >=", value, "dSlander");
             return (Criteria) this;
         }
 
-        public Criteria andDSlanderLessThan(String value) {
+        public Criteria andDSlanderLessThan(Byte value) {
             addCriterion("D_Slander <", value, "dSlander");
             return (Criteria) this;
         }
 
-        public Criteria andDSlanderLessThanOrEqualTo(String value) {
+        public Criteria andDSlanderLessThanOrEqualTo(Byte value) {
             addCriterion("D_Slander <=", value, "dSlander");
             return (Criteria) this;
         }
 
-        public Criteria andDSlanderLike(String value) {
-            addCriterion("D_Slander like", value, "dSlander");
-            return (Criteria) this;
-        }
-
-        public Criteria andDSlanderNotLike(String value) {
-            addCriterion("D_Slander not like", value, "dSlander");
-            return (Criteria) this;
-        }
-
-        public Criteria andDSlanderIn(List<String> values) {
+        public Criteria andDSlanderIn(List<Byte> values) {
             addCriterion("D_Slander in", values, "dSlander");
             return (Criteria) this;
         }
 
-        public Criteria andDSlanderNotIn(List<String> values) {
+        public Criteria andDSlanderNotIn(List<Byte> values) {
             addCriterion("D_Slander not in", values, "dSlander");
             return (Criteria) this;
         }
 
-        public Criteria andDSlanderBetween(String value1, String value2) {
+        public Criteria andDSlanderBetween(Byte value1, Byte value2) {
             addCriterion("D_Slander between", value1, value2, "dSlander");
             return (Criteria) this;
         }
 
-        public Criteria andDSlanderNotBetween(String value1, String value2) {
+        public Criteria andDSlanderNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Slander not between", value1, value2, "dSlander");
             return (Criteria) this;
         }
@@ -2414,62 +2094,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDForwardnessEqualTo(String value) {
+        public Criteria andDForwardnessEqualTo(Byte value) {
             addCriterion("D_Forwardness =", value, "dForwardness");
             return (Criteria) this;
         }
 
-        public Criteria andDForwardnessNotEqualTo(String value) {
+        public Criteria andDForwardnessNotEqualTo(Byte value) {
             addCriterion("D_Forwardness <>", value, "dForwardness");
             return (Criteria) this;
         }
 
-        public Criteria andDForwardnessGreaterThan(String value) {
+        public Criteria andDForwardnessGreaterThan(Byte value) {
             addCriterion("D_Forwardness >", value, "dForwardness");
             return (Criteria) this;
         }
 
-        public Criteria andDForwardnessGreaterThanOrEqualTo(String value) {
+        public Criteria andDForwardnessGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Forwardness >=", value, "dForwardness");
             return (Criteria) this;
         }
 
-        public Criteria andDForwardnessLessThan(String value) {
+        public Criteria andDForwardnessLessThan(Byte value) {
             addCriterion("D_Forwardness <", value, "dForwardness");
             return (Criteria) this;
         }
 
-        public Criteria andDForwardnessLessThanOrEqualTo(String value) {
+        public Criteria andDForwardnessLessThanOrEqualTo(Byte value) {
             addCriterion("D_Forwardness <=", value, "dForwardness");
             return (Criteria) this;
         }
 
-        public Criteria andDForwardnessLike(String value) {
-            addCriterion("D_Forwardness like", value, "dForwardness");
-            return (Criteria) this;
-        }
-
-        public Criteria andDForwardnessNotLike(String value) {
-            addCriterion("D_Forwardness not like", value, "dForwardness");
-            return (Criteria) this;
-        }
-
-        public Criteria andDForwardnessIn(List<String> values) {
+        public Criteria andDForwardnessIn(List<Byte> values) {
             addCriterion("D_Forwardness in", values, "dForwardness");
             return (Criteria) this;
         }
 
-        public Criteria andDForwardnessNotIn(List<String> values) {
+        public Criteria andDForwardnessNotIn(List<Byte> values) {
             addCriterion("D_Forwardness not in", values, "dForwardness");
             return (Criteria) this;
         }
 
-        public Criteria andDForwardnessBetween(String value1, String value2) {
+        public Criteria andDForwardnessBetween(Byte value1, Byte value2) {
             addCriterion("D_Forwardness between", value1, value2, "dForwardness");
             return (Criteria) this;
         }
 
-        public Criteria andDForwardnessNotBetween(String value1, String value2) {
+        public Criteria andDForwardnessNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Forwardness not between", value1, value2, "dForwardness");
             return (Criteria) this;
         }
@@ -2484,62 +2154,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDPraiseEqualTo(String value) {
+        public Criteria andDPraiseEqualTo(Byte value) {
             addCriterion("D_Praise =", value, "dPraise");
             return (Criteria) this;
         }
 
-        public Criteria andDPraiseNotEqualTo(String value) {
+        public Criteria andDPraiseNotEqualTo(Byte value) {
             addCriterion("D_Praise <>", value, "dPraise");
             return (Criteria) this;
         }
 
-        public Criteria andDPraiseGreaterThan(String value) {
+        public Criteria andDPraiseGreaterThan(Byte value) {
             addCriterion("D_Praise >", value, "dPraise");
             return (Criteria) this;
         }
 
-        public Criteria andDPraiseGreaterThanOrEqualTo(String value) {
+        public Criteria andDPraiseGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Praise >=", value, "dPraise");
             return (Criteria) this;
         }
 
-        public Criteria andDPraiseLessThan(String value) {
+        public Criteria andDPraiseLessThan(Byte value) {
             addCriterion("D_Praise <", value, "dPraise");
             return (Criteria) this;
         }
 
-        public Criteria andDPraiseLessThanOrEqualTo(String value) {
+        public Criteria andDPraiseLessThanOrEqualTo(Byte value) {
             addCriterion("D_Praise <=", value, "dPraise");
             return (Criteria) this;
         }
 
-        public Criteria andDPraiseLike(String value) {
-            addCriterion("D_Praise like", value, "dPraise");
-            return (Criteria) this;
-        }
-
-        public Criteria andDPraiseNotLike(String value) {
-            addCriterion("D_Praise not like", value, "dPraise");
-            return (Criteria) this;
-        }
-
-        public Criteria andDPraiseIn(List<String> values) {
+        public Criteria andDPraiseIn(List<Byte> values) {
             addCriterion("D_Praise in", values, "dPraise");
             return (Criteria) this;
         }
 
-        public Criteria andDPraiseNotIn(List<String> values) {
+        public Criteria andDPraiseNotIn(List<Byte> values) {
             addCriterion("D_Praise not in", values, "dPraise");
             return (Criteria) this;
         }
 
-        public Criteria andDPraiseBetween(String value1, String value2) {
+        public Criteria andDPraiseBetween(Byte value1, Byte value2) {
             addCriterion("D_Praise between", value1, value2, "dPraise");
             return (Criteria) this;
         }
 
-        public Criteria andDPraiseNotBetween(String value1, String value2) {
+        public Criteria andDPraiseNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Praise not between", value1, value2, "dPraise");
             return (Criteria) this;
         }
@@ -2554,62 +2214,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDQuarrelEqualTo(String value) {
+        public Criteria andDQuarrelEqualTo(Byte value) {
             addCriterion("D_Quarrel =", value, "dQuarrel");
             return (Criteria) this;
         }
 
-        public Criteria andDQuarrelNotEqualTo(String value) {
+        public Criteria andDQuarrelNotEqualTo(Byte value) {
             addCriterion("D_Quarrel <>", value, "dQuarrel");
             return (Criteria) this;
         }
 
-        public Criteria andDQuarrelGreaterThan(String value) {
+        public Criteria andDQuarrelGreaterThan(Byte value) {
             addCriterion("D_Quarrel >", value, "dQuarrel");
             return (Criteria) this;
         }
 
-        public Criteria andDQuarrelGreaterThanOrEqualTo(String value) {
+        public Criteria andDQuarrelGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Quarrel >=", value, "dQuarrel");
             return (Criteria) this;
         }
 
-        public Criteria andDQuarrelLessThan(String value) {
+        public Criteria andDQuarrelLessThan(Byte value) {
             addCriterion("D_Quarrel <", value, "dQuarrel");
             return (Criteria) this;
         }
 
-        public Criteria andDQuarrelLessThanOrEqualTo(String value) {
+        public Criteria andDQuarrelLessThanOrEqualTo(Byte value) {
             addCriterion("D_Quarrel <=", value, "dQuarrel");
             return (Criteria) this;
         }
 
-        public Criteria andDQuarrelLike(String value) {
-            addCriterion("D_Quarrel like", value, "dQuarrel");
-            return (Criteria) this;
-        }
-
-        public Criteria andDQuarrelNotLike(String value) {
-            addCriterion("D_Quarrel not like", value, "dQuarrel");
-            return (Criteria) this;
-        }
-
-        public Criteria andDQuarrelIn(List<String> values) {
+        public Criteria andDQuarrelIn(List<Byte> values) {
             addCriterion("D_Quarrel in", values, "dQuarrel");
             return (Criteria) this;
         }
 
-        public Criteria andDQuarrelNotIn(List<String> values) {
+        public Criteria andDQuarrelNotIn(List<Byte> values) {
             addCriterion("D_Quarrel not in", values, "dQuarrel");
             return (Criteria) this;
         }
 
-        public Criteria andDQuarrelBetween(String value1, String value2) {
+        public Criteria andDQuarrelBetween(Byte value1, Byte value2) {
             addCriterion("D_Quarrel between", value1, value2, "dQuarrel");
             return (Criteria) this;
         }
 
-        public Criteria andDQuarrelNotBetween(String value1, String value2) {
+        public Criteria andDQuarrelNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Quarrel not between", value1, value2, "dQuarrel");
             return (Criteria) this;
         }
@@ -2624,62 +2274,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDArtDetailEqualTo(String value) {
+        public Criteria andDArtDetailEqualTo(Byte value) {
             addCriterion("D_Art_Detail =", value, "dArtDetail");
             return (Criteria) this;
         }
 
-        public Criteria andDArtDetailNotEqualTo(String value) {
+        public Criteria andDArtDetailNotEqualTo(Byte value) {
             addCriterion("D_Art_Detail <>", value, "dArtDetail");
             return (Criteria) this;
         }
 
-        public Criteria andDArtDetailGreaterThan(String value) {
+        public Criteria andDArtDetailGreaterThan(Byte value) {
             addCriterion("D_Art_Detail >", value, "dArtDetail");
             return (Criteria) this;
         }
 
-        public Criteria andDArtDetailGreaterThanOrEqualTo(String value) {
+        public Criteria andDArtDetailGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Art_Detail >=", value, "dArtDetail");
             return (Criteria) this;
         }
 
-        public Criteria andDArtDetailLessThan(String value) {
+        public Criteria andDArtDetailLessThan(Byte value) {
             addCriterion("D_Art_Detail <", value, "dArtDetail");
             return (Criteria) this;
         }
 
-        public Criteria andDArtDetailLessThanOrEqualTo(String value) {
+        public Criteria andDArtDetailLessThanOrEqualTo(Byte value) {
             addCriterion("D_Art_Detail <=", value, "dArtDetail");
             return (Criteria) this;
         }
 
-        public Criteria andDArtDetailLike(String value) {
-            addCriterion("D_Art_Detail like", value, "dArtDetail");
-            return (Criteria) this;
-        }
-
-        public Criteria andDArtDetailNotLike(String value) {
-            addCriterion("D_Art_Detail not like", value, "dArtDetail");
-            return (Criteria) this;
-        }
-
-        public Criteria andDArtDetailIn(List<String> values) {
+        public Criteria andDArtDetailIn(List<Byte> values) {
             addCriterion("D_Art_Detail in", values, "dArtDetail");
             return (Criteria) this;
         }
 
-        public Criteria andDArtDetailNotIn(List<String> values) {
+        public Criteria andDArtDetailNotIn(List<Byte> values) {
             addCriterion("D_Art_Detail not in", values, "dArtDetail");
             return (Criteria) this;
         }
 
-        public Criteria andDArtDetailBetween(String value1, String value2) {
+        public Criteria andDArtDetailBetween(Byte value1, Byte value2) {
             addCriterion("D_Art_Detail between", value1, value2, "dArtDetail");
             return (Criteria) this;
         }
 
-        public Criteria andDArtDetailNotBetween(String value1, String value2) {
+        public Criteria andDArtDetailNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Art_Detail not between", value1, value2, "dArtDetail");
             return (Criteria) this;
         }
@@ -2694,62 +2334,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDScarEqualTo(String value) {
+        public Criteria andDScarEqualTo(Byte value) {
             addCriterion("D_Scar =", value, "dScar");
             return (Criteria) this;
         }
 
-        public Criteria andDScarNotEqualTo(String value) {
+        public Criteria andDScarNotEqualTo(Byte value) {
             addCriterion("D_Scar <>", value, "dScar");
             return (Criteria) this;
         }
 
-        public Criteria andDScarGreaterThan(String value) {
+        public Criteria andDScarGreaterThan(Byte value) {
             addCriterion("D_Scar >", value, "dScar");
             return (Criteria) this;
         }
 
-        public Criteria andDScarGreaterThanOrEqualTo(String value) {
+        public Criteria andDScarGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Scar >=", value, "dScar");
             return (Criteria) this;
         }
 
-        public Criteria andDScarLessThan(String value) {
+        public Criteria andDScarLessThan(Byte value) {
             addCriterion("D_Scar <", value, "dScar");
             return (Criteria) this;
         }
 
-        public Criteria andDScarLessThanOrEqualTo(String value) {
+        public Criteria andDScarLessThanOrEqualTo(Byte value) {
             addCriterion("D_Scar <=", value, "dScar");
             return (Criteria) this;
         }
 
-        public Criteria andDScarLike(String value) {
-            addCriterion("D_Scar like", value, "dScar");
-            return (Criteria) this;
-        }
-
-        public Criteria andDScarNotLike(String value) {
-            addCriterion("D_Scar not like", value, "dScar");
-            return (Criteria) this;
-        }
-
-        public Criteria andDScarIn(List<String> values) {
+        public Criteria andDScarIn(List<Byte> values) {
             addCriterion("D_Scar in", values, "dScar");
             return (Criteria) this;
         }
 
-        public Criteria andDScarNotIn(List<String> values) {
+        public Criteria andDScarNotIn(List<Byte> values) {
             addCriterion("D_Scar not in", values, "dScar");
             return (Criteria) this;
         }
 
-        public Criteria andDScarBetween(String value1, String value2) {
+        public Criteria andDScarBetween(Byte value1, Byte value2) {
             addCriterion("D_Scar between", value1, value2, "dScar");
             return (Criteria) this;
         }
 
-        public Criteria andDScarNotBetween(String value1, String value2) {
+        public Criteria andDScarNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Scar not between", value1, value2, "dScar");
             return (Criteria) this;
         }
@@ -2764,62 +2394,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDFailEqualTo(String value) {
+        public Criteria andDFailEqualTo(Byte value) {
             addCriterion("D_Fail =", value, "dFail");
             return (Criteria) this;
         }
 
-        public Criteria andDFailNotEqualTo(String value) {
+        public Criteria andDFailNotEqualTo(Byte value) {
             addCriterion("D_Fail <>", value, "dFail");
             return (Criteria) this;
         }
 
-        public Criteria andDFailGreaterThan(String value) {
+        public Criteria andDFailGreaterThan(Byte value) {
             addCriterion("D_Fail >", value, "dFail");
             return (Criteria) this;
         }
 
-        public Criteria andDFailGreaterThanOrEqualTo(String value) {
+        public Criteria andDFailGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Fail >=", value, "dFail");
             return (Criteria) this;
         }
 
-        public Criteria andDFailLessThan(String value) {
+        public Criteria andDFailLessThan(Byte value) {
             addCriterion("D_Fail <", value, "dFail");
             return (Criteria) this;
         }
 
-        public Criteria andDFailLessThanOrEqualTo(String value) {
+        public Criteria andDFailLessThanOrEqualTo(Byte value) {
             addCriterion("D_Fail <=", value, "dFail");
             return (Criteria) this;
         }
 
-        public Criteria andDFailLike(String value) {
-            addCriterion("D_Fail like", value, "dFail");
-            return (Criteria) this;
-        }
-
-        public Criteria andDFailNotLike(String value) {
-            addCriterion("D_Fail not like", value, "dFail");
-            return (Criteria) this;
-        }
-
-        public Criteria andDFailIn(List<String> values) {
+        public Criteria andDFailIn(List<Byte> values) {
             addCriterion("D_Fail in", values, "dFail");
             return (Criteria) this;
         }
 
-        public Criteria andDFailNotIn(List<String> values) {
+        public Criteria andDFailNotIn(List<Byte> values) {
             addCriterion("D_Fail not in", values, "dFail");
             return (Criteria) this;
         }
 
-        public Criteria andDFailBetween(String value1, String value2) {
+        public Criteria andDFailBetween(Byte value1, Byte value2) {
             addCriterion("D_Fail between", value1, value2, "dFail");
             return (Criteria) this;
         }
 
-        public Criteria andDFailNotBetween(String value1, String value2) {
+        public Criteria andDFailNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Fail not between", value1, value2, "dFail");
             return (Criteria) this;
         }
@@ -2834,62 +2454,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDNurseEqualTo(String value) {
+        public Criteria andDNurseEqualTo(Byte value) {
             addCriterion("D_Nurse =", value, "dNurse");
             return (Criteria) this;
         }
 
-        public Criteria andDNurseNotEqualTo(String value) {
+        public Criteria andDNurseNotEqualTo(Byte value) {
             addCriterion("D_Nurse <>", value, "dNurse");
             return (Criteria) this;
         }
 
-        public Criteria andDNurseGreaterThan(String value) {
+        public Criteria andDNurseGreaterThan(Byte value) {
             addCriterion("D_Nurse >", value, "dNurse");
             return (Criteria) this;
         }
 
-        public Criteria andDNurseGreaterThanOrEqualTo(String value) {
+        public Criteria andDNurseGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Nurse >=", value, "dNurse");
             return (Criteria) this;
         }
 
-        public Criteria andDNurseLessThan(String value) {
+        public Criteria andDNurseLessThan(Byte value) {
             addCriterion("D_Nurse <", value, "dNurse");
             return (Criteria) this;
         }
 
-        public Criteria andDNurseLessThanOrEqualTo(String value) {
+        public Criteria andDNurseLessThanOrEqualTo(Byte value) {
             addCriterion("D_Nurse <=", value, "dNurse");
             return (Criteria) this;
         }
 
-        public Criteria andDNurseLike(String value) {
-            addCriterion("D_Nurse like", value, "dNurse");
-            return (Criteria) this;
-        }
-
-        public Criteria andDNurseNotLike(String value) {
-            addCriterion("D_Nurse not like", value, "dNurse");
-            return (Criteria) this;
-        }
-
-        public Criteria andDNurseIn(List<String> values) {
+        public Criteria andDNurseIn(List<Byte> values) {
             addCriterion("D_Nurse in", values, "dNurse");
             return (Criteria) this;
         }
 
-        public Criteria andDNurseNotIn(List<String> values) {
+        public Criteria andDNurseNotIn(List<Byte> values) {
             addCriterion("D_Nurse not in", values, "dNurse");
             return (Criteria) this;
         }
 
-        public Criteria andDNurseBetween(String value1, String value2) {
+        public Criteria andDNurseBetween(Byte value1, Byte value2) {
             addCriterion("D_Nurse between", value1, value2, "dNurse");
             return (Criteria) this;
         }
 
-        public Criteria andDNurseNotBetween(String value1, String value2) {
+        public Criteria andDNurseNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Nurse not between", value1, value2, "dNurse");
             return (Criteria) this;
         }
@@ -2904,62 +2514,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDPerfectEqualTo(String value) {
+        public Criteria andDPerfectEqualTo(Byte value) {
             addCriterion("D_Perfect =", value, "dPerfect");
             return (Criteria) this;
         }
 
-        public Criteria andDPerfectNotEqualTo(String value) {
+        public Criteria andDPerfectNotEqualTo(Byte value) {
             addCriterion("D_Perfect <>", value, "dPerfect");
             return (Criteria) this;
         }
 
-        public Criteria andDPerfectGreaterThan(String value) {
+        public Criteria andDPerfectGreaterThan(Byte value) {
             addCriterion("D_Perfect >", value, "dPerfect");
             return (Criteria) this;
         }
 
-        public Criteria andDPerfectGreaterThanOrEqualTo(String value) {
+        public Criteria andDPerfectGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Perfect >=", value, "dPerfect");
             return (Criteria) this;
         }
 
-        public Criteria andDPerfectLessThan(String value) {
+        public Criteria andDPerfectLessThan(Byte value) {
             addCriterion("D_Perfect <", value, "dPerfect");
             return (Criteria) this;
         }
 
-        public Criteria andDPerfectLessThanOrEqualTo(String value) {
+        public Criteria andDPerfectLessThanOrEqualTo(Byte value) {
             addCriterion("D_Perfect <=", value, "dPerfect");
             return (Criteria) this;
         }
 
-        public Criteria andDPerfectLike(String value) {
-            addCriterion("D_Perfect like", value, "dPerfect");
-            return (Criteria) this;
-        }
-
-        public Criteria andDPerfectNotLike(String value) {
-            addCriterion("D_Perfect not like", value, "dPerfect");
-            return (Criteria) this;
-        }
-
-        public Criteria andDPerfectIn(List<String> values) {
+        public Criteria andDPerfectIn(List<Byte> values) {
             addCriterion("D_Perfect in", values, "dPerfect");
             return (Criteria) this;
         }
 
-        public Criteria andDPerfectNotIn(List<String> values) {
+        public Criteria andDPerfectNotIn(List<Byte> values) {
             addCriterion("D_Perfect not in", values, "dPerfect");
             return (Criteria) this;
         }
 
-        public Criteria andDPerfectBetween(String value1, String value2) {
+        public Criteria andDPerfectBetween(Byte value1, Byte value2) {
             addCriterion("D_Perfect between", value1, value2, "dPerfect");
             return (Criteria) this;
         }
 
-        public Criteria andDPerfectNotBetween(String value1, String value2) {
+        public Criteria andDPerfectNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Perfect not between", value1, value2, "dPerfect");
             return (Criteria) this;
         }
@@ -2974,62 +2574,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andDParanoidEqualTo(String value) {
+        public Criteria andDParanoidEqualTo(Byte value) {
             addCriterion("D_Paranoid =", value, "dParanoid");
             return (Criteria) this;
         }
 
-        public Criteria andDParanoidNotEqualTo(String value) {
+        public Criteria andDParanoidNotEqualTo(Byte value) {
             addCriterion("D_Paranoid <>", value, "dParanoid");
             return (Criteria) this;
         }
 
-        public Criteria andDParanoidGreaterThan(String value) {
+        public Criteria andDParanoidGreaterThan(Byte value) {
             addCriterion("D_Paranoid >", value, "dParanoid");
             return (Criteria) this;
         }
 
-        public Criteria andDParanoidGreaterThanOrEqualTo(String value) {
+        public Criteria andDParanoidGreaterThanOrEqualTo(Byte value) {
             addCriterion("D_Paranoid >=", value, "dParanoid");
             return (Criteria) this;
         }
 
-        public Criteria andDParanoidLessThan(String value) {
+        public Criteria andDParanoidLessThan(Byte value) {
             addCriterion("D_Paranoid <", value, "dParanoid");
             return (Criteria) this;
         }
 
-        public Criteria andDParanoidLessThanOrEqualTo(String value) {
+        public Criteria andDParanoidLessThanOrEqualTo(Byte value) {
             addCriterion("D_Paranoid <=", value, "dParanoid");
             return (Criteria) this;
         }
 
-        public Criteria andDParanoidLike(String value) {
-            addCriterion("D_Paranoid like", value, "dParanoid");
-            return (Criteria) this;
-        }
-
-        public Criteria andDParanoidNotLike(String value) {
-            addCriterion("D_Paranoid not like", value, "dParanoid");
-            return (Criteria) this;
-        }
-
-        public Criteria andDParanoidIn(List<String> values) {
+        public Criteria andDParanoidIn(List<Byte> values) {
             addCriterion("D_Paranoid in", values, "dParanoid");
             return (Criteria) this;
         }
 
-        public Criteria andDParanoidNotIn(List<String> values) {
+        public Criteria andDParanoidNotIn(List<Byte> values) {
             addCriterion("D_Paranoid not in", values, "dParanoid");
             return (Criteria) this;
         }
 
-        public Criteria andDParanoidBetween(String value1, String value2) {
+        public Criteria andDParanoidBetween(Byte value1, Byte value2) {
             addCriterion("D_Paranoid between", value1, value2, "dParanoid");
             return (Criteria) this;
         }
 
-        public Criteria andDParanoidNotBetween(String value1, String value2) {
+        public Criteria andDParanoidNotBetween(Byte value1, Byte value2) {
             addCriterion("D_Paranoid not between", value1, value2, "dParanoid");
             return (Criteria) this;
         }
@@ -3044,62 +2634,52 @@ public class QuestionExample {
             return (Criteria) this;
         }
 
-        public Criteria andJudgementEqualTo(String value) {
+        public Criteria andJudgementEqualTo(Byte value) {
             addCriterion("Judgement =", value, "judgement");
             return (Criteria) this;
         }
 
-        public Criteria andJudgementNotEqualTo(String value) {
+        public Criteria andJudgementNotEqualTo(Byte value) {
             addCriterion("Judgement <>", value, "judgement");
             return (Criteria) this;
         }
 
-        public Criteria andJudgementGreaterThan(String value) {
+        public Criteria andJudgementGreaterThan(Byte value) {
             addCriterion("Judgement >", value, "judgement");
             return (Criteria) this;
         }
 
-        public Criteria andJudgementGreaterThanOrEqualTo(String value) {
+        public Criteria andJudgementGreaterThanOrEqualTo(Byte value) {
             addCriterion("Judgement >=", value, "judgement");
             return (Criteria) this;
         }
 
-        public Criteria andJudgementLessThan(String value) {
+        public Criteria andJudgementLessThan(Byte value) {
             addCriterion("Judgement <", value, "judgement");
             return (Criteria) this;
         }
 
-        public Criteria andJudgementLessThanOrEqualTo(String value) {
+        public Criteria andJudgementLessThanOrEqualTo(Byte value) {
             addCriterion("Judgement <=", value, "judgement");
             return (Criteria) this;
         }
 
-        public Criteria andJudgementLike(String value) {
-            addCriterion("Judgement like", value, "judgement");
-            return (Criteria) this;
-        }
-
-        public Criteria andJudgementNotLike(String value) {
-            addCriterion("Judgement not like", value, "judgement");
-            return (Criteria) this;
-        }
-
-        public Criteria andJudgementIn(List<String> values) {
+        public Criteria andJudgementIn(List<Byte> values) {
             addCriterion("Judgement in", values, "judgement");
             return (Criteria) this;
         }
 
-        public Criteria andJudgementNotIn(List<String> values) {
+        public Criteria andJudgementNotIn(List<Byte> values) {
             addCriterion("Judgement not in", values, "judgement");
             return (Criteria) this;
         }
 
-        public Criteria andJudgementBetween(String value1, String value2) {
+        public Criteria andJudgementBetween(Byte value1, Byte value2) {
             addCriterion("Judgement between", value1, value2, "judgement");
             return (Criteria) this;
         }
 
-        public Criteria andJudgementNotBetween(String value1, String value2) {
+        public Criteria andJudgementNotBetween(Byte value1, Byte value2) {
             addCriterion("Judgement not between", value1, value2, "judgement");
             return (Criteria) this;
         }

@@ -3,48 +3,48 @@
 <mapper namespace="com.vito.mvc.dao.QuestionMapper">
   <resultMap id="BaseResultMap" type="com.vito.mvc.bean.Question">
     <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="P_Sex" jdbcType="VARCHAR" property="pSex" />
-    <result column="P_Age" jdbcType="VARCHAR" property="pAge" />
-    <result column="P_Constellation" jdbcType="VARCHAR" property="pConstellation" />
-    <result column="P_Blood_Type" jdbcType="VARCHAR" property="pBloodType" />
-    <result column="P_Occupation_Risk" jdbcType="VARCHAR" property="pOccupationRisk" />
-    <result column="P_Education" jdbcType="VARCHAR" property="pEducation" />
-    <result column="P_Marriage_Status" jdbcType="VARCHAR" property="pMarriageStatus" />
-    <result column="P_Surgery_History" jdbcType="VARCHAR" property="pSurgeryHistory" />
-    <result column="P_Comparison" jdbcType="VARCHAR" property="pComparison" />
-    <result column="P_Others_Satisfaction" jdbcType="VARCHAR" property="pOthersSatisfaction" />
-    <result column="P_Change_Life" jdbcType="VARCHAR" property="pChangeLife" />
-    <result column="P_Change_Destiny" jdbcType="VARCHAR" property="pChangeDestiny" />
-    <result column="P_Kinsfolk_Attitude" jdbcType="VARCHAR" property="pKinsfolkAttitude" />
-    <result column="P_Unhappiness_Family" jdbcType="VARCHAR" property="pUnhappinessFamily" />
-    <result column="P_Mental_Disorder" jdbcType="VARCHAR" property="pMentalDisorder" />
-    <result column="P_Selfie" jdbcType="VARCHAR" property="pSelfie" />
-    <result column="P_Appearance_Attention" jdbcType="VARCHAR" property="pAppearanceAttention" />
-    <result column="D_Charm" jdbcType="VARCHAR" property="dCharm" />
-    <result column="D_Subjective" jdbcType="VARCHAR" property="dSubjective" />
-    <result column="D_Modesty" jdbcType="VARCHAR" property="dModesty" />
-    <result column="D_Attention" jdbcType="VARCHAR" property="dAttention" />
-    <result column="D_Expression" jdbcType="VARCHAR" property="dExpression" />
-    <result column="D_Extreme_Emotion" jdbcType="VARCHAR" property="dExtremeEmotion" />
-    <result column="D_Expectation" jdbcType="VARCHAR" property="dExpectation" />
-    <result column="D_Detail" jdbcType="VARCHAR" property="dDetail" />
-    <result column="D_Comprehension" jdbcType="VARCHAR" property="dComprehension" />
-    <result column="D_Internet_Research" jdbcType="VARCHAR" property="dInternetResearch" />
-    <result column="D_Suspicious" jdbcType="VARCHAR" property="dSuspicious" />
-    <result column="D_Repair" jdbcType="VARCHAR" property="dRepair" />
-    <result column="D_Impulsion" jdbcType="VARCHAR" property="dImpulsion" />
-    <result column="D_Price" jdbcType="VARCHAR" property="dPrice" />
-    <result column="D_Slander" jdbcType="VARCHAR" property="dSlander" />
-    <result column="D_Forwardness" jdbcType="VARCHAR" property="dForwardness" />
-    <result column="D_Praise" jdbcType="VARCHAR" property="dPraise" />
-    <result column="D_Quarrel" jdbcType="VARCHAR" property="dQuarrel" />
-    <result column="D_Art_Detail" jdbcType="VARCHAR" property="dArtDetail" />
-    <result column="D_Scar" jdbcType="VARCHAR" property="dScar" />
-    <result column="D_Fail" jdbcType="VARCHAR" property="dFail" />
-    <result column="D_Nurse" jdbcType="VARCHAR" property="dNurse" />
-    <result column="D_Perfect" jdbcType="VARCHAR" property="dPerfect" />
-    <result column="D_Paranoid" jdbcType="VARCHAR" property="dParanoid" />
-    <result column="Judgement" jdbcType="VARCHAR" property="judgement" />
+    <result column="P_Sex" jdbcType="TINYINT" property="pSex" />
+    <result column="P_Age" jdbcType="TINYINT" property="pAge" />
+    <result column="P_Constellation" jdbcType="TINYINT" property="pConstellation" />
+    <result column="P_Blood_Type" jdbcType="TINYINT" property="pBloodType" />
+    <result column="P_Occupation_Risk" jdbcType="TINYINT" property="pOccupationRisk" />
+    <result column="P_Education" jdbcType="TINYINT" property="pEducation" />
+    <result column="P_Marriage_Status" jdbcType="TINYINT" property="pMarriageStatus" />
+    <result column="P_Surgery_History" jdbcType="TINYINT" property="pSurgeryHistory" />
+    <result column="P_Comparison" jdbcType="TINYINT" property="pComparison" />
+    <result column="P_Others_Satisfaction" jdbcType="TINYINT" property="pOthersSatisfaction" />
+    <result column="P_Change_Life" jdbcType="TINYINT" property="pChangeLife" />
+    <result column="P_Change_Destiny" jdbcType="TINYINT" property="pChangeDestiny" />
+    <result column="P_Kinsfolk_Attitude" jdbcType="TINYINT" property="pKinsfolkAttitude" />
+    <result column="P_Unhappiness_Family" jdbcType="TINYINT" property="pUnhappinessFamily" />
+    <result column="P_Mental_Disorder" jdbcType="TINYINT" property="pMentalDisorder" />
+    <result column="P_Selfie" jdbcType="TINYINT" property="pSelfie" />
+    <result column="P_Appearance_Attention" jdbcType="TINYINT" property="pAppearanceAttention" />
+    <result column="D_Charm" jdbcType="TINYINT" property="dCharm" />
+    <result column="D_Subjective" jdbcType="TINYINT" property="dSubjective" />
+    <result column="D_Modesty" jdbcType="TINYINT" property="dModesty" />
+    <result column="D_Attention" jdbcType="TINYINT" property="dAttention" />
+    <result column="D_Expression" jdbcType="TINYINT" property="dExpression" />
+    <result column="D_Extreme_Emotion" jdbcType="TINYINT" property="dExtremeEmotion" />
+    <result column="D_Expectation" jdbcType="TINYINT" property="dExpectation" />
+    <result column="D_Detail" jdbcType="TINYINT" property="dDetail" />
+    <result column="D_Comprehension" jdbcType="TINYINT" property="dComprehension" />
+    <result column="D_Internet_Research" jdbcType="TINYINT" property="dInternetResearch" />
+    <result column="D_Suspicious" jdbcType="TINYINT" property="dSuspicious" />
+    <result column="D_Repair" jdbcType="TINYINT" property="dRepair" />
+    <result column="D_Impulsion" jdbcType="TINYINT" property="dImpulsion" />
+    <result column="D_Price" jdbcType="TINYINT" property="dPrice" />
+    <result column="D_Slander" jdbcType="TINYINT" property="dSlander" />
+    <result column="D_Forwardness" jdbcType="TINYINT" property="dForwardness" />
+    <result column="D_Praise" jdbcType="TINYINT" property="dPraise" />
+    <result column="D_Quarrel" jdbcType="TINYINT" property="dQuarrel" />
+    <result column="D_Art_Detail" jdbcType="TINYINT" property="dArtDetail" />
+    <result column="D_Scar" jdbcType="TINYINT" property="dScar" />
+    <result column="D_Fail" jdbcType="TINYINT" property="dFail" />
+    <result column="D_Nurse" jdbcType="TINYINT" property="dNurse" />
+    <result column="D_Perfect" jdbcType="TINYINT" property="dPerfect" />
+    <result column="D_Paranoid" jdbcType="TINYINT" property="dParanoid" />
+    <result column="Judgement" jdbcType="TINYINT" property="judgement" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -143,7 +143,7 @@
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.vito.mvc.bean.Question">
+  <insert id="insert" parameterType="com.vito.mvc.bean.Question" useGeneratedKeys="true" keyProperty="id">
     insert into tbl_question (id, P_Sex, P_Age, 
       P_Constellation, P_Blood_Type, P_Occupation_Risk, 
       P_Education, P_Marriage_Status, P_Surgery_History, 
@@ -159,21 +159,21 @@
       D_Art_Detail, D_Scar, D_Fail, 
       D_Nurse, D_Perfect, D_Paranoid, 
       Judgement)
-    values (#{id,jdbcType=INTEGER}, #{pSex,jdbcType=VARCHAR}, #{pAge,jdbcType=VARCHAR}, 
-      #{pConstellation,jdbcType=VARCHAR}, #{pBloodType,jdbcType=VARCHAR}, #{pOccupationRisk,jdbcType=VARCHAR}, 
-      #{pEducation,jdbcType=VARCHAR}, #{pMarriageStatus,jdbcType=VARCHAR}, #{pSurgeryHistory,jdbcType=VARCHAR}, 
-      #{pComparison,jdbcType=VARCHAR}, #{pOthersSatisfaction,jdbcType=VARCHAR}, #{pChangeLife,jdbcType=VARCHAR}, 
-      #{pChangeDestiny,jdbcType=VARCHAR}, #{pKinsfolkAttitude,jdbcType=VARCHAR}, #{pUnhappinessFamily,jdbcType=VARCHAR}, 
-      #{pMentalDisorder,jdbcType=VARCHAR}, #{pSelfie,jdbcType=VARCHAR}, #{pAppearanceAttention,jdbcType=VARCHAR}, 
-      #{dCharm,jdbcType=VARCHAR}, #{dSubjective,jdbcType=VARCHAR}, #{dModesty,jdbcType=VARCHAR}, 
-      #{dAttention,jdbcType=VARCHAR}, #{dExpression,jdbcType=VARCHAR}, #{dExtremeEmotion,jdbcType=VARCHAR}, 
-      #{dExpectation,jdbcType=VARCHAR}, #{dDetail,jdbcType=VARCHAR}, #{dComprehension,jdbcType=VARCHAR}, 
-      #{dInternetResearch,jdbcType=VARCHAR}, #{dSuspicious,jdbcType=VARCHAR}, #{dRepair,jdbcType=VARCHAR}, 
-      #{dImpulsion,jdbcType=VARCHAR}, #{dPrice,jdbcType=VARCHAR}, #{dSlander,jdbcType=VARCHAR}, 
-      #{dForwardness,jdbcType=VARCHAR}, #{dPraise,jdbcType=VARCHAR}, #{dQuarrel,jdbcType=VARCHAR}, 
-      #{dArtDetail,jdbcType=VARCHAR}, #{dScar,jdbcType=VARCHAR}, #{dFail,jdbcType=VARCHAR}, 
-      #{dNurse,jdbcType=VARCHAR}, #{dPerfect,jdbcType=VARCHAR}, #{dParanoid,jdbcType=VARCHAR}, 
-      #{judgement,jdbcType=VARCHAR})
+    values (#{id,jdbcType=INTEGER}, #{pSex,jdbcType=TINYINT}, #{pAge,jdbcType=TINYINT}, 
+      #{pConstellation,jdbcType=TINYINT}, #{pBloodType,jdbcType=TINYINT}, #{pOccupationRisk,jdbcType=TINYINT}, 
+      #{pEducation,jdbcType=TINYINT}, #{pMarriageStatus,jdbcType=TINYINT}, #{pSurgeryHistory,jdbcType=TINYINT}, 
+      #{pComparison,jdbcType=TINYINT}, #{pOthersSatisfaction,jdbcType=TINYINT}, #{pChangeLife,jdbcType=TINYINT}, 
+      #{pChangeDestiny,jdbcType=TINYINT}, #{pKinsfolkAttitude,jdbcType=TINYINT}, #{pUnhappinessFamily,jdbcType=TINYINT}, 
+      #{pMentalDisorder,jdbcType=TINYINT}, #{pSelfie,jdbcType=TINYINT}, #{pAppearanceAttention,jdbcType=TINYINT}, 
+      #{dCharm,jdbcType=TINYINT}, #{dSubjective,jdbcType=TINYINT}, #{dModesty,jdbcType=TINYINT}, 
+      #{dAttention,jdbcType=TINYINT}, #{dExpression,jdbcType=TINYINT}, #{dExtremeEmotion,jdbcType=TINYINT}, 
+      #{dExpectation,jdbcType=TINYINT}, #{dDetail,jdbcType=TINYINT}, #{dComprehension,jdbcType=TINYINT}, 
+      #{dInternetResearch,jdbcType=TINYINT}, #{dSuspicious,jdbcType=TINYINT}, #{dRepair,jdbcType=TINYINT}, 
+      #{dImpulsion,jdbcType=TINYINT}, #{dPrice,jdbcType=TINYINT}, #{dSlander,jdbcType=TINYINT}, 
+      #{dForwardness,jdbcType=TINYINT}, #{dPraise,jdbcType=TINYINT}, #{dQuarrel,jdbcType=TINYINT}, 
+      #{dArtDetail,jdbcType=TINYINT}, #{dScar,jdbcType=TINYINT}, #{dFail,jdbcType=TINYINT}, 
+      #{dNurse,jdbcType=TINYINT}, #{dPerfect,jdbcType=TINYINT}, #{dParanoid,jdbcType=TINYINT}, 
+      #{judgement,jdbcType=TINYINT})
   </insert>
   <insert id="insertSelective" parameterType="com.vito.mvc.bean.Question">
     insert into tbl_question
@@ -313,130 +313,130 @@
         #{id,jdbcType=INTEGER},
       </if>
       <if test="pSex != null">
-        #{pSex,jdbcType=VARCHAR},
+        #{pSex,jdbcType=TINYINT},
       </if>
       <if test="pAge != null">
-        #{pAge,jdbcType=VARCHAR},
+        #{pAge,jdbcType=TINYINT},
       </if>
       <if test="pConstellation != null">
-        #{pConstellation,jdbcType=VARCHAR},
+        #{pConstellation,jdbcType=TINYINT},
       </if>
       <if test="pBloodType != null">
-        #{pBloodType,jdbcType=VARCHAR},
+        #{pBloodType,jdbcType=TINYINT},
       </if>
       <if test="pOccupationRisk != null">
-        #{pOccupationRisk,jdbcType=VARCHAR},
+        #{pOccupationRisk,jdbcType=TINYINT},
       </if>
       <if test="pEducation != null">
-        #{pEducation,jdbcType=VARCHAR},
+        #{pEducation,jdbcType=TINYINT},
       </if>
       <if test="pMarriageStatus != null">
-        #{pMarriageStatus,jdbcType=VARCHAR},
+        #{pMarriageStatus,jdbcType=TINYINT},
       </if>
       <if test="pSurgeryHistory != null">
-        #{pSurgeryHistory,jdbcType=VARCHAR},
+        #{pSurgeryHistory,jdbcType=TINYINT},
       </if>
       <if test="pComparison != null">
-        #{pComparison,jdbcType=VARCHAR},
+        #{pComparison,jdbcType=TINYINT},
       </if>
       <if test="pOthersSatisfaction != null">
-        #{pOthersSatisfaction,jdbcType=VARCHAR},
+        #{pOthersSatisfaction,jdbcType=TINYINT},
       </if>
       <if test="pChangeLife != null">
-        #{pChangeLife,jdbcType=VARCHAR},
+        #{pChangeLife,jdbcType=TINYINT},
       </if>
       <if test="pChangeDestiny != null">
-        #{pChangeDestiny,jdbcType=VARCHAR},
+        #{pChangeDestiny,jdbcType=TINYINT},
       </if>
       <if test="pKinsfolkAttitude != null">
-        #{pKinsfolkAttitude,jdbcType=VARCHAR},
+        #{pKinsfolkAttitude,jdbcType=TINYINT},
       </if>
       <if test="pUnhappinessFamily != null">
-        #{pUnhappinessFamily,jdbcType=VARCHAR},
+        #{pUnhappinessFamily,jdbcType=TINYINT},
       </if>
       <if test="pMentalDisorder != null">
-        #{pMentalDisorder,jdbcType=VARCHAR},
+        #{pMentalDisorder,jdbcType=TINYINT},
       </if>
       <if test="pSelfie != null">
-        #{pSelfie,jdbcType=VARCHAR},
+        #{pSelfie,jdbcType=TINYINT},
       </if>
       <if test="pAppearanceAttention != null">
-        #{pAppearanceAttention,jdbcType=VARCHAR},
+        #{pAppearanceAttention,jdbcType=TINYINT},
       </if>
       <if test="dCharm != null">
-        #{dCharm,jdbcType=VARCHAR},
+        #{dCharm,jdbcType=TINYINT},
       </if>
       <if test="dSubjective != null">
-        #{dSubjective,jdbcType=VARCHAR},
+        #{dSubjective,jdbcType=TINYINT},
       </if>
       <if test="dModesty != null">
-        #{dModesty,jdbcType=VARCHAR},
+        #{dModesty,jdbcType=TINYINT},
       </if>
       <if test="dAttention != null">
-        #{dAttention,jdbcType=VARCHAR},
+        #{dAttention,jdbcType=TINYINT},
       </if>
       <if test="dExpression != null">
-        #{dExpression,jdbcType=VARCHAR},
+        #{dExpression,jdbcType=TINYINT},
       </if>
       <if test="dExtremeEmotion != null">
-        #{dExtremeEmotion,jdbcType=VARCHAR},
+        #{dExtremeEmotion,jdbcType=TINYINT},
       </if>
       <if test="dExpectation != null">
-        #{dExpectation,jdbcType=VARCHAR},
+        #{dExpectation,jdbcType=TINYINT},
       </if>
       <if test="dDetail != null">
-        #{dDetail,jdbcType=VARCHAR},
+        #{dDetail,jdbcType=TINYINT},
       </if>
       <if test="dComprehension != null">
-        #{dComprehension,jdbcType=VARCHAR},
+        #{dComprehension,jdbcType=TINYINT},
       </if>
       <if test="dInternetResearch != null">
-        #{dInternetResearch,jdbcType=VARCHAR},
+        #{dInternetResearch,jdbcType=TINYINT},
       </if>
       <if test="dSuspicious != null">
-        #{dSuspicious,jdbcType=VARCHAR},
+        #{dSuspicious,jdbcType=TINYINT},
       </if>
       <if test="dRepair != null">
-        #{dRepair,jdbcType=VARCHAR},
+        #{dRepair,jdbcType=TINYINT},
       </if>
       <if test="dImpulsion != null">
-        #{dImpulsion,jdbcType=VARCHAR},
+        #{dImpulsion,jdbcType=TINYINT},
       </if>
       <if test="dPrice != null">
-        #{dPrice,jdbcType=VARCHAR},
+        #{dPrice,jdbcType=TINYINT},
       </if>
       <if test="dSlander != null">
-        #{dSlander,jdbcType=VARCHAR},
+        #{dSlander,jdbcType=TINYINT},
       </if>
       <if test="dForwardness != null">
-        #{dForwardness,jdbcType=VARCHAR},
+        #{dForwardness,jdbcType=TINYINT},
       </if>
       <if test="dPraise != null">
-        #{dPraise,jdbcType=VARCHAR},
+        #{dPraise,jdbcType=TINYINT},
       </if>
       <if test="dQuarrel != null">
-        #{dQuarrel,jdbcType=VARCHAR},
+        #{dQuarrel,jdbcType=TINYINT},
       </if>
       <if test="dArtDetail != null">
-        #{dArtDetail,jdbcType=VARCHAR},
+        #{dArtDetail,jdbcType=TINYINT},
       </if>
       <if test="dScar != null">
-        #{dScar,jdbcType=VARCHAR},
+        #{dScar,jdbcType=TINYINT},
       </if>
       <if test="dFail != null">
-        #{dFail,jdbcType=VARCHAR},
+        #{dFail,jdbcType=TINYINT},
       </if>
       <if test="dNurse != null">
-        #{dNurse,jdbcType=VARCHAR},
+        #{dNurse,jdbcType=TINYINT},
       </if>
       <if test="dPerfect != null">
-        #{dPerfect,jdbcType=VARCHAR},
+        #{dPerfect,jdbcType=TINYINT},
       </if>
       <if test="dParanoid != null">
-        #{dParanoid,jdbcType=VARCHAR},
+        #{dParanoid,jdbcType=TINYINT},
       </if>
       <if test="judgement != null">
-        #{judgement,jdbcType=VARCHAR},
+        #{judgement,jdbcType=TINYINT},
       </if>
     </trim>
   </insert>
@@ -453,130 +453,130 @@
         id = #{record.id,jdbcType=INTEGER},
       </if>
       <if test="record.pSex != null">
-        P_Sex = #{record.pSex,jdbcType=VARCHAR},
+        P_Sex = #{record.pSex,jdbcType=TINYINT},
       </if>
       <if test="record.pAge != null">
-        P_Age = #{record.pAge,jdbcType=VARCHAR},
+        P_Age = #{record.pAge,jdbcType=TINYINT},
       </if>
       <if test="record.pConstellation != null">
-        P_Constellation = #{record.pConstellation,jdbcType=VARCHAR},
+        P_Constellation = #{record.pConstellation,jdbcType=TINYINT},
       </if>
       <if test="record.pBloodType != null">
-        P_Blood_Type = #{record.pBloodType,jdbcType=VARCHAR},
+        P_Blood_Type = #{record.pBloodType,jdbcType=TINYINT},
       </if>
       <if test="record.pOccupationRisk != null">
-        P_Occupation_Risk = #{record.pOccupationRisk,jdbcType=VARCHAR},
+        P_Occupation_Risk = #{record.pOccupationRisk,jdbcType=TINYINT},
       </if>
       <if test="record.pEducation != null">
-        P_Education = #{record.pEducation,jdbcType=VARCHAR},
+        P_Education = #{record.pEducation,jdbcType=TINYINT},
       </if>
       <if test="record.pMarriageStatus != null">
-        P_Marriage_Status = #{record.pMarriageStatus,jdbcType=VARCHAR},
+        P_Marriage_Status = #{record.pMarriageStatus,jdbcType=TINYINT},
       </if>
       <if test="record.pSurgeryHistory != null">
-        P_Surgery_History = #{record.pSurgeryHistory,jdbcType=VARCHAR},
+        P_Surgery_History = #{record.pSurgeryHistory,jdbcType=TINYINT},
       </if>
       <if test="record.pComparison != null">
-        P_Comparison = #{record.pComparison,jdbcType=VARCHAR},
+        P_Comparison = #{record.pComparison,jdbcType=TINYINT},
       </if>
       <if test="record.pOthersSatisfaction != null">
-        P_Others_Satisfaction = #{record.pOthersSatisfaction,jdbcType=VARCHAR},
+        P_Others_Satisfaction = #{record.pOthersSatisfaction,jdbcType=TINYINT},
       </if>
       <if test="record.pChangeLife != null">
-        P_Change_Life = #{record.pChangeLife,jdbcType=VARCHAR},
+        P_Change_Life = #{record.pChangeLife,jdbcType=TINYINT},
       </if>
       <if test="record.pChangeDestiny != null">
-        P_Change_Destiny = #{record.pChangeDestiny,jdbcType=VARCHAR},
+        P_Change_Destiny = #{record.pChangeDestiny,jdbcType=TINYINT},
       </if>
       <if test="record.pKinsfolkAttitude != null">
-        P_Kinsfolk_Attitude = #{record.pKinsfolkAttitude,jdbcType=VARCHAR},
+        P_Kinsfolk_Attitude = #{record.pKinsfolkAttitude,jdbcType=TINYINT},
       </if>
       <if test="record.pUnhappinessFamily != null">
-        P_Unhappiness_Family = #{record.pUnhappinessFamily,jdbcType=VARCHAR},
+        P_Unhappiness_Family = #{record.pUnhappinessFamily,jdbcType=TINYINT},
       </if>
       <if test="record.pMentalDisorder != null">
-        P_Mental_Disorder = #{record.pMentalDisorder,jdbcType=VARCHAR},
+        P_Mental_Disorder = #{record.pMentalDisorder,jdbcType=TINYINT},
       </if>
       <if test="record.pSelfie != null">
-        P_Selfie = #{record.pSelfie,jdbcType=VARCHAR},
+        P_Selfie = #{record.pSelfie,jdbcType=TINYINT},
       </if>
       <if test="record.pAppearanceAttention != null">
-        P_Appearance_Attention = #{record.pAppearanceAttention,jdbcType=VARCHAR},
+        P_Appearance_Attention = #{record.pAppearanceAttention,jdbcType=TINYINT},
       </if>
       <if test="record.dCharm != null">
-        D_Charm = #{record.dCharm,jdbcType=VARCHAR},
+        D_Charm = #{record.dCharm,jdbcType=TINYINT},
       </if>
       <if test="record.dSubjective != null">
-        D_Subjective = #{record.dSubjective,jdbcType=VARCHAR},
+        D_Subjective = #{record.dSubjective,jdbcType=TINYINT},
       </if>
       <if test="record.dModesty != null">
-        D_Modesty = #{record.dModesty,jdbcType=VARCHAR},
+        D_Modesty = #{record.dModesty,jdbcType=TINYINT},
       </if>
       <if test="record.dAttention != null">
-        D_Attention = #{record.dAttention,jdbcType=VARCHAR},
+        D_Attention = #{record.dAttention,jdbcType=TINYINT},
       </if>
       <if test="record.dExpression != null">
-        D_Expression = #{record.dExpression,jdbcType=VARCHAR},
+        D_Expression = #{record.dExpression,jdbcType=TINYINT},
       </if>
       <if test="record.dExtremeEmotion != null">
-        D_Extreme_Emotion = #{record.dExtremeEmotion,jdbcType=VARCHAR},
+        D_Extreme_Emotion = #{record.dExtremeEmotion,jdbcType=TINYINT},
       </if>
       <if test="record.dExpectation != null">
-        D_Expectation = #{record.dExpectation,jdbcType=VARCHAR},
+        D_Expectation = #{record.dExpectation,jdbcType=TINYINT},
       </if>
       <if test="record.dDetail != null">
-        D_Detail = #{record.dDetail,jdbcType=VARCHAR},
+        D_Detail = #{record.dDetail,jdbcType=TINYINT},
       </if>
       <if test="record.dComprehension != null">
-        D_Comprehension = #{record.dComprehension,jdbcType=VARCHAR},
+        D_Comprehension = #{record.dComprehension,jdbcType=TINYINT},
       </if>
       <if test="record.dInternetResearch != null">
-        D_Internet_Research = #{record.dInternetResearch,jdbcType=VARCHAR},
+        D_Internet_Research = #{record.dInternetResearch,jdbcType=TINYINT},
       </if>
       <if test="record.dSuspicious != null">
-        D_Suspicious = #{record.dSuspicious,jdbcType=VARCHAR},
+        D_Suspicious = #{record.dSuspicious,jdbcType=TINYINT},
       </if>
       <if test="record.dRepair != null">
-        D_Repair = #{record.dRepair,jdbcType=VARCHAR},
+        D_Repair = #{record.dRepair,jdbcType=TINYINT},
       </if>
       <if test="record.dImpulsion != null">
-        D_Impulsion = #{record.dImpulsion,jdbcType=VARCHAR},
+        D_Impulsion = #{record.dImpulsion,jdbcType=TINYINT},
       </if>
       <if test="record.dPrice != null">
-        D_Price = #{record.dPrice,jdbcType=VARCHAR},
+        D_Price = #{record.dPrice,jdbcType=TINYINT},
       </if>
       <if test="record.dSlander != null">
-        D_Slander = #{record.dSlander,jdbcType=VARCHAR},
+        D_Slander = #{record.dSlander,jdbcType=TINYINT},
       </if>
       <if test="record.dForwardness != null">
-        D_Forwardness = #{record.dForwardness,jdbcType=VARCHAR},
+        D_Forwardness = #{record.dForwardness,jdbcType=TINYINT},
       </if>
       <if test="record.dPraise != null">
-        D_Praise = #{record.dPraise,jdbcType=VARCHAR},
+        D_Praise = #{record.dPraise,jdbcType=TINYINT},
       </if>
       <if test="record.dQuarrel != null">
-        D_Quarrel = #{record.dQuarrel,jdbcType=VARCHAR},
+        D_Quarrel = #{record.dQuarrel,jdbcType=TINYINT},
       </if>
       <if test="record.dArtDetail != null">
-        D_Art_Detail = #{record.dArtDetail,jdbcType=VARCHAR},
+        D_Art_Detail = #{record.dArtDetail,jdbcType=TINYINT},
       </if>
       <if test="record.dScar != null">
-        D_Scar = #{record.dScar,jdbcType=VARCHAR},
+        D_Scar = #{record.dScar,jdbcType=TINYINT},
       </if>
       <if test="record.dFail != null">
-        D_Fail = #{record.dFail,jdbcType=VARCHAR},
+        D_Fail = #{record.dFail,jdbcType=TINYINT},
       </if>
       <if test="record.dNurse != null">
-        D_Nurse = #{record.dNurse,jdbcType=VARCHAR},
+        D_Nurse = #{record.dNurse,jdbcType=TINYINT},
       </if>
       <if test="record.dPerfect != null">
-        D_Perfect = #{record.dPerfect,jdbcType=VARCHAR},
+        D_Perfect = #{record.dPerfect,jdbcType=TINYINT},
       </if>
       <if test="record.dParanoid != null">
-        D_Paranoid = #{record.dParanoid,jdbcType=VARCHAR},
+        D_Paranoid = #{record.dParanoid,jdbcType=TINYINT},
       </if>
       <if test="record.judgement != null">
-        Judgement = #{record.judgement,jdbcType=VARCHAR},
+        Judgement = #{record.judgement,jdbcType=TINYINT},
       </if>
     </set>
     <if test="_parameter != null">
@@ -586,48 +586,48 @@
   <update id="updateByExample" parameterType="map">
     update tbl_question
     set id = #{record.id,jdbcType=INTEGER},
-      P_Sex = #{record.pSex,jdbcType=VARCHAR},
-      P_Age = #{record.pAge,jdbcType=VARCHAR},
-      P_Constellation = #{record.pConstellation,jdbcType=VARCHAR},
-      P_Blood_Type = #{record.pBloodType,jdbcType=VARCHAR},
-      P_Occupation_Risk = #{record.pOccupationRisk,jdbcType=VARCHAR},
-      P_Education = #{record.pEducation,jdbcType=VARCHAR},
-      P_Marriage_Status = #{record.pMarriageStatus,jdbcType=VARCHAR},
-      P_Surgery_History = #{record.pSurgeryHistory,jdbcType=VARCHAR},
-      P_Comparison = #{record.pComparison,jdbcType=VARCHAR},
-      P_Others_Satisfaction = #{record.pOthersSatisfaction,jdbcType=VARCHAR},
-      P_Change_Life = #{record.pChangeLife,jdbcType=VARCHAR},
-      P_Change_Destiny = #{record.pChangeDestiny,jdbcType=VARCHAR},
-      P_Kinsfolk_Attitude = #{record.pKinsfolkAttitude,jdbcType=VARCHAR},
-      P_Unhappiness_Family = #{record.pUnhappinessFamily,jdbcType=VARCHAR},
-      P_Mental_Disorder = #{record.pMentalDisorder,jdbcType=VARCHAR},
-      P_Selfie = #{record.pSelfie,jdbcType=VARCHAR},
-      P_Appearance_Attention = #{record.pAppearanceAttention,jdbcType=VARCHAR},
-      D_Charm = #{record.dCharm,jdbcType=VARCHAR},
-      D_Subjective = #{record.dSubjective,jdbcType=VARCHAR},
-      D_Modesty = #{record.dModesty,jdbcType=VARCHAR},
-      D_Attention = #{record.dAttention,jdbcType=VARCHAR},
-      D_Expression = #{record.dExpression,jdbcType=VARCHAR},
-      D_Extreme_Emotion = #{record.dExtremeEmotion,jdbcType=VARCHAR},
-      D_Expectation = #{record.dExpectation,jdbcType=VARCHAR},
-      D_Detail = #{record.dDetail,jdbcType=VARCHAR},
-      D_Comprehension = #{record.dComprehension,jdbcType=VARCHAR},
-      D_Internet_Research = #{record.dInternetResearch,jdbcType=VARCHAR},
-      D_Suspicious = #{record.dSuspicious,jdbcType=VARCHAR},
-      D_Repair = #{record.dRepair,jdbcType=VARCHAR},
-      D_Impulsion = #{record.dImpulsion,jdbcType=VARCHAR},
-      D_Price = #{record.dPrice,jdbcType=VARCHAR},
-      D_Slander = #{record.dSlander,jdbcType=VARCHAR},
-      D_Forwardness = #{record.dForwardness,jdbcType=VARCHAR},
-      D_Praise = #{record.dPraise,jdbcType=VARCHAR},
-      D_Quarrel = #{record.dQuarrel,jdbcType=VARCHAR},
-      D_Art_Detail = #{record.dArtDetail,jdbcType=VARCHAR},
-      D_Scar = #{record.dScar,jdbcType=VARCHAR},
-      D_Fail = #{record.dFail,jdbcType=VARCHAR},
-      D_Nurse = #{record.dNurse,jdbcType=VARCHAR},
-      D_Perfect = #{record.dPerfect,jdbcType=VARCHAR},
-      D_Paranoid = #{record.dParanoid,jdbcType=VARCHAR},
-      Judgement = #{record.judgement,jdbcType=VARCHAR}
+      P_Sex = #{record.pSex,jdbcType=TINYINT},
+      P_Age = #{record.pAge,jdbcType=TINYINT},
+      P_Constellation = #{record.pConstellation,jdbcType=TINYINT},
+      P_Blood_Type = #{record.pBloodType,jdbcType=TINYINT},
+      P_Occupation_Risk = #{record.pOccupationRisk,jdbcType=TINYINT},
+      P_Education = #{record.pEducation,jdbcType=TINYINT},
+      P_Marriage_Status = #{record.pMarriageStatus,jdbcType=TINYINT},
+      P_Surgery_History = #{record.pSurgeryHistory,jdbcType=TINYINT},
+      P_Comparison = #{record.pComparison,jdbcType=TINYINT},
+      P_Others_Satisfaction = #{record.pOthersSatisfaction,jdbcType=TINYINT},
+      P_Change_Life = #{record.pChangeLife,jdbcType=TINYINT},
+      P_Change_Destiny = #{record.pChangeDestiny,jdbcType=TINYINT},
+      P_Kinsfolk_Attitude = #{record.pKinsfolkAttitude,jdbcType=TINYINT},
+      P_Unhappiness_Family = #{record.pUnhappinessFamily,jdbcType=TINYINT},
+      P_Mental_Disorder = #{record.pMentalDisorder,jdbcType=TINYINT},
+      P_Selfie = #{record.pSelfie,jdbcType=TINYINT},
+      P_Appearance_Attention = #{record.pAppearanceAttention,jdbcType=TINYINT},
+      D_Charm = #{record.dCharm,jdbcType=TINYINT},
+      D_Subjective = #{record.dSubjective,jdbcType=TINYINT},
+      D_Modesty = #{record.dModesty,jdbcType=TINYINT},
+      D_Attention = #{record.dAttention,jdbcType=TINYINT},
+      D_Expression = #{record.dExpression,jdbcType=TINYINT},
+      D_Extreme_Emotion = #{record.dExtremeEmotion,jdbcType=TINYINT},
+      D_Expectation = #{record.dExpectation,jdbcType=TINYINT},
+      D_Detail = #{record.dDetail,jdbcType=TINYINT},
+      D_Comprehension = #{record.dComprehension,jdbcType=TINYINT},
+      D_Internet_Research = #{record.dInternetResearch,jdbcType=TINYINT},
+      D_Suspicious = #{record.dSuspicious,jdbcType=TINYINT},
+      D_Repair = #{record.dRepair,jdbcType=TINYINT},
+      D_Impulsion = #{record.dImpulsion,jdbcType=TINYINT},
+      D_Price = #{record.dPrice,jdbcType=TINYINT},
+      D_Slander = #{record.dSlander,jdbcType=TINYINT},
+      D_Forwardness = #{record.dForwardness,jdbcType=TINYINT},
+      D_Praise = #{record.dPraise,jdbcType=TINYINT},
+      D_Quarrel = #{record.dQuarrel,jdbcType=TINYINT},
+      D_Art_Detail = #{record.dArtDetail,jdbcType=TINYINT},
+      D_Scar = #{record.dScar,jdbcType=TINYINT},
+      D_Fail = #{record.dFail,jdbcType=TINYINT},
+      D_Nurse = #{record.dNurse,jdbcType=TINYINT},
+      D_Perfect = #{record.dPerfect,jdbcType=TINYINT},
+      D_Paranoid = #{record.dParanoid,jdbcType=TINYINT},
+      Judgement = #{record.judgement,jdbcType=TINYINT}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -636,178 +636,178 @@
     update tbl_question
     <set>
       <if test="pSex != null">
-        P_Sex = #{pSex,jdbcType=VARCHAR},
+        P_Sex = #{pSex,jdbcType=TINYINT},
       </if>
       <if test="pAge != null">
-        P_Age = #{pAge,jdbcType=VARCHAR},
+        P_Age = #{pAge,jdbcType=TINYINT},
       </if>
       <if test="pConstellation != null">
-        P_Constellation = #{pConstellation,jdbcType=VARCHAR},
+        P_Constellation = #{pConstellation,jdbcType=TINYINT},
       </if>
       <if test="pBloodType != null">
-        P_Blood_Type = #{pBloodType,jdbcType=VARCHAR},
+        P_Blood_Type = #{pBloodType,jdbcType=TINYINT},
       </if>
       <if test="pOccupationRisk != null">
-        P_Occupation_Risk = #{pOccupationRisk,jdbcType=VARCHAR},
+        P_Occupation_Risk = #{pOccupationRisk,jdbcType=TINYINT},
       </if>
       <if test="pEducation != null">
-        P_Education = #{pEducation,jdbcType=VARCHAR},
+        P_Education = #{pEducation,jdbcType=TINYINT},
       </if>
       <if test="pMarriageStatus != null">
-        P_Marriage_Status = #{pMarriageStatus,jdbcType=VARCHAR},
+        P_Marriage_Status = #{pMarriageStatus,jdbcType=TINYINT},
       </if>
       <if test="pSurgeryHistory != null">
-        P_Surgery_History = #{pSurgeryHistory,jdbcType=VARCHAR},
+        P_Surgery_History = #{pSurgeryHistory,jdbcType=TINYINT},
       </if>
       <if test="pComparison != null">
-        P_Comparison = #{pComparison,jdbcType=VARCHAR},
+        P_Comparison = #{pComparison,jdbcType=TINYINT},
       </if>
       <if test="pOthersSatisfaction != null">
-        P_Others_Satisfaction = #{pOthersSatisfaction,jdbcType=VARCHAR},
+        P_Others_Satisfaction = #{pOthersSatisfaction,jdbcType=TINYINT},
       </if>
       <if test="pChangeLife != null">
-        P_Change_Life = #{pChangeLife,jdbcType=VARCHAR},
+        P_Change_Life = #{pChangeLife,jdbcType=TINYINT},
       </if>
       <if test="pChangeDestiny != null">
-        P_Change_Destiny = #{pChangeDestiny,jdbcType=VARCHAR},
+        P_Change_Destiny = #{pChangeDestiny,jdbcType=TINYINT},
       </if>
       <if test="pKinsfolkAttitude != null">
-        P_Kinsfolk_Attitude = #{pKinsfolkAttitude,jdbcType=VARCHAR},
+        P_Kinsfolk_Attitude = #{pKinsfolkAttitude,jdbcType=TINYINT},
       </if>
       <if test="pUnhappinessFamily != null">
-        P_Unhappiness_Family = #{pUnhappinessFamily,jdbcType=VARCHAR},
+        P_Unhappiness_Family = #{pUnhappinessFamily,jdbcType=TINYINT},
       </if>
       <if test="pMentalDisorder != null">
-        P_Mental_Disorder = #{pMentalDisorder,jdbcType=VARCHAR},
+        P_Mental_Disorder = #{pMentalDisorder,jdbcType=TINYINT},
       </if>
       <if test="pSelfie != null">
-        P_Selfie = #{pSelfie,jdbcType=VARCHAR},
+        P_Selfie = #{pSelfie,jdbcType=TINYINT},
       </if>
       <if test="pAppearanceAttention != null">
-        P_Appearance_Attention = #{pAppearanceAttention,jdbcType=VARCHAR},
+        P_Appearance_Attention = #{pAppearanceAttention,jdbcType=TINYINT},
       </if>
       <if test="dCharm != null">
-        D_Charm = #{dCharm,jdbcType=VARCHAR},
+        D_Charm = #{dCharm,jdbcType=TINYINT},
       </if>
       <if test="dSubjective != null">
-        D_Subjective = #{dSubjective,jdbcType=VARCHAR},
+        D_Subjective = #{dSubjective,jdbcType=TINYINT},
       </if>
       <if test="dModesty != null">
-        D_Modesty = #{dModesty,jdbcType=VARCHAR},
+        D_Modesty = #{dModesty,jdbcType=TINYINT},
       </if>
       <if test="dAttention != null">
-        D_Attention = #{dAttention,jdbcType=VARCHAR},
+        D_Attention = #{dAttention,jdbcType=TINYINT},
       </if>
       <if test="dExpression != null">
-        D_Expression = #{dExpression,jdbcType=VARCHAR},
+        D_Expression = #{dExpression,jdbcType=TINYINT},
       </if>
       <if test="dExtremeEmotion != null">
-        D_Extreme_Emotion = #{dExtremeEmotion,jdbcType=VARCHAR},
+        D_Extreme_Emotion = #{dExtremeEmotion,jdbcType=TINYINT},
       </if>
       <if test="dExpectation != null">
-        D_Expectation = #{dExpectation,jdbcType=VARCHAR},
+        D_Expectation = #{dExpectation,jdbcType=TINYINT},
       </if>
       <if test="dDetail != null">
-        D_Detail = #{dDetail,jdbcType=VARCHAR},
+        D_Detail = #{dDetail,jdbcType=TINYINT},
       </if>
       <if test="dComprehension != null">
-        D_Comprehension = #{dComprehension,jdbcType=VARCHAR},
+        D_Comprehension = #{dComprehension,jdbcType=TINYINT},
       </if>
       <if test="dInternetResearch != null">
-        D_Internet_Research = #{dInternetResearch,jdbcType=VARCHAR},
+        D_Internet_Research = #{dInternetResearch,jdbcType=TINYINT},
       </if>
       <if test="dSuspicious != null">
-        D_Suspicious = #{dSuspicious,jdbcType=VARCHAR},
+        D_Suspicious = #{dSuspicious,jdbcType=TINYINT},
       </if>
       <if test="dRepair != null">
-        D_Repair = #{dRepair,jdbcType=VARCHAR},
+        D_Repair = #{dRepair,jdbcType=TINYINT},
       </if>
       <if test="dImpulsion != null">
-        D_Impulsion = #{dImpulsion,jdbcType=VARCHAR},
+        D_Impulsion = #{dImpulsion,jdbcType=TINYINT},
       </if>
       <if test="dPrice != null">
-        D_Price = #{dPrice,jdbcType=VARCHAR},
+        D_Price = #{dPrice,jdbcType=TINYINT},
       </if>
       <if test="dSlander != null">
-        D_Slander = #{dSlander,jdbcType=VARCHAR},
+        D_Slander = #{dSlander,jdbcType=TINYINT},
       </if>
       <if test="dForwardness != null">
-        D_Forwardness = #{dForwardness,jdbcType=VARCHAR},
+        D_Forwardness = #{dForwardness,jdbcType=TINYINT},
       </if>
       <if test="dPraise != null">
-        D_Praise = #{dPraise,jdbcType=VARCHAR},
+        D_Praise = #{dPraise,jdbcType=TINYINT},
       </if>
       <if test="dQuarrel != null">
-        D_Quarrel = #{dQuarrel,jdbcType=VARCHAR},
+        D_Quarrel = #{dQuarrel,jdbcType=TINYINT},
       </if>
       <if test="dArtDetail != null">
-        D_Art_Detail = #{dArtDetail,jdbcType=VARCHAR},
+        D_Art_Detail = #{dArtDetail,jdbcType=TINYINT},
       </if>
       <if test="dScar != null">
-        D_Scar = #{dScar,jdbcType=VARCHAR},
+        D_Scar = #{dScar,jdbcType=TINYINT},
       </if>
       <if test="dFail != null">
-        D_Fail = #{dFail,jdbcType=VARCHAR},
+        D_Fail = #{dFail,jdbcType=TINYINT},
       </if>
       <if test="dNurse != null">
-        D_Nurse = #{dNurse,jdbcType=VARCHAR},
+        D_Nurse = #{dNurse,jdbcType=TINYINT},
       </if>
       <if test="dPerfect != null">
-        D_Perfect = #{dPerfect,jdbcType=VARCHAR},
+        D_Perfect = #{dPerfect,jdbcType=TINYINT},
       </if>
       <if test="dParanoid != null">
-        D_Paranoid = #{dParanoid,jdbcType=VARCHAR},
+        D_Paranoid = #{dParanoid,jdbcType=TINYINT},
       </if>
       <if test="judgement != null">
-        Judgement = #{judgement,jdbcType=VARCHAR},
+        Judgement = #{judgement,jdbcType=TINYINT},
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.vito.mvc.bean.Question">
     update tbl_question
-    set P_Sex = #{pSex,jdbcType=VARCHAR},
-      P_Age = #{pAge,jdbcType=VARCHAR},
-      P_Constellation = #{pConstellation,jdbcType=VARCHAR},
-      P_Blood_Type = #{pBloodType,jdbcType=VARCHAR},
-      P_Occupation_Risk = #{pOccupationRisk,jdbcType=VARCHAR},
-      P_Education = #{pEducation,jdbcType=VARCHAR},
-      P_Marriage_Status = #{pMarriageStatus,jdbcType=VARCHAR},
-      P_Surgery_History = #{pSurgeryHistory,jdbcType=VARCHAR},
-      P_Comparison = #{pComparison,jdbcType=VARCHAR},
-      P_Others_Satisfaction = #{pOthersSatisfaction,jdbcType=VARCHAR},
-      P_Change_Life = #{pChangeLife,jdbcType=VARCHAR},
-      P_Change_Destiny = #{pChangeDestiny,jdbcType=VARCHAR},
-      P_Kinsfolk_Attitude = #{pKinsfolkAttitude,jdbcType=VARCHAR},
-      P_Unhappiness_Family = #{pUnhappinessFamily,jdbcType=VARCHAR},
-      P_Mental_Disorder = #{pMentalDisorder,jdbcType=VARCHAR},
-      P_Selfie = #{pSelfie,jdbcType=VARCHAR},
-      P_Appearance_Attention = #{pAppearanceAttention,jdbcType=VARCHAR},
-      D_Charm = #{dCharm,jdbcType=VARCHAR},
-      D_Subjective = #{dSubjective,jdbcType=VARCHAR},
-      D_Modesty = #{dModesty,jdbcType=VARCHAR},
-      D_Attention = #{dAttention,jdbcType=VARCHAR},
-      D_Expression = #{dExpression,jdbcType=VARCHAR},
-      D_Extreme_Emotion = #{dExtremeEmotion,jdbcType=VARCHAR},
-      D_Expectation = #{dExpectation,jdbcType=VARCHAR},
-      D_Detail = #{dDetail,jdbcType=VARCHAR},
-      D_Comprehension = #{dComprehension,jdbcType=VARCHAR},
-      D_Internet_Research = #{dInternetResearch,jdbcType=VARCHAR},
-      D_Suspicious = #{dSuspicious,jdbcType=VARCHAR},
-      D_Repair = #{dRepair,jdbcType=VARCHAR},
-      D_Impulsion = #{dImpulsion,jdbcType=VARCHAR},
-      D_Price = #{dPrice,jdbcType=VARCHAR},
-      D_Slander = #{dSlander,jdbcType=VARCHAR},
-      D_Forwardness = #{dForwardness,jdbcType=VARCHAR},
-      D_Praise = #{dPraise,jdbcType=VARCHAR},
-      D_Quarrel = #{dQuarrel,jdbcType=VARCHAR},
-      D_Art_Detail = #{dArtDetail,jdbcType=VARCHAR},
-      D_Scar = #{dScar,jdbcType=VARCHAR},
-      D_Fail = #{dFail,jdbcType=VARCHAR},
-      D_Nurse = #{dNurse,jdbcType=VARCHAR},
-      D_Perfect = #{dPerfect,jdbcType=VARCHAR},
-      D_Paranoid = #{dParanoid,jdbcType=VARCHAR},
-      Judgement = #{judgement,jdbcType=VARCHAR}
+    set P_Sex = #{pSex,jdbcType=TINYINT},
+      P_Age = #{pAge,jdbcType=TINYINT},
+      P_Constellation = #{pConstellation,jdbcType=TINYINT},
+      P_Blood_Type = #{pBloodType,jdbcType=TINYINT},
+      P_Occupation_Risk = #{pOccupationRisk,jdbcType=TINYINT},
+      P_Education = #{pEducation,jdbcType=TINYINT},
+      P_Marriage_Status = #{pMarriageStatus,jdbcType=TINYINT},
+      P_Surgery_History = #{pSurgeryHistory,jdbcType=TINYINT},
+      P_Comparison = #{pComparison,jdbcType=TINYINT},
+      P_Others_Satisfaction = #{pOthersSatisfaction,jdbcType=TINYINT},
+      P_Change_Life = #{pChangeLife,jdbcType=TINYINT},
+      P_Change_Destiny = #{pChangeDestiny,jdbcType=TINYINT},
+      P_Kinsfolk_Attitude = #{pKinsfolkAttitude,jdbcType=TINYINT},
+      P_Unhappiness_Family = #{pUnhappinessFamily,jdbcType=TINYINT},
+      P_Mental_Disorder = #{pMentalDisorder,jdbcType=TINYINT},
+      P_Selfie = #{pSelfie,jdbcType=TINYINT},
+      P_Appearance_Attention = #{pAppearanceAttention,jdbcType=TINYINT},
+      D_Charm = #{dCharm,jdbcType=TINYINT},
+      D_Subjective = #{dSubjective,jdbcType=TINYINT},
+      D_Modesty = #{dModesty,jdbcType=TINYINT},
+      D_Attention = #{dAttention,jdbcType=TINYINT},
+      D_Expression = #{dExpression,jdbcType=TINYINT},
+      D_Extreme_Emotion = #{dExtremeEmotion,jdbcType=TINYINT},
+      D_Expectation = #{dExpectation,jdbcType=TINYINT},
+      D_Detail = #{dDetail,jdbcType=TINYINT},
+      D_Comprehension = #{dComprehension,jdbcType=TINYINT},
+      D_Internet_Research = #{dInternetResearch,jdbcType=TINYINT},
+      D_Suspicious = #{dSuspicious,jdbcType=TINYINT},
+      D_Repair = #{dRepair,jdbcType=TINYINT},
+      D_Impulsion = #{dImpulsion,jdbcType=TINYINT},
+      D_Price = #{dPrice,jdbcType=TINYINT},
+      D_Slander = #{dSlander,jdbcType=TINYINT},
+      D_Forwardness = #{dForwardness,jdbcType=TINYINT},
+      D_Praise = #{dPraise,jdbcType=TINYINT},
+      D_Quarrel = #{dQuarrel,jdbcType=TINYINT},
+      D_Art_Detail = #{dArtDetail,jdbcType=TINYINT},
+      D_Scar = #{dScar,jdbcType=TINYINT},
+      D_Fail = #{dFail,jdbcType=TINYINT},
+      D_Nurse = #{dNurse,jdbcType=TINYINT},
+      D_Perfect = #{dPerfect,jdbcType=TINYINT},
+      D_Paranoid = #{dParanoid,jdbcType=TINYINT},
+      Judgement = #{judgement,jdbcType=TINYINT}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

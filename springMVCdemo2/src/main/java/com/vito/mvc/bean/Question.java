@@ -3,98 +3,97 @@ package com.vito.mvc.bean;
 public class Question {
     private Integer id;
 
-    private String pSex;
+    private Byte pSex;
 
-    private String pAge;
+    private Byte pAge;
 
-    private String pConstellation;
+    private Byte pConstellation;
 
-    private String pBloodType;
+    private Byte pBloodType;
 
-    private String pOccupationRisk;
+    private Byte pOccupationRisk;
 
-    private String pEducation;
+    private Byte pEducation;
 
-    private String pMarriageStatus;
+    private Byte pMarriageStatus;
 
-    private String pSurgeryHistory;
+    private Byte pSurgeryHistory;
 
-    private String pComparison;
+    private Byte pComparison;
 
-    private String pOthersSatisfaction;
+    private Byte pOthersSatisfaction;
 
-    private String pChangeLife;
+    private Byte pChangeLife;
 
-    private String pChangeDestiny;
+    private Byte pChangeDestiny;
 
-    private String pKinsfolkAttitude;
+    private Byte pKinsfolkAttitude;
 
-    private String pUnhappinessFamily;
+    private Byte pUnhappinessFamily;
 
-    private String pMentalDisorder;
+    private Byte pMentalDisorder;
 
-    private String pSelfie;
+    private Byte pSelfie;
 
-    private String pAppearanceAttention;
+    private Byte pAppearanceAttention;
 
-    private String dCharm;
+    private Byte dCharm;
 
-    private String dSubjective;
+    private Byte dSubjective;
 
-    private String dModesty;
+    private Byte dModesty;
 
-    private String dAttention;
+    private Byte dAttention;
 
-    private String dExpression;
+    private Byte dExpression;
 
-    private String dExtremeEmotion;
+    private Byte dExtremeEmotion;
 
-    private String dExpectation;
+    private Byte dExpectation;
 
-    private String dDetail;
+    private Byte dDetail;
 
-    private String dComprehension;
+    private Byte dComprehension;
 
-    private String dInternetResearch;
+    private Byte dInternetResearch;
 
-    private String dSuspicious;
+    private Byte dSuspicious;
 
-    private String dRepair;
+    private Byte dRepair;
 
-    private String dImpulsion;
+    private Byte dImpulsion;
 
-    private String dPrice;
+    private Byte dPrice;
 
-    private String dSlander;
+    private Byte dSlander;
 
-    private String dForwardness;
+    private Byte dForwardness;
 
-    private String dPraise;
+    private Byte dPraise;
 
-    private String dQuarrel;
+    private Byte dQuarrel;
 
-    private String dArtDetail;
+    private Byte dArtDetail;
 
-    private String dScar;
+    private Byte dScar;
 
-    private String dFail;
+    private Byte dFail;
 
-    private String dNurse;
+    private Byte dNurse;
 
-    private String dPerfect;
+    private Byte dPerfect;
 
-    private String dParanoid;
+    private Byte dParanoid;
 
-    private String judgement;
+    private Byte judgement;
 
     public Question(){
         super();
         //TODO Auto-generated constructor stub
     }
 
-    public Question(Integer id, String pSex, String pAge, String pConstellation, String pBloodType, String pOccupationRisk, String pEducation, String pMarriageStatus, String pSurgeryHistory, String pComparison, String pOthersSatisfaction, String pChangeLife, String pChangeDestiny, String pKinsfolkAttitude, String pUnhappinessFamily, String pMentalDisorder, String pSelfie, String pAppearanceAttention, String dCharm, String dSubjective, String dModesty, String dAttention, String dExpression, String dExtremeEmotion, String dExpectation, String dDetail, String dComprehension, String dInternetResearch, String dSuspicious, String dRepair, String dImpulsion, String dPrice, String dSlander, String dForwardness, String dPraise, String dQuarrel, String dArtDetail, String dScar, String dFail, String dNurse, String dPerfect, String dParanoid, String judgement) {
+    public Question(Byte pSex, Byte pAge, Byte pConstellation, Byte pBloodType, Byte pOccupationRisk, Byte pEducation, Byte pMarriageStatus, Byte pSurgeryHistory, Byte pComparison, Byte pOthersSatisfaction, Byte pChangeLife, Byte pChangeDestiny, Byte pKinsfolkAttitude, Byte pUnhappinessFamily, Byte pMentalDisorder, Byte pSelfie, Byte pAppearanceAttention, Byte dCharm, Byte dSubjective, Byte dModesty, Byte dAttention, Byte dExpression, Byte dExtremeEmotion, Byte dExpectation, Byte dDetail, Byte dComprehension, Byte dInternetResearch, Byte dSuspicious, Byte dRepair, Byte dImpulsion, Byte dPrice, Byte dSlander, Byte dForwardness, Byte dPraise, Byte dQuarrel, Byte dArtDetail, Byte dScar, Byte dFail, Byte dNurse, Byte dPerfect, Byte dParanoid, Byte judgement) {
         super();
-        this.id = id;
         this.pSex = pSex;
         this.pAge = pAge;
         this.pConstellation = pConstellation;
@@ -147,339 +146,339 @@ public class Question {
         this.id = id;
     }
 
-    public String getpSex() {
+    public Byte getpSex() {
         return pSex;
     }
 
-    public void setpSex(String pSex) {
-        this.pSex = pSex == null ? null : pSex.trim();
+    public void setpSex(Byte pSex) {
+        this.pSex = pSex;
     }
 
-    public String getpAge() {
+    public Byte getpAge() {
         return pAge;
     }
 
-    public void setpAge(String pAge) {
-        this.pAge = pAge == null ? null : pAge.trim();
+    public void setpAge(Byte pAge) {
+        this.pAge = pAge;
     }
 
-    public String getpConstellation() {
+    public Byte getpConstellation() {
         return pConstellation;
     }
 
-    public void setpConstellation(String pConstellation) {
-        this.pConstellation = pConstellation == null ? null : pConstellation.trim();
+    public void setpConstellation(Byte pConstellation) {
+        this.pConstellation = pConstellation;
     }
 
-    public String getpBloodType() {
+    public Byte getpBloodType() {
         return pBloodType;
     }
 
-    public void setpBloodType(String pBloodType) {
-        this.pBloodType = pBloodType == null ? null : pBloodType.trim();
+    public void setpBloodType(Byte pBloodType) {
+        this.pBloodType = pBloodType;
     }
 
-    public String getpOccupationRisk() {
+    public Byte getpOccupationRisk() {
         return pOccupationRisk;
     }
 
-    public void setpOccupationRisk(String pOccupationRisk) {
-        this.pOccupationRisk = pOccupationRisk == null ? null : pOccupationRisk.trim();
+    public void setpOccupationRisk(Byte pOccupationRisk) {
+        this.pOccupationRisk = pOccupationRisk;
     }
 
-    public String getpEducation() {
+    public Byte getpEducation() {
         return pEducation;
     }
 
-    public void setpEducation(String pEducation) {
-        this.pEducation = pEducation == null ? null : pEducation.trim();
+    public void setpEducation(Byte pEducation) {
+        this.pEducation = pEducation;
     }
 
-    public String getpMarriageStatus() {
+    public Byte getpMarriageStatus() {
         return pMarriageStatus;
     }
 
-    public void setpMarriageStatus(String pMarriageStatus) {
-        this.pMarriageStatus = pMarriageStatus == null ? null : pMarriageStatus.trim();
+    public void setpMarriageStatus(Byte pMarriageStatus) {
+        this.pMarriageStatus = pMarriageStatus;
     }
 
-    public String getpSurgeryHistory() {
+    public Byte getpSurgeryHistory() {
         return pSurgeryHistory;
     }
 
-    public void setpSurgeryHistory(String pSurgeryHistory) {
-        this.pSurgeryHistory = pSurgeryHistory == null ? null : pSurgeryHistory.trim();
+    public void setpSurgeryHistory(Byte pSurgeryHistory) {
+        this.pSurgeryHistory = pSurgeryHistory;
     }
 
-    public String getpComparison() {
+    public Byte getpComparison() {
         return pComparison;
     }
 
-    public void setpComparison(String pComparison) {
-        this.pComparison = pComparison == null ? null : pComparison.trim();
+    public void setpComparison(Byte pComparison) {
+        this.pComparison = pComparison;
     }
 
-    public String getpOthersSatisfaction() {
+    public Byte getpOthersSatisfaction() {
         return pOthersSatisfaction;
     }
 
-    public void setpOthersSatisfaction(String pOthersSatisfaction) {
-        this.pOthersSatisfaction = pOthersSatisfaction == null ? null : pOthersSatisfaction.trim();
+    public void setpOthersSatisfaction(Byte pOthersSatisfaction) {
+        this.pOthersSatisfaction = pOthersSatisfaction;
     }
 
-    public String getpChangeLife() {
+    public Byte getpChangeLife() {
         return pChangeLife;
     }
 
-    public void setpChangeLife(String pChangeLife) {
-        this.pChangeLife = pChangeLife == null ? null : pChangeLife.trim();
+    public void setpChangeLife(Byte pChangeLife) {
+        this.pChangeLife = pChangeLife;
     }
 
-    public String getpChangeDestiny() {
+    public Byte getpChangeDestiny() {
         return pChangeDestiny;
     }
 
-    public void setpChangeDestiny(String pChangeDestiny) {
-        this.pChangeDestiny = pChangeDestiny == null ? null : pChangeDestiny.trim();
+    public void setpChangeDestiny(Byte pChangeDestiny) {
+        this.pChangeDestiny = pChangeDestiny;
     }
 
-    public String getpKinsfolkAttitude() {
+    public Byte getpKinsfolkAttitude() {
         return pKinsfolkAttitude;
     }
 
-    public void setpKinsfolkAttitude(String pKinsfolkAttitude) {
-        this.pKinsfolkAttitude = pKinsfolkAttitude == null ? null : pKinsfolkAttitude.trim();
+    public void setpKinsfolkAttitude(Byte pKinsfolkAttitude) {
+        this.pKinsfolkAttitude = pKinsfolkAttitude;
     }
 
-    public String getpUnhappinessFamily() {
+    public Byte getpUnhappinessFamily() {
         return pUnhappinessFamily;
     }
 
-    public void setpUnhappinessFamily(String pUnhappinessFamily) {
-        this.pUnhappinessFamily = pUnhappinessFamily == null ? null : pUnhappinessFamily.trim();
+    public void setpUnhappinessFamily(Byte pUnhappinessFamily) {
+        this.pUnhappinessFamily = pUnhappinessFamily;
     }
 
-    public String getpMentalDisorder() {
+    public Byte getpMentalDisorder() {
         return pMentalDisorder;
     }
 
-    public void setpMentalDisorder(String pMentalDisorder) {
-        this.pMentalDisorder = pMentalDisorder == null ? null : pMentalDisorder.trim();
+    public void setpMentalDisorder(Byte pMentalDisorder) {
+        this.pMentalDisorder = pMentalDisorder;
     }
 
-    public String getpSelfie() {
+    public Byte getpSelfie() {
         return pSelfie;
     }
 
-    public void setpSelfie(String pSelfie) {
-        this.pSelfie = pSelfie == null ? null : pSelfie.trim();
+    public void setpSelfie(Byte pSelfie) {
+        this.pSelfie = pSelfie;
     }
 
-    public String getpAppearanceAttention() {
+    public Byte getpAppearanceAttention() {
         return pAppearanceAttention;
     }
 
-    public void setpAppearanceAttention(String pAppearanceAttention) {
-        this.pAppearanceAttention = pAppearanceAttention == null ? null : pAppearanceAttention.trim();
+    public void setpAppearanceAttention(Byte pAppearanceAttention) {
+        this.pAppearanceAttention = pAppearanceAttention;
     }
 
-    public String getdCharm() {
+    public Byte getdCharm() {
         return dCharm;
     }
 
-    public void setdCharm(String dCharm) {
-        this.dCharm = dCharm == null ? null : dCharm.trim();
+    public void setdCharm(Byte dCharm) {
+        this.dCharm = dCharm;
     }
 
-    public String getdSubjective() {
+    public Byte getdSubjective() {
         return dSubjective;
     }
 
-    public void setdSubjective(String dSubjective) {
-        this.dSubjective = dSubjective == null ? null : dSubjective.trim();
+    public void setdSubjective(Byte dSubjective) {
+        this.dSubjective = dSubjective;
     }
 
-    public String getdModesty() {
+    public Byte getdModesty() {
         return dModesty;
     }
 
-    public void setdModesty(String dModesty) {
-        this.dModesty = dModesty == null ? null : dModesty.trim();
+    public void setdModesty(Byte dModesty) {
+        this.dModesty = dModesty;
     }
 
-    public String getdAttention() {
+    public Byte getdAttention() {
         return dAttention;
     }
 
-    public void setdAttention(String dAttention) {
-        this.dAttention = dAttention == null ? null : dAttention.trim();
+    public void setdAttention(Byte dAttention) {
+        this.dAttention = dAttention;
     }
 
-    public String getdExpression() {
+    public Byte getdExpression() {
         return dExpression;
     }
 
-    public void setdExpression(String dExpression) {
-        this.dExpression = dExpression == null ? null : dExpression.trim();
+    public void setdExpression(Byte dExpression) {
+        this.dExpression = dExpression;
     }
 
-    public String getdExtremeEmotion() {
+    public Byte getdExtremeEmotion() {
         return dExtremeEmotion;
     }
 
-    public void setdExtremeEmotion(String dExtremeEmotion) {
-        this.dExtremeEmotion = dExtremeEmotion == null ? null : dExtremeEmotion.trim();
+    public void setdExtremeEmotion(Byte dExtremeEmotion) {
+        this.dExtremeEmotion = dExtremeEmotion;
     }
 
-    public String getdExpectation() {
+    public Byte getdExpectation() {
         return dExpectation;
     }
 
-    public void setdExpectation(String dExpectation) {
-        this.dExpectation = dExpectation == null ? null : dExpectation.trim();
+    public void setdExpectation(Byte dExpectation) {
+        this.dExpectation = dExpectation;
     }
 
-    public String getdDetail() {
+    public Byte getdDetail() {
         return dDetail;
     }
 
-    public void setdDetail(String dDetail) {
-        this.dDetail = dDetail == null ? null : dDetail.trim();
+    public void setdDetail(Byte dDetail) {
+        this.dDetail = dDetail;
     }
 
-    public String getdComprehension() {
+    public Byte getdComprehension() {
         return dComprehension;
     }
 
-    public void setdComprehension(String dComprehension) {
-        this.dComprehension = dComprehension == null ? null : dComprehension.trim();
+    public void setdComprehension(Byte dComprehension) {
+        this.dComprehension = dComprehension;
     }
 
-    public String getdInternetResearch() {
+    public Byte getdInternetResearch() {
         return dInternetResearch;
     }
 
-    public void setdInternetResearch(String dInternetResearch) {
-        this.dInternetResearch = dInternetResearch == null ? null : dInternetResearch.trim();
+    public void setdInternetResearch(Byte dInternetResearch) {
+        this.dInternetResearch = dInternetResearch;
     }
 
-    public String getdSuspicious() {
+    public Byte getdSuspicious() {
         return dSuspicious;
     }
 
-    public void setdSuspicious(String dSuspicious) {
-        this.dSuspicious = dSuspicious == null ? null : dSuspicious.trim();
+    public void setdSuspicious(Byte dSuspicious) {
+        this.dSuspicious = dSuspicious;
     }
 
-    public String getdRepair() {
+    public Byte getdRepair() {
         return dRepair;
     }
 
-    public void setdRepair(String dRepair) {
-        this.dRepair = dRepair == null ? null : dRepair.trim();
+    public void setdRepair(Byte dRepair) {
+        this.dRepair = dRepair;
     }
 
-    public String getdImpulsion() {
+    public Byte getdImpulsion() {
         return dImpulsion;
     }
 
-    public void setdImpulsion(String dImpulsion) {
-        this.dImpulsion = dImpulsion == null ? null : dImpulsion.trim();
+    public void setdImpulsion(Byte dImpulsion) {
+        this.dImpulsion = dImpulsion;
     }
 
-    public String getdPrice() {
+    public Byte getdPrice() {
         return dPrice;
     }
 
-    public void setdPrice(String dPrice) {
-        this.dPrice = dPrice == null ? null : dPrice.trim();
+    public void setdPrice(Byte dPrice) {
+        this.dPrice = dPrice;
     }
 
-    public String getdSlander() {
+    public Byte getdSlander() {
         return dSlander;
     }
 
-    public void setdSlander(String dSlander) {
-        this.dSlander = dSlander == null ? null : dSlander.trim();
+    public void setdSlander(Byte dSlander) {
+        this.dSlander = dSlander;
     }
 
-    public String getdForwardness() {
+    public Byte getdForwardness() {
         return dForwardness;
     }
 
-    public void setdForwardness(String dForwardness) {
-        this.dForwardness = dForwardness == null ? null : dForwardness.trim();
+    public void setdForwardness(Byte dForwardness) {
+        this.dForwardness = dForwardness;
     }
 
-    public String getdPraise() {
+    public Byte getdPraise() {
         return dPraise;
     }
 
-    public void setdPraise(String dPraise) {
-        this.dPraise = dPraise == null ? null : dPraise.trim();
+    public void setdPraise(Byte dPraise) {
+        this.dPraise = dPraise;
     }
 
-    public String getdQuarrel() {
+    public Byte getdQuarrel() {
         return dQuarrel;
     }
 
-    public void setdQuarrel(String dQuarrel) {
-        this.dQuarrel = dQuarrel == null ? null : dQuarrel.trim();
+    public void setdQuarrel(Byte dQuarrel) {
+        this.dQuarrel = dQuarrel;
     }
 
-    public String getdArtDetail() {
+    public Byte getdArtDetail() {
         return dArtDetail;
     }
 
-    public void setdArtDetail(String dArtDetail) {
-        this.dArtDetail = dArtDetail == null ? null : dArtDetail.trim();
+    public void setdArtDetail(Byte dArtDetail) {
+        this.dArtDetail = dArtDetail;
     }
 
-    public String getdScar() {
+    public Byte getdScar() {
         return dScar;
     }
 
-    public void setdScar(String dScar) {
-        this.dScar = dScar == null ? null : dScar.trim();
+    public void setdScar(Byte dScar) {
+        this.dScar = dScar;
     }
 
-    public String getdFail() {
+    public Byte getdFail() {
         return dFail;
     }
 
-    public void setdFail(String dFail) {
-        this.dFail = dFail == null ? null : dFail.trim();
+    public void setdFail(Byte dFail) {
+        this.dFail = dFail;
     }
 
-    public String getdNurse() {
+    public Byte getdNurse() {
         return dNurse;
     }
 
-    public void setdNurse(String dNurse) {
-        this.dNurse = dNurse == null ? null : dNurse.trim();
+    public void setdNurse(Byte dNurse) {
+        this.dNurse = dNurse;
     }
 
-    public String getdPerfect() {
+    public Byte getdPerfect() {
         return dPerfect;
     }
 
-    public void setdPerfect(String dPerfect) {
-        this.dPerfect = dPerfect == null ? null : dPerfect.trim();
+    public void setdPerfect(Byte dPerfect) {
+        this.dPerfect = dPerfect;
     }
 
-    public String getdParanoid() {
+    public Byte getdParanoid() {
         return dParanoid;
     }
 
-    public void setdParanoid(String dParanoid) {
-        this.dParanoid = dParanoid == null ? null : dParanoid.trim();
+    public void setdParanoid(Byte dParanoid) {
+        this.dParanoid = dParanoid;
     }
 
-    public String getJudgement() {
+    public Byte getJudgement() {
         return judgement;
     }
 
-    public void setJudgement(String judgement) {
-        this.judgement = judgement == null ? null : judgement.trim();
+    public void setJudgement(Byte judgement) {
+        this.judgement = judgement;
     }
 }
