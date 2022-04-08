@@ -40,7 +40,7 @@ public class DoctorController {
     /**
      *用户
      */
-    @PostMapping(value="/login", produces = "application/json; charset=utf-8")
+    @RequestMapping(value="/login", produces = "application/json; charset=utf-8")
     public @ResponseBody
     ResponseData login(HttpServletRequest request,@RequestParam("js_code") String js_code) {
         //获取session_key,openid
@@ -78,7 +78,7 @@ public class DoctorController {
     /**
      * 获取问题数据
      */
-    @PostMapping(value="/question", produces = "application/json; charset=utf-8")
+    @RequestMapping(value="/question", produces = "application/json; charset=utf-8")
     @ResponseBody
     public Map question_random(){
         Random random = new Random();
@@ -162,7 +162,7 @@ public class DoctorController {
     /**
      * 接收前端判断结果
      */
-    @PostMapping(value="/answer", produces = "application/json; charset=utf-8")
+    @RequestMapping(value="/answer", produces = "application/json; charset=utf-8")
     @ResponseBody
     public Question answer_judgement(@RequestParam("Judgement") String Judgement){
         //获取当前问题id
