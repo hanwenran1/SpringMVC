@@ -28,8 +28,8 @@ public class User {
         this.openid = openid;
     }
 
-    public String getId() {
-        return openid;
+    public Integer getId() {
+        return id;
     }
 
     public void setId(Integer id) {

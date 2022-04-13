@@ -4,6 +4,7 @@ package com.vito.mvc.controller;
 import com.vito.mvc.bean.*;
 import com.vito.mvc.dao.DoctorMapper;
 import com.vito.mvc.dao.QuestionMapper;
+import com.vito.mvc.dao.UserMapper;
 import com.vito.mvc.service.DoctorService;
 
 import com.vito.mvc.service.HttpClient;
@@ -31,6 +32,8 @@ public class DoctorController {
     @Autowired
     UserService userService;
     @Autowired
+    UserMapper userMapper;
+    @Autowired
     QuestionMapper questionMapper;
     @Autowired
     QuestionService questionService;
@@ -42,13 +45,14 @@ public class DoctorController {
      */
     @PostMapping(value="/login", produces = "application/json; charset=utf-8")
     public @ResponseBody
-    ResponseData login(HttpServletRequest request,@RequestParam("js_code") String js_code) {
+    ResponseData login(HttpServletRequest request,@RequestBody Map<String, Object> map_front) {
         //获取session_key,openid
+        String js_code = (String) map_front.get("js_code");
         String wechatApiInfo;
         System.out.println("js_code"+js_code);
         wechatApiInfo = hc.doGet("https://api.weixin.qq.com/sns/jscode2session?appid=wxeae4d653ad57dcc5&secret=d531d7a5592343794f8f897ba929e9be&js_code="+js_code+"&grant_type=authorization_code");
 //        wechatApiInfo= "{\"session_key\":\"Jd+BjczJSQg2CBMoSMTYXQ==\",\"openid\":\"oSZXB5SdDSDWas6kSS3UZOShm0kI\"}";
-
+//        wechatApiInfo= "{\"session_key\":\"Jd+BjczJSQg2CBMoSMTYXQ==\",\"openid\":\"666777\"}";     //错误Info
         String session_key = getSession_key(wechatApiInfo);
         String openid = getOpen_id(wechatApiInfo);
         System.out.println("wechatApiInfo"+wechatApiInfo);
@@ -57,20 +61,46 @@ public class DoctorController {
         login.setOpenid(openid);
         ResponseData responseData = ResponseData.ok();
         //先到数据库验证
-        String loginId = userService.checkLogin(login.getOpenid()).getId();//这里是否是用sessionkey进行验证？？
-        if(null != loginId) {
+        String loginId = new String();
+        try{
+            loginId = userService.checkLogin(login.getOpenid()).getOpenid();//这里是否是用sessionkey进行验证？？
+            System.out.println("loginID???"+loginId);
+        }
+        catch (Exception e){
+            loginId = null;
+            System.out.println("未注册的新用户");
+        }
+        if(null != loginId) {   //老用户直接登录
+            System.out.println("老用户");
             User user = userService.getUserByLoginId(loginId);
             login.setOpenid(loginId);
             //给用户jwt加密生成token
             String token = JWT.sign(login, 60L* 1000L* 30L);
             //封装成对象返回给客户端
-            responseData.putDataValue("loginId", login.getId());
+//            responseData.putDataValue("loginId", login.getId());
             responseData.putDataValue("token", token);
             responseData.putDataValue("user", user);
         }
         else{
-            responseData =  ResponseData.customerError();
-            System.out.println("code错误");
+            //新用户注册
+            System.out.println("新用户");
+            User user =new User();
+            Integer id = userService.getAll().size()+1;
+            user.setId(id);
+            user.setOpenid(openid);
+            user.setSessionKey(session_key);
+            userMapper.insert(user);
+            System.out.println("user::"+user);
+            System.out.println("userid::"+user.getId());
+
+            login.setOpenid(openid);
+            //给用户jwt加密生成token
+            String token = JWT.sign(login, 60L* 1000L* 30L);
+//            responseData.putDataValue("loginId", login.getId());
+            responseData.putDataValue("token", token);
+            responseData.putDataValue("user", user);
+//            responseData =  ResponseData.customerError();
+//            System.out.println("code错误");
         }
         return responseData;
     }
@@ -80,11 +110,17 @@ public class DoctorController {
      */
     @PostMapping(value="/question", produces = "application/json; charset=utf-8")
     @ResponseBody
-    public Map question_random(){
+    public Map question_random(@RequestBody Map<String, Object> map_front){
+        //得到前端传入的token与time时间
+        String token = (String) map_front.get("token");
+//        String time = (String) map_front.get("time");
+        //解析token获得openid
+        String openid = JWT.unsign(token,String.class);
+
         Random random = new Random();
         Map<String, Object> map=new HashMap<String, Object>();
 
-        String[] questionList = {"P_Sex","P_Age","P_Constellation","P_Blood_Type","P_Occupation_Risk","P_Education","P_Marriage_Status","P_Surgery_History","P_Comparison","P_Others’_Satisfaction","P_Change_Life","P_Change_Destiny","P_Kinsfolk_Attitude","P_Unhappiness_Family","P_Mental_Disorder","P_Selfie","P_Appearance_Attention","D_Charm","D_Subjective","D_Modesty","D_Attention","D_Expression","D_Extreme_Emotion","D_Expectation","D_Detail","D_Comprehension","D_Internet_Research","D_Suspicious","D_Repair","D_Impulsion","D_Price","D_Slander","D_Forwardness","D_Praise","D_Quarrel","D_ Art_Detail","D_Scar","D_Fail","D_Nurse","D_Perfect","D_Paranoid","Judgement"};
+        String[] questionList = {"P_Sex","P_Age","P_Constellation","P_Blood_Type","P_Occupation_Risk","P_Education","P_Marriage_Status","P_Surgery_History","P_Comparison","P_Others_Satisfaction","P_Change_Life","P_Change_Destiny","P_Kinsfolk_Attitude","P_Unhappiness_Family","P_Mental_Disorder","P_Selfie","P_Appearance_Attention","D_Charm","D_Subjective","D_Modesty","D_Attention","D_Expression","D_Extreme_Emotion","D_Expectation","D_Detail","D_Comprehension","D_Internet_Research","D_Suspicious","D_Repair","D_Impulsion","D_Price","D_Slander","D_Forwardness","D_Praise","D_Quarrel","D_ Art_Detail","D_Scar","D_Fail","D_Nurse","D_Perfect","D_Paranoid","Judgement"};
         Integer[] questionAnswer = new Integer[questionList.length];
         String[] questionAnswer_String = new String[questionList.length];
 
@@ -168,12 +204,38 @@ public class DoctorController {
      */
     @PostMapping(value="/answer", produces = "application/json; charset=utf-8")
     @ResponseBody
-    public Question answer_judgement(@RequestParam("Id") Integer id,@RequestParam("Judgement") Byte Judgement){
+    public Question answer_judgement(@RequestBody Map<String, Object> map_front){
         //得到该问题信息
+        Integer id = (Integer) map_front.get("Id");
+        String Judgement_I = (String) map_front.get("Judgement");
+        String token = (String) map_front.get("token");
+        String time = (String) map_front.get("time");
+        Byte Judgement = Byte.valueOf(Judgement_I);
         Question question = questionMapper.selectByPrimaryKey(id);
         question.setJudgement(Judgement);
         questionMapper.updateByPrimaryKeySelective(question);
         return question;
+    }
+
+    /**
+     * 测试Post
+     */
+    @PostMapping("/test11")
+    @ResponseBody
+    public Map test11(@RequestBody Map<String, Object> map){
+        Integer id = (Integer) map.get("id");
+        String name = (String) map.get("name");
+        Integer age = (Integer) map.get("age");
+        Map<String, Object> map1=new HashMap<String, Object>();
+        map1.put("id", id);
+        map1.put("name", name);
+        map1.put("age", age);
+        return map1;
+    }
+    @PostMapping("/test22")
+    @ResponseBody
+    public String test22(){
+        return "sss";
     }
 
     /**
@@ -242,11 +304,6 @@ public class DoctorController {
         return map;
     }
 
-    @RequestMapping("/test1")
-    @ResponseBody
-    public String test1(){
-        return "Success";
-    }
 
     public String getSession_key(String wechatApiInfo){
         wechatApiInfo=wechatApiInfo.replace("\"", "");
