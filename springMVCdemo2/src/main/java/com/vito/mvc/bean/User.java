@@ -3,6 +3,10 @@ package com.vito.mvc.bean;
 public class User {
     private Integer id;
 
+    private String role;
+
+    private String sex;
+
     private String name;
 
     private String password;
@@ -18,9 +22,11 @@ public class User {
         //TODO Auto-generated constructor stub
     }
 
-    public User(Integer id, String name, String password, String tel, String sessionKey, String openid) {
+    public User(Integer id, String role, String sex, String name, String password, String tel, String sessionKey, String openid) {
         super();
         this.id = id;
+        this.role = role;
+        this.sex = sex;
         this.name = name;
         this.password = password;
         this.tel = tel;
@@ -34,6 +40,22 @@ public class User {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role == null ? null : role.trim();
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex == null ? null : sex.trim();
     }
 
     public String getName() {

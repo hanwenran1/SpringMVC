@@ -1,6 +1,7 @@
 package com.vito.mvc.bean;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class QuestionExample {
@@ -161,6 +162,136 @@ public class QuestionExample {
 
         public Criteria andIdNotBetween(Integer value1, Integer value2) {
             addCriterion("id not between", value1, value2, "id");
+            return (Criteria) this;
+        }
+
+        public Criteria andOpenidIsNull() {
+            addCriterion("openid is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andOpenidIsNotNull() {
+            addCriterion("openid is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andOpenidEqualTo(String value) {
+            addCriterion("openid =", value, "openid");
+            return (Criteria) this;
+        }
+
+        public Criteria andOpenidNotEqualTo(String value) {
+            addCriterion("openid <>", value, "openid");
+            return (Criteria) this;
+        }
+
+        public Criteria andOpenidGreaterThan(String value) {
+            addCriterion("openid >", value, "openid");
+            return (Criteria) this;
+        }
+
+        public Criteria andOpenidGreaterThanOrEqualTo(String value) {
+            addCriterion("openid >=", value, "openid");
+            return (Criteria) this;
+        }
+
+        public Criteria andOpenidLessThan(String value) {
+            addCriterion("openid <", value, "openid");
+            return (Criteria) this;
+        }
+
+        public Criteria andOpenidLessThanOrEqualTo(String value) {
+            addCriterion("openid <=", value, "openid");
+            return (Criteria) this;
+        }
+
+        public Criteria andOpenidLike(String value) {
+            addCriterion("openid like", value, "openid");
+            return (Criteria) this;
+        }
+
+        public Criteria andOpenidNotLike(String value) {
+            addCriterion("openid not like", value, "openid");
+            return (Criteria) this;
+        }
+
+        public Criteria andOpenidIn(List<String> values) {
+            addCriterion("openid in", values, "openid");
+            return (Criteria) this;
+        }
+
+        public Criteria andOpenidNotIn(List<String> values) {
+            addCriterion("openid not in", values, "openid");
+            return (Criteria) this;
+        }
+
+        public Criteria andOpenidBetween(String value1, String value2) {
+            addCriterion("openid between", value1, value2, "openid");
+            return (Criteria) this;
+        }
+
+        public Criteria andOpenidNotBetween(String value1, String value2) {
+            addCriterion("openid not between", value1, value2, "openid");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimeIsNull() {
+            addCriterion("time is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimeIsNotNull() {
+            addCriterion("time is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimeEqualTo(Date value) {
+            addCriterion("time =", value, "time");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimeNotEqualTo(Date value) {
+            addCriterion("time <>", value, "time");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimeGreaterThan(Date value) {
+            addCriterion("time >", value, "time");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimeGreaterThanOrEqualTo(Date value) {
+            addCriterion("time >=", value, "time");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimeLessThan(Date value) {
+            addCriterion("time <", value, "time");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimeLessThanOrEqualTo(Date value) {
+            addCriterion("time <=", value, "time");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimeIn(List<Date> values) {
+            addCriterion("time in", values, "time");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimeNotIn(List<Date> values) {
+            addCriterion("time not in", values, "time");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimeBetween(Date value1, Date value2) {
+            addCriterion("time between", value1, value2, "time");
+            return (Criteria) this;
+        }
+
+        public Criteria andTimeNotBetween(Date value1, Date value2) {
+            addCriterion("time not between", value1, value2, "time");
             return (Criteria) this;
         }
 
@@ -2681,6 +2812,66 @@ public class QuestionExample {
 
         public Criteria andJudgementNotBetween(Byte value1, Byte value2) {
             addCriterion("Judgement not between", value1, value2, "judgement");
+            return (Criteria) this;
+        }
+
+        public Criteria andMarkIsNull() {
+            addCriterion("mark is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andMarkIsNotNull() {
+            addCriterion("mark is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andMarkEqualTo(Byte value) {
+            addCriterion("mark =", value, "mark");
+            return (Criteria) this;
+        }
+
+        public Criteria andMarkNotEqualTo(Byte value) {
+            addCriterion("mark <>", value, "mark");
+            return (Criteria) this;
+        }
+
+        public Criteria andMarkGreaterThan(Byte value) {
+            addCriterion("mark >", value, "mark");
+            return (Criteria) this;
+        }
+
+        public Criteria andMarkGreaterThanOrEqualTo(Byte value) {
+            addCriterion("mark >=", value, "mark");
+            return (Criteria) this;
+        }
+
+        public Criteria andMarkLessThan(Byte value) {
+            addCriterion("mark <", value, "mark");
+            return (Criteria) this;
+        }
+
+        public Criteria andMarkLessThanOrEqualTo(Byte value) {
+            addCriterion("mark <=", value, "mark");
+            return (Criteria) this;
+        }
+
+        public Criteria andMarkIn(List<Byte> values) {
+            addCriterion("mark in", values, "mark");
+            return (Criteria) this;
+        }
+
+        public Criteria andMarkNotIn(List<Byte> values) {
+            addCriterion("mark not in", values, "mark");
+            return (Criteria) this;
+        }
+
+        public Criteria andMarkBetween(Byte value1, Byte value2) {
+            addCriterion("mark between", value1, value2, "mark");
+            return (Criteria) this;
+        }
+
+        public Criteria andMarkNotBetween(Byte value1, Byte value2) {
+            addCriterion("mark not between", value1, value2, "mark");
             return (Criteria) this;
         }
     }

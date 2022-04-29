@@ -1,6 +1,5 @@
 package com.vito.mvc.dao;
 
-import com.vito.mvc.bean.Login;
 import com.vito.mvc.bean.User;
 import com.vito.mvc.bean.UserExample;
 import java.util.List;
@@ -17,11 +16,11 @@ public interface UserMapper {
 
     int insertSelective(User record);
 
-    User selectBySingleExample(String openid);
+    List<User> selectByExample(UserExample example);
 
     User selectByPrimaryKey(Integer id);
 
-    List<User> selectByExample(UserExample example);
+    User selectBySingleExample(String openid);
 
     User selectByLoginId(String id);
 

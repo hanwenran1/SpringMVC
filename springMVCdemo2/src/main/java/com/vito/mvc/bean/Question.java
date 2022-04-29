@@ -1,7 +1,13 @@
 package com.vito.mvc.bean;
 
+import java.util.Date;
+
 public class Question {
     private Integer id;
+
+    private String userid;
+
+    private Date time;
 
     private Byte pSex;
 
@@ -87,13 +93,17 @@ public class Question {
 
     private Byte judgement;
 
+    private Byte mark;
+
     public Question(){
         super();
         //TODO Auto-generated constructor stub
     }
 
-    public Question(Byte pSex, Byte pAge, Byte pConstellation, Byte pBloodType, Byte pOccupationRisk, Byte pEducation, Byte pMarriageStatus, Byte pSurgeryHistory, Byte pComparison, Byte pOthersSatisfaction, Byte pChangeLife, Byte pChangeDestiny, Byte pKinsfolkAttitude, Byte pUnhappinessFamily, Byte pMentalDisorder, Byte pSelfie, Byte pAppearanceAttention, Byte dCharm, Byte dSubjective, Byte dModesty, Byte dAttention, Byte dExpression, Byte dExtremeEmotion, Byte dExpectation, Byte dDetail, Byte dComprehension, Byte dInternetResearch, Byte dSuspicious, Byte dRepair, Byte dImpulsion, Byte dPrice, Byte dSlander, Byte dForwardness, Byte dPraise, Byte dQuarrel, Byte dArtDetail, Byte dScar, Byte dFail, Byte dNurse, Byte dPerfect, Byte dParanoid, Byte judgement) {
+    public Question(String userid, Date time, Byte pSex, Byte pAge, Byte pConstellation, Byte pBloodType, Byte pOccupationRisk, Byte pEducation, Byte pMarriageStatus, Byte pSurgeryHistory, Byte pComparison, Byte pOthersSatisfaction, Byte pChangeLife, Byte pChangeDestiny, Byte pKinsfolkAttitude, Byte pUnhappinessFamily, Byte pMentalDisorder, Byte pSelfie, Byte pAppearanceAttention, Byte dCharm, Byte dSubjective, Byte dModesty, Byte dAttention, Byte dExpression, Byte dExtremeEmotion, Byte dExpectation, Byte dDetail, Byte dComprehension, Byte dInternetResearch, Byte dSuspicious, Byte dRepair, Byte dImpulsion, Byte dPrice, Byte dSlander, Byte dForwardness, Byte dPraise, Byte dQuarrel, Byte dArtDetail, Byte dScar, Byte dFail, Byte dNurse, Byte dPerfect, Byte dParanoid, Byte judgement, Byte mark) {
         super();
+        this.userid = userid;
+        this.time = time;
         this.pSex = pSex;
         this.pAge = pAge;
         this.pConstellation = pConstellation;
@@ -136,6 +146,7 @@ public class Question {
         this.dPerfect = dPerfect;
         this.dParanoid = dParanoid;
         this.judgement = judgement;
+        this.mark = mark;
     }
 
     public Integer getId() {
@@ -144,6 +155,22 @@ public class Question {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getUserid() {
+        return userid;
+    }
+
+    public void setUserid(String userid) {
+        this.userid = userid == null ? null : userid.trim();
+    }
+
+    public Date getTime() {
+        return time;
+    }
+
+    public void setTime(Date time) {
+        this.time = time;
     }
 
     public Byte getpSex() {
@@ -480,5 +507,13 @@ public class Question {
 
     public void setJudgement(Byte judgement) {
         this.judgement = judgement;
+    }
+
+    public Byte getMark() {
+        return mark;
+    }
+
+    public void setMark(Byte mark) {
+        this.mark = mark;
     }
 }

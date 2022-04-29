@@ -46,7 +46,7 @@
         <!--<table tableName="tbl_cus" domainObjectName="Customer"></table>-->
         <!--<table tableName="tbl_user" domainObjectName="User"></table>-->
         <table tableName="tbl_question" domainObjectName="Question"></table>
-        <table tableName="tbl_occupation" domainObjectName="Occupation"></table>
+        <!--<table tableName="tbl_occupation" domainObjectName="Occupation"></table>-->
 
     </context>
 </generatorConfiguration>

@@ -3,6 +3,8 @@
 <mapper namespace="com.vito.mvc.dao.QuestionMapper">
   <resultMap id="BaseResultMap" type="com.vito.mvc.bean.Question">
     <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="userid" jdbcType="VARCHAR" property="userid" />
+    <result column="time" jdbcType="TIMESTAMP" property="time" />
     <result column="P_Sex" jdbcType="TINYINT" property="pSex" />
     <result column="P_Age" jdbcType="TINYINT" property="pAge" />
     <result column="P_Constellation" jdbcType="TINYINT" property="pConstellation" />
@@ -45,6 +47,7 @@
     <result column="D_Perfect" jdbcType="TINYINT" property="dPerfect" />
     <result column="D_Paranoid" jdbcType="TINYINT" property="dParanoid" />
     <result column="Judgement" jdbcType="TINYINT" property="judgement" />
+    <result column="mark" jdbcType="TINYINT" property="mark" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -105,13 +108,14 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, P_Sex, P_Age, P_Constellation, P_Blood_Type, P_Occupation_Risk, P_Education, 
-    P_Marriage_Status, P_Surgery_History, P_Comparison, P_Others_Satisfaction, P_Change_Life, 
-    P_Change_Destiny, P_Kinsfolk_Attitude, P_Unhappiness_Family, P_Mental_Disorder, P_Selfie, 
-    P_Appearance_Attention, D_Charm, D_Subjective, D_Modesty, D_Attention, D_Expression, 
-    D_Extreme_Emotion, D_Expectation, D_Detail, D_Comprehension, D_Internet_Research, 
+    id, userid, time, P_Sex, P_Age, P_Constellation, P_Blood_Type, P_Occupation_Risk,
+    P_Education, P_Marriage_Status, P_Surgery_History, P_Comparison, P_Others_Satisfaction, 
+    P_Change_Life, P_Change_Destiny, P_Kinsfolk_Attitude, P_Unhappiness_Family, P_Mental_Disorder, 
+    P_Selfie, P_Appearance_Attention, D_Charm, D_Subjective, D_Modesty, D_Attention, 
+    D_Expression, D_Extreme_Emotion, D_Expectation, D_Detail, D_Comprehension, D_Internet_Research, 
     D_Suspicious, D_Repair, D_Impulsion, D_Price, D_Slander, D_Forwardness, D_Praise, 
-    D_Quarrel, D_Art_Detail, D_Scar, D_Fail, D_Nurse, D_Perfect, D_Paranoid, Judgement
+    D_Quarrel, D_Art_Detail, D_Scar, D_Fail, D_Nurse, D_Perfect, D_Paranoid, Judgement, 
+    mark
   </sql>
   <select id="selectByExample" parameterType="com.vito.mvc.bean.QuestionExample" resultMap="BaseResultMap">
     select
@@ -143,12 +147,13 @@
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.vito.mvc.bean.Question" useGeneratedKeys="true" keyProperty="id">
-    insert into tbl_question (id, P_Sex, P_Age, 
-      P_Constellation, P_Blood_Type, P_Occupation_Risk, 
-      P_Education, P_Marriage_Status, P_Surgery_History, 
-      P_Comparison, P_Others_Satisfaction, P_Change_Life, 
-      P_Change_Destiny, P_Kinsfolk_Attitude, P_Unhappiness_Family, 
+  <insert id="insert" useGeneratedKeys="true" keyProperty="id" parameterType="com.vito.mvc.bean.Question">
+    insert into tbl_question (id, userid, time,
+      P_Sex, P_Age, P_Constellation, 
+      P_Blood_Type, P_Occupation_Risk, P_Education, 
+      P_Marriage_Status, P_Surgery_History, P_Comparison, 
+      P_Others_Satisfaction, P_Change_Life, P_Change_Destiny, 
+      P_Kinsfolk_Attitude, P_Unhappiness_Family, 
       P_Mental_Disorder, P_Selfie, P_Appearance_Attention, 
       D_Charm, D_Subjective, D_Modesty, 
       D_Attention, D_Expression, D_Extreme_Emotion, 
@@ -158,12 +163,13 @@
       D_Forwardness, D_Praise, D_Quarrel, 
       D_Art_Detail, D_Scar, D_Fail, 
       D_Nurse, D_Perfect, D_Paranoid, 
-      Judgement)
-    values (#{id,jdbcType=INTEGER}, #{pSex,jdbcType=TINYINT}, #{pAge,jdbcType=TINYINT}, 
-      #{pConstellation,jdbcType=TINYINT}, #{pBloodType,jdbcType=TINYINT}, #{pOccupationRisk,jdbcType=TINYINT}, 
-      #{pEducation,jdbcType=TINYINT}, #{pMarriageStatus,jdbcType=TINYINT}, #{pSurgeryHistory,jdbcType=TINYINT}, 
-      #{pComparison,jdbcType=TINYINT}, #{pOthersSatisfaction,jdbcType=TINYINT}, #{pChangeLife,jdbcType=TINYINT}, 
-      #{pChangeDestiny,jdbcType=TINYINT}, #{pKinsfolkAttitude,jdbcType=TINYINT}, #{pUnhappinessFamily,jdbcType=TINYINT}, 
+      Judgement, mark)
+    values (#{id,jdbcType=INTEGER}, #{userid,jdbcType=VARCHAR}, #{time,jdbcType=TIMESTAMP},
+      #{pSex,jdbcType=TINYINT}, #{pAge,jdbcType=TINYINT}, #{pConstellation,jdbcType=TINYINT}, 
+      #{pBloodType,jdbcType=TINYINT}, #{pOccupationRisk,jdbcType=TINYINT}, #{pEducation,jdbcType=TINYINT}, 
+      #{pMarriageStatus,jdbcType=TINYINT}, #{pSurgeryHistory,jdbcType=TINYINT}, #{pComparison,jdbcType=TINYINT}, 
+      #{pOthersSatisfaction,jdbcType=TINYINT}, #{pChangeLife,jdbcType=TINYINT}, #{pChangeDestiny,jdbcType=TINYINT}, 
+      #{pKinsfolkAttitude,jdbcType=TINYINT}, #{pUnhappinessFamily,jdbcType=TINYINT}, 
       #{pMentalDisorder,jdbcType=TINYINT}, #{pSelfie,jdbcType=TINYINT}, #{pAppearanceAttention,jdbcType=TINYINT}, 
       #{dCharm,jdbcType=TINYINT}, #{dSubjective,jdbcType=TINYINT}, #{dModesty,jdbcType=TINYINT}, 
       #{dAttention,jdbcType=TINYINT}, #{dExpression,jdbcType=TINYINT}, #{dExtremeEmotion,jdbcType=TINYINT}, 
@@ -173,13 +179,19 @@
       #{dForwardness,jdbcType=TINYINT}, #{dPraise,jdbcType=TINYINT}, #{dQuarrel,jdbcType=TINYINT}, 
       #{dArtDetail,jdbcType=TINYINT}, #{dScar,jdbcType=TINYINT}, #{dFail,jdbcType=TINYINT}, 
       #{dNurse,jdbcType=TINYINT}, #{dPerfect,jdbcType=TINYINT}, #{dParanoid,jdbcType=TINYINT}, 
-      #{judgement,jdbcType=TINYINT})
+      #{judgement,jdbcType=TINYINT}, #{mark,jdbcType=TINYINT})
   </insert>
   <insert id="insertSelective" parameterType="com.vito.mvc.bean.Question">
     insert into tbl_question
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
         id,
+      </if>
+      <if test="userid != null">
+        userid,
+      </if>
+      <if test="time != null">
+        time,
       </if>
       <if test="pSex != null">
         P_Sex,
@@ -307,10 +319,19 @@
       <if test="judgement != null">
         Judgement,
       </if>
+      <if test="mark != null">
+        mark,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="id != null">
         #{id,jdbcType=INTEGER},
+      </if>
+      <if test="userid != null">
+        #{userid,jdbcType=VARCHAR},
+      </if>
+      <if test="time != null">
+        #{time,jdbcType=TIMESTAMP},
       </if>
       <if test="pSex != null">
         #{pSex,jdbcType=TINYINT},
@@ -438,6 +459,9 @@
       <if test="judgement != null">
         #{judgement,jdbcType=TINYINT},
       </if>
+      <if test="mark != null">
+        #{mark,jdbcType=TINYINT},
+      </if>
     </trim>
   </insert>
   <select id="countByExample" parameterType="com.vito.mvc.bean.QuestionExample" resultType="java.lang.Long">
@@ -451,6 +475,12 @@
     <set>
       <if test="record.id != null">
         id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.userid != null">
+        userid = #{record.userid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.time != null">
+        time = #{record.time,jdbcType=TIMESTAMP},
       </if>
       <if test="record.pSex != null">
         P_Sex = #{record.pSex,jdbcType=TINYINT},
@@ -578,6 +608,9 @@
       <if test="record.judgement != null">
         Judgement = #{record.judgement,jdbcType=TINYINT},
       </if>
+      <if test="record.mark != null">
+        mark = #{record.mark,jdbcType=TINYINT},
+      </if>
     </set>
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
@@ -586,6 +619,8 @@
   <update id="updateByExample" parameterType="map">
     update tbl_question
     set id = #{record.id,jdbcType=INTEGER},
+      userid = #{record.userid,jdbcType=VARCHAR},
+      time = #{record.time,jdbcType=TIMESTAMP},
       P_Sex = #{record.pSex,jdbcType=TINYINT},
       P_Age = #{record.pAge,jdbcType=TINYINT},
       P_Constellation = #{record.pConstellation,jdbcType=TINYINT},
@@ -627,7 +662,8 @@
       D_Nurse = #{record.dNurse,jdbcType=TINYINT},
       D_Perfect = #{record.dPerfect,jdbcType=TINYINT},
       D_Paranoid = #{record.dParanoid,jdbcType=TINYINT},
-      Judgement = #{record.judgement,jdbcType=TINYINT}
+      Judgement = #{record.judgement,jdbcType=TINYINT},
+      mark = #{record.mark,jdbcType=TINYINT}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -635,6 +671,12 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.vito.mvc.bean.Question">
     update tbl_question
     <set>
+      <if test="userid != null">
+        userid = #{userid,jdbcType=VARCHAR},
+      </if>
+      <if test="time != null">
+        time = #{time,jdbcType=TIMESTAMP},
+      </if>
       <if test="pSex != null">
         P_Sex = #{pSex,jdbcType=TINYINT},
       </if>
@@ -761,12 +803,17 @@
       <if test="judgement != null">
         Judgement = #{judgement,jdbcType=TINYINT},
       </if>
+      <if test="mark != null">
+        mark = #{mark,jdbcType=TINYINT},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.vito.mvc.bean.Question">
     update tbl_question
-    set P_Sex = #{pSex,jdbcType=TINYINT},
+    set userid = #{userid,jdbcType=VARCHAR},
+      time = #{time,jdbcType=TIMESTAMP},
+      P_Sex = #{pSex,jdbcType=TINYINT},
       P_Age = #{pAge,jdbcType=TINYINT},
       P_Constellation = #{pConstellation,jdbcType=TINYINT},
       P_Blood_Type = #{pBloodType,jdbcType=TINYINT},
@@ -807,7 +854,8 @@
       D_Nurse = #{dNurse,jdbcType=TINYINT},
       D_Perfect = #{dPerfect,jdbcType=TINYINT},
       D_Paranoid = #{dParanoid,jdbcType=TINYINT},
-      Judgement = #{judgement,jdbcType=TINYINT}
+      Judgement = #{judgement,jdbcType=TINYINT},
+      mark = #{mark,jdbcType=TINYINT}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

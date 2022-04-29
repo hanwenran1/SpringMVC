@@ -1,9 +1,6 @@
 package com.vito.mvc.service;
 
-import com.vito.mvc.bean.Doctor;
-import com.vito.mvc.bean.Login;
 import com.vito.mvc.bean.User;
-import com.vito.mvc.dao.DoctorMapper;
 import com.vito.mvc.dao.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
